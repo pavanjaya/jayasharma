@@ -47,14 +47,6 @@ export default async function InsightPage({
   return (
     <>
       <section className="relative overflow-hidden bg-background pt-36 pb-16 lg:pt-44 lg:pb-20">
-        <div
-          className="pointer-events-none absolute inset-0 opacity-[0.035]"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, #0f1b2d 1px, transparent 1px), linear-gradient(to bottom, #0f1b2d 1px, transparent 1px)",
-            backgroundSize: "56px 56px",
-          }}
-        />
         <div className="relative mx-auto max-w-3xl px-6 lg:px-8">
           <Link
             href="/insights"

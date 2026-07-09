@@ -5,14 +5,6 @@ export default function CTASection() {
   return (
     <section className="mx-auto max-w-7xl px-6 pb-28 lg:px-8">
       <div className="relative overflow-hidden rounded-3xl bg-[var(--color-navy)] px-8 py-16 text-center sm:px-16">
-        <div
-          className="pointer-events-none absolute inset-0 opacity-[0.06]"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)",
-            backgroundSize: "48px 48px",
-          }}
-        />
         <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[var(--color-gold)]/15 blur-3xl" />
 
         <div className="relative">
@@ -29,7 +21,7 @@ export default function CTASection() {
               href="/contact"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-gold)] px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[var(--color-gold-light)]"
             >
-              Schedule Consultation
+              Book Consultation
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
             </Link>
             <a

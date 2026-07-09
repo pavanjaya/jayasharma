@@ -4,15 +4,6 @@ import { ArrowRight, Scale } from "lucide-react";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-background pt-28 pb-28 lg:pt-32 lg:pb-36">
-      {/* Decorative background */}
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.035]"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, #0f1b2d 1px, transparent 1px), linear-gradient(to bottom, #0f1b2d 1px, transparent 1px)",
-          backgroundSize: "56px 56px",
-        }}
-      />
       <div className="pointer-events-none absolute -right-40 -top-40 h-[32rem] w-[32rem] rounded-full bg-[var(--color-gold)]/10 blur-3xl" />
       <div className="pointer-events-none absolute -left-32 bottom-0 h-96 w-96 rounded-full bg-[var(--color-navy)]/5 blur-3xl" />
 
@@ -38,7 +29,7 @@ export default function Hero() {
               href="#contact"
               className="group inline-flex items-center justify-center gap-2 bg-[var(--color-navy)] px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[var(--color-gold)]"
             >
-              Schedule Consultation
+              Book Consultation
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
             </a>
             <a

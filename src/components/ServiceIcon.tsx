@@ -1,4 +1,4 @@
-import { Building2, FileText, Gavel, Handshake, Home, Landmark, ShieldCheck, Users } from "lucide-react";
+import { Building2, FileSignature, Gavel, Handshake, Home, Landmark, ShieldCheck, Users } from "lucide-react";
 import type { Service } from "@/data/content";
 
 const ICON_MAP: Record<Service["icon"], typeof Building2> = {
@@ -7,7 +7,7 @@ const ICON_MAP: Record<Service["icon"], typeof Building2> = {
   family: Users,
   criminal: ShieldCheck,
   property: Home,
-  documentation: FileText,
+  documentation: FileSignature,
   banking: Landmark,
   arbitration: Handshake,
 };

@@ -25,11 +25,12 @@ export default function PracticeAreas() {
           {SERVICES.map((service) => (
             <div
               key={service.slug}
-              className="group rounded-2xl border border-neutral-200 bg-white p-8 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-neutral-900/5"
+              className="group bg-white p-8 transition-transform hover:-translate-y-1"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--color-navy)] transition-colors group-hover:bg-[var(--color-gold)]">
+              <div className="flex h-16 w-16 items-center justify-center bg-[var(--color-navy)] transition-colors group-hover:bg-[var(--color-gold)]">
                 <ServiceIcon
                   icon={service.icon}
+                  size={28}
                   className="text-[var(--color-gold-light)] group-hover:text-white"
                 />
               </div>

@@ -35,6 +35,12 @@ body {
   font-family: var(--font-general-sans);
 }
 
+/* Eyebrow labels and pill tags read as UI chrome, not body copy — keep them on the sans title font. */
+.uppercase.tracking-widest,
+.bg-neutral-100 {
+  font-family: var(--font-general-sans);
+}
+
 * {
   border-radius: 0 !important;
   box-shadow: none !important;

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Award, Briefcase, GraduationCap, Landmark, Scale, ShieldCheck } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
@@ -39,12 +40,19 @@ export default function AboutPage() {
 
       {/* Bio */}
       <section className="mx-auto max-w-4xl px-6 py-20 lg:px-8">
-        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-[var(--color-gold)]/40 bg-surface">
-          <span className="font-serif-display text-xl font-semibold text-[var(--color-navy)]">
-            JS
-          </span>
+        <div className="relative mx-auto max-w-2xl">
+          <div className="absolute -inset-3 -z-10 border border-[var(--color-gold)]/30" />
+          <div className="relative aspect-[1160/522] w-full overflow-hidden bg-surface">
+            <Image
+              src="/advocate-jaya-sharma-about.jpg"
+              alt="Advocate Jaya Sharma"
+              fill
+              className="object-cover"
+              sizes="(min-width: 1024px) 42rem, 90vw"
+            />
+          </div>
         </div>
-        <div className="mt-8 space-y-5 text-base leading-relaxed text-neutral-600">
+        <div className="mt-10 space-y-5 text-base leading-relaxed text-neutral-600">
           <p>
             Advocate Jaya Sharma is an experienced legal practitioner with
             over 14 years of expertise handling cases across the Debt

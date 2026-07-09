@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, BookOpen } from "lucide-react";
-import { SKILLS } from "@/data/content";
+import { ArrowRight } from "lucide-react";
 import Reveal from "./motion/Reveal";
 
 export default function About() {
@@ -25,24 +24,7 @@ export default function About() {
         </p>
       </Reveal>
 
-      <Reveal delay={0.1} className="mt-12">
-        <p className="flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)]">
-          <BookOpen size={16} className="text-[var(--color-gold)]" />
-          Areas of Expertise
-        </p>
-        <div className="mt-4 flex flex-wrap gap-2.5">
-          {SKILLS.map((skill) => (
-            <span
-              key={skill}
-              className="rounded-full bg-neutral-100 px-4 py-1.5 text-sm font-medium text-neutral-700"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
-      </Reveal>
-
-      <Reveal delay={0.15} className="mt-10">
+      <Reveal delay={0.1} className="mt-10">
         <Link
           href="/about"
           className="group inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)]"

@@ -29,8 +29,8 @@ export default function PracticeAreasPage() {
           >
             <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
               <div className="lg:w-72 lg:flex-none">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--color-navy)]">
-                  <ServiceIcon icon={service.icon} className="text-[var(--color-gold-light)]" />
+                <div className="flex h-14 w-14 items-center justify-center bg-[var(--color-mint)]">
+                  <ServiceIcon icon={service.icon} size={26} className="text-[var(--color-navy)]" />
                 </div>
                 <p className="mt-4 text-xs font-semibold uppercase tracking-widest text-[var(--color-gold)]">
                   {`0${index + 1}`}

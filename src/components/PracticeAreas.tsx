@@ -27,11 +27,11 @@ export default function PracticeAreas() {
               key={service.slug}
               className="group bg-white p-8 transition-transform hover:-translate-y-1"
             >
-              <div className="flex h-16 w-16 items-center justify-center bg-[var(--color-navy)] transition-colors group-hover:bg-[var(--color-gold)]">
+              <div className="flex h-16 w-16 items-center justify-center bg-[var(--color-mint)] transition-colors group-hover:bg-[var(--color-gold)]">
                 <ServiceIcon
                   icon={service.icon}
                   size={28}
-                  className="text-[var(--color-gold-light)] group-hover:text-white"
+                  className="text-[var(--color-navy)] group-hover:text-white"
                 />
               </div>
               <h3 className="mt-6 font-serif-display text-xl font-semibold text-[var(--color-navy)]">

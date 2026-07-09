@@ -3,10 +3,7 @@ import { ArrowRight, Scale } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-background pt-28 pb-28 lg:pt-32 lg:pb-36">
-      <div className="pointer-events-none absolute -right-40 -top-40 h-[32rem] w-[32rem] rounded-full bg-[var(--color-gold)]/10 blur-3xl" />
-      <div className="pointer-events-none absolute -left-32 bottom-0 h-96 w-96 rounded-full bg-[var(--color-navy)]/5 blur-3xl" />
-
+    <section className="relative overflow-hidden pt-28 pb-28 lg:pt-32 lg:pb-36">
       <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
         <div className="flex flex-col items-start">
           <div className="flex items-center gap-2 border border-neutral-200 bg-white px-4 py-1.5 text-xs font-medium tracking-wide text-[var(--color-navy)]">

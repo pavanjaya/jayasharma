@@ -36,14 +36,14 @@ export default function DisclaimerModal() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4, ease: EASE_OUT }}
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-[var(--color-navy)]/70 backdrop-blur-sm px-4 py-8"
+          className="fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-[var(--color-navy)]/70 backdrop-blur-sm px-4 py-8"
         >
           <motion.div
             initial={{ opacity: 0, y: 16, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 16, scale: 0.98 }}
             transition={{ duration: 0.45, ease: EASE_OUT }}
-            className="w-full max-w-lg rounded-2xl border border-neutral-200 bg-white p-8 text-center sm:p-10"
+            className="w-full max-w-lg rounded-2xl border border-neutral-200 bg-white p-8 text-center sm:p-10 my-auto"
           >
             <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-navy)]">
               <Scale className="text-[var(--color-gold-light)]" size={22} />

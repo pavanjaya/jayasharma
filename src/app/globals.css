@@ -16,7 +16,7 @@
   --color-background: var(--background);
   --color-surface: var(--surface);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-ibm-plex-serif), Georgia, serif;
+  --font-sans: var(--font-general-sans);
   --font-serif: var(--font-general-sans);
   --color-navy: #333465;
   --color-navy-light: #46467d;
@@ -28,17 +28,19 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-ibm-plex-serif), Georgia, serif;
+  font-family: var(--font-general-sans);
 }
 
 .font-serif-display {
   font-family: var(--font-general-sans);
 }
 
-/* Eyebrow labels and pill tags read as UI chrome, not body copy — keep them on the sans title font. */
-.uppercase.tracking-widest,
-.bg-neutral-100 {
-  font-family: var(--font-general-sans);
+/* Long-form body copy (descriptions, bios, FAQ answers, article text) reads in
+   IBM Plex Serif. Every genuine copy paragraph in this codebase uses
+   leading-relaxed for readability; short UI labels/links/tags never do,
+   which makes it a reliable hook instead of chasing individual elements. */
+.leading-relaxed {
+  font-family: var(--font-ibm-plex-serif), Georgia, serif;
 }
 
 * {

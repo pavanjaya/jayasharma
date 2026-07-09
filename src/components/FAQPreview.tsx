@@ -2,11 +2,12 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { FAQS } from "@/data/content";
 import FAQAccordion from "./FAQAccordion";
+import Reveal from "./motion/Reveal";
 
 export default function FAQPreview() {
   return (
     <section className="mx-auto max-w-4xl px-6 py-28 lg:px-8">
-      <div className="mx-auto max-w-2xl text-center">
+      <Reveal className="mx-auto max-w-2xl text-center">
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
           Common Questions
         </p>
@@ -17,21 +18,21 @@ export default function FAQPreview() {
           Answers to a few things clients often ask before their first
           consultation.
         </p>
-      </div>
+      </Reveal>
 
-      <div className="mt-14">
+      <Reveal delay={0.1} className="mt-14">
         <FAQAccordion items={FAQS.slice(0, 3)} />
-      </div>
+      </Reveal>
 
-      <div className="mt-10 text-center">
+      <Reveal delay={0.15} className="mt-10 text-center">
         <Link
           href="/faq"
           className="group inline-flex items-center justify-center gap-2 text-sm font-semibold text-[var(--color-navy)]"
         >
           View All FAQs
-          <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
+          <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-0.5" />
         </Link>
-      </div>
+      </Reveal>
     </section>
   );
 }

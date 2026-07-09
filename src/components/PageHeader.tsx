@@ -1,4 +1,8 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Scale } from "lucide-react";
+import { fadeUp, staggerContainer } from "@/lib/motion-variants";
 
 export default function PageHeader({
   eyebrow,
@@ -13,20 +17,37 @@ export default function PageHeader({
     <section className="relative overflow-hidden bg-background pt-36 pb-16 lg:pt-44 lg:pb-20">
       <div className="pointer-events-none absolute -right-40 -top-40 h-[28rem] w-[28rem] rounded-full bg-[var(--color-gold)]/10 blur-3xl" />
 
-      <div className="relative mx-auto max-w-4xl px-6 text-center lg:px-8">
-        <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-navy)]">
+      <motion.div
+        className="relative mx-auto max-w-4xl px-6 text-center lg:px-8"
+        initial="hidden"
+        animate="visible"
+        variants={staggerContainer(0.12, 0.1)}
+      >
+        <motion.div
+          variants={fadeUp}
+          className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-navy)]"
+        >
           <Scale className="text-[var(--color-gold-light)]" size={18} />
-        </div>
-        <p className="mt-5 text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
+        </motion.div>
+        <motion.p
+          variants={fadeUp}
+          className="mt-5 text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]"
+        >
           {eyebrow}
-        </p>
-        <h1 className="mt-3 font-serif-display text-4xl font-semibold text-[var(--color-navy)] sm:text-5xl">
+        </motion.p>
+        <motion.h1
+          variants={fadeUp}
+          className="mt-3 font-serif-display text-4xl font-semibold text-[var(--color-navy)] sm:text-5xl"
+        >
           {title}
-        </h1>
-        <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-neutral-600">
+        </motion.h1>
+        <motion.p
+          variants={fadeUp}
+          className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-neutral-600"
+        >
           {description}
-        </p>
-      </div>
+        </motion.p>
+      </motion.div>
     </section>
   );
 }

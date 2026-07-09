@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { EASE_OUT } from "@/lib/motion-variants";
 
 type FAQItem = { question: string; answer: string };
 
@@ -24,18 +26,29 @@ export default function FAQAccordion({ items }: { items: FAQItem[] }) {
               aria-expanded={isOpen}
             >
               <span className="font-medium text-[var(--color-navy)]">{item.question}</span>
-              <ChevronDown
-                size={18}
-                className={`flex-none text-[var(--color-gold)] transition-transform ${
-                  isOpen ? "rotate-180" : ""
-                }`}
-              />
+              <motion.span
+                animate={{ rotate: isOpen ? 180 : 0 }}
+                transition={{ duration: 0.3, ease: EASE_OUT }}
+                className="flex-none text-[var(--color-gold)]"
+              >
+                <ChevronDown size={18} />
+              </motion.span>
             </button>
-            {isOpen && (
-              <p className="px-6 pb-5 text-sm leading-relaxed text-neutral-600">
-                {item.answer}
-              </p>
-            )}
+            <AnimatePresence initial={false}>
+              {isOpen && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.35, ease: EASE_OUT }}
+                  style={{ overflow: "hidden" }}
+                >
+                  <p className="px-6 pb-5 text-sm leading-relaxed text-neutral-600">
+                    {item.answer}
+                  </p>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         );
       })}

@@ -1,12 +1,14 @@
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import ContactForm from "./ContactForm";
+import Reveal from "./motion/Reveal";
+import { RevealStagger, RevealStaggerItem } from "./motion/RevealStagger";
 
 export default function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-7xl px-6 pb-28 lg:px-8">
       <div className="grid gap-12 lg:grid-cols-[1fr_1fr]">
-        <div className="space-y-4">
-          <div className="flex gap-4 rounded-2xl border border-neutral-200 bg-white p-6">
+        <RevealStagger className="space-y-4">
+          <RevealStaggerItem className="flex gap-4 rounded-2xl border border-neutral-200 bg-white p-6">
             <div className="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-[var(--color-navy)]/5">
               <Phone size={19} className="text-[var(--color-gold)]" />
             </div>
@@ -19,9 +21,9 @@ export default function Contact() {
                 +91 99867 58567
               </a>
             </div>
-          </div>
+          </RevealStaggerItem>
 
-          <div className="flex gap-4 rounded-2xl border border-neutral-200 bg-white p-6">
+          <RevealStaggerItem className="flex gap-4 rounded-2xl border border-neutral-200 bg-white p-6">
             <div className="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-[var(--color-navy)]/5">
               <Mail size={19} className="text-[var(--color-gold)]" />
             </div>
@@ -34,9 +36,9 @@ export default function Contact() {
                 jayapjangid@gmail.com
               </a>
             </div>
-          </div>
+          </RevealStaggerItem>
 
-          <div className="flex gap-4 rounded-2xl border border-neutral-200 bg-white p-6">
+          <RevealStaggerItem className="flex gap-4 rounded-2xl border border-neutral-200 bg-white p-6">
             <div className="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-[var(--color-navy)]/5">
               <MapPin size={19} className="text-[var(--color-gold)]" />
             </div>
@@ -56,9 +58,9 @@ export default function Contact() {
                 </p>
               </div>
             </div>
-          </div>
+          </RevealStaggerItem>
 
-          <div className="flex gap-4 rounded-2xl border border-neutral-200 bg-white p-6">
+          <RevealStaggerItem className="flex gap-4 rounded-2xl border border-neutral-200 bg-white p-6">
             <div className="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-[var(--color-navy)]/5">
               <Clock size={19} className="text-[var(--color-gold)]" />
             </div>
@@ -75,10 +77,12 @@ export default function Contact() {
                 Emergency legal assistance available 24/7
               </p>
             </div>
-          </div>
-        </div>
+          </RevealStaggerItem>
+        </RevealStagger>
 
-        <ContactForm />
+        <Reveal delay={0.15}>
+          <ContactForm />
+        </Reveal>
       </div>
     </section>
   );

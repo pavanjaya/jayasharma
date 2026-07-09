@@ -3,6 +3,7 @@ import { CheckCircle2 } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ServiceIcon from "@/components/ServiceIcon";
+import Reveal from "@/components/motion/Reveal";
 import { SERVICES } from "@/data/content";
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default function PracticeAreasPage() {
 
       <section className="mx-auto max-w-5xl space-y-6 px-6 pb-28 lg:px-8">
         {SERVICES.map((service, index) => (
-          <div
+          <Reveal
             key={service.slug}
             id={service.slug}
             className="scroll-mt-28 rounded-3xl border border-neutral-200 bg-white p-8 sm:p-10"
@@ -54,7 +55,7 @@ export default function PracticeAreasPage() {
                 </ul>
               </div>
             </div>
-          </div>
+          </Reveal>
         ))}
       </section>
 

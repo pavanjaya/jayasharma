@@ -3,6 +3,7 @@ import { IBM_Plex_Serif } from "next/font/google";
 import DisclaimerModal from "@/components/DisclaimerModal";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MotionProvider from "@/components/motion/MotionProvider";
 import "./globals.css";
 
 const ibmPlexSerif = IBM_Plex_Serif({
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${ibmPlexSerif.variable} h-full antialiased scroll-smooth`}
+      className={`${ibmPlexSerif.variable} h-full antialiased`}
     >
       <link rel="preconnect" href="https://api.fontshare.com" />
       <link
@@ -36,7 +37,9 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-background text-neutral-900">
         <DisclaimerModal />
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">
+          <MotionProvider>{children}</MotionProvider>
+        </main>
         <Footer />
       </body>
     </html>

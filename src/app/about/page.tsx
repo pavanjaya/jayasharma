@@ -3,6 +3,9 @@ import Image from "next/image";
 import { Award, Briefcase, GraduationCap, Landmark, Scale, ShieldCheck } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
+import Reveal from "@/components/motion/Reveal";
+import { RevealStagger, RevealStaggerItem } from "@/components/motion/RevealStagger";
+import ZoomImage from "@/components/motion/ZoomImage";
 import {
   BAR_REGISTRATION,
   CERTIFICATIONS,
@@ -40,9 +43,9 @@ export default function AboutPage() {
 
       {/* Bio */}
       <section className="mx-auto max-w-4xl px-6 py-20 lg:px-8">
-        <div className="relative mx-auto max-w-2xl">
+        <Reveal className="relative mx-auto max-w-2xl">
           <div className="absolute -inset-3 -z-10 border border-[var(--color-gold)]/30" />
-          <div className="relative aspect-[1160/522] w-full overflow-hidden bg-surface">
+          <ZoomImage className="relative aspect-[1160/522] w-full overflow-hidden bg-surface">
             <Image
               src="/advocate-jaya-sharma-about.jpg"
               alt="Advocate Jaya Sharma"
@@ -50,9 +53,9 @@ export default function AboutPage() {
               className="object-cover"
               sizes="(min-width: 1024px) 42rem, 90vw"
             />
-          </div>
-        </div>
-        <div className="mt-10 space-y-5 text-base leading-relaxed text-neutral-600">
+          </ZoomImage>
+        </Reveal>
+        <Reveal delay={0.1} className="mt-10 space-y-5 text-base leading-relaxed text-neutral-600">
           <p>
             Advocate Jaya Sharma is an experienced legal practitioner with
             over 14 years of expertise handling cases across the Debt
@@ -79,12 +82,12 @@ export default function AboutPage() {
             been appointed as an Advocate for Indian Oil Corporation Ltd.,
             Nashik District.
           </p>
-        </div>
+        </Reveal>
       </section>
 
       {/* Panel Advocate */}
       <section className="bg-surface py-20">
-        <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
+        <Reveal className="mx-auto max-w-4xl px-6 text-center lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
             Empanelments
           </p>
@@ -105,23 +108,23 @@ export default function AboutPage() {
               </span>
             ))}
           </div>
-        </div>
+        </Reveal>
       </section>
 
       {/* Experience */}
       <section className="mx-auto max-w-4xl px-6 py-20 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+        <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
             Career
           </p>
           <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
             Professional Experience
           </h2>
-        </div>
+        </Reveal>
 
-        <div className="mt-14 space-y-6">
+        <RevealStagger className="mt-14 space-y-6">
           {EXPERIENCE.map((job) => (
-            <div
+            <RevealStaggerItem
               key={`${job.firm}-${job.period}`}
               className="rounded-2xl border border-neutral-200 bg-white p-7 sm:p-8"
             >
@@ -137,26 +140,26 @@ export default function AboutPage() {
               <p className="mt-3 text-sm leading-relaxed text-neutral-600">
                 {job.description}
               </p>
-            </div>
+            </RevealStaggerItem>
           ))}
-        </div>
+        </RevealStagger>
       </section>
 
       {/* Education */}
       <section className="bg-surface py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
+          <Reveal className="mx-auto max-w-2xl text-center">
             <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
               Education
             </p>
             <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
               Academic Credentials
             </h2>
-          </div>
+          </Reveal>
 
-          <div className="mt-14 grid gap-6 sm:grid-cols-3">
+          <RevealStagger className="mt-14 grid gap-6 sm:grid-cols-3">
             {EDUCATION.map((item) => (
-              <div
+              <RevealStaggerItem
                 key={item.degree}
                 className="rounded-2xl border border-neutral-200 bg-white p-7"
               >
@@ -175,11 +178,11 @@ export default function AboutPage() {
                 <p className="mt-2 text-xs font-semibold uppercase tracking-wider text-[var(--color-gold)]">
                   {item.period}
                 </p>
-              </div>
+              </RevealStaggerItem>
             ))}
-          </div>
+          </RevealStagger>
 
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
+          <Reveal delay={0.1} className="mt-6 flex flex-wrap items-center justify-center gap-2">
             {CREDENTIALS.map((c) => (
               <span
                 key={c}
@@ -188,9 +191,9 @@ export default function AboutPage() {
                 {c}
               </span>
             ))}
-          </div>
+          </Reveal>
 
-          <div className="mt-14 mx-auto max-w-2xl">
+          <Reveal delay={0.15} className="mt-14 mx-auto max-w-2xl">
             <p className="text-center text-sm font-semibold text-[var(--color-navy)]">
               Certifications
             </p>
@@ -210,26 +213,26 @@ export default function AboutPage() {
                 </div>
               ))}
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       {/* Professional Highlights */}
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+        <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
             Professional Standing
           </p>
           <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
             Professional Highlights
           </h2>
-        </div>
+        </Reveal>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2">
+        <RevealStagger className="mt-14 grid gap-6 sm:grid-cols-2">
           {HIGHLIGHTS.map((item) => {
             const Icon = HIGHLIGHT_ICONS[item.id];
             return (
-              <div
+              <RevealStaggerItem
                 key={item.id}
                 className="flex gap-4 rounded-2xl border border-neutral-200 bg-white p-7"
               >
@@ -242,15 +245,15 @@ export default function AboutPage() {
                     {item.description}
                   </p>
                 </div>
-              </div>
+              </RevealStaggerItem>
             );
           })}
-        </div>
+        </RevealStagger>
       </section>
 
       {/* Approach */}
       <section className="bg-surface py-20">
-        <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
+        <Reveal className="mx-auto max-w-4xl px-6 text-center lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
             Her Approach
           </p>
@@ -268,27 +271,29 @@ export default function AboutPage() {
             discipline: careful listening, honest assessment, and precise
             documentation at every step.
           </p>
-        </div>
+        </Reveal>
       </section>
 
       {/* Skills */}
       <section className="mx-auto max-w-4xl px-6 py-20 text-center lg:px-8">
-        <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
-          Areas of Expertise
-        </p>
-        <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
-          Skills &amp; Specialisations
-        </h2>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-2.5">
-          {SKILLS.map((skill) => (
-            <span
-              key={skill}
-              className="rounded-full bg-neutral-100 px-4 py-1.5 text-sm font-medium text-neutral-700"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
+        <Reveal>
+          <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
+            Areas of Expertise
+          </p>
+          <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
+            Skills &amp; Specialisations
+          </h2>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-2.5">
+            {SKILLS.map((skill) => (
+              <span
+                key={skill}
+                className="rounded-full bg-neutral-100 px-4 py-1.5 text-sm font-medium text-neutral-700"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </Reveal>
       </section>
 
       <CTASection />

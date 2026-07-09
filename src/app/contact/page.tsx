@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { MapPin, Navigation } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import Contact from "@/components/Contact";
+import Reveal from "@/components/motion/Reveal";
 
 export const metadata: Metadata = {
   title: "Contact | Advocate Jaya Sharma & Associates",
@@ -25,7 +26,7 @@ export default function ContactPage() {
       <Contact />
 
       <section className="mx-auto max-w-7xl px-6 pb-28 lg:px-8">
-        <div className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-neutral-200 bg-surface px-8 py-16 text-center">
+        <Reveal className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-neutral-200 bg-surface px-8 py-16 text-center">
           <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--color-navy)]">
             <MapPin size={24} className="text-[var(--color-gold-light)]" />
           </div>
@@ -41,12 +42,12 @@ export default function ContactPage() {
             href={`https://www.google.com/maps/search/?api=1&query=${MAP_QUERY}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-2 inline-flex items-center gap-2 rounded-full bg-[var(--color-navy)] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[var(--color-gold)]"
+            className="mt-2 inline-flex items-center gap-2 rounded-full bg-[var(--color-navy)] px-6 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[var(--color-gold)]"
           >
             <Navigation size={15} />
             Get Directions
           </a>
-        </div>
+        </Reveal>
       </section>
     </>
   );

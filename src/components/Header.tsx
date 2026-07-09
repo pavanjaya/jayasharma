@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 import { Menu, Phone, X } from "lucide-react";
 
 const NAV_LINKS = [
@@ -14,6 +15,8 @@ const NAV_LINKS = [
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];
+
+const MotionLink = motion(Link);
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -32,10 +35,14 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header
-      className={`fixed top-0 z-50 w-full bg-background/95 backdrop-blur transition-shadow duration-300 ${
-        scrolled ? "shadow-sm border-b border-neutral-200" : "border-b border-transparent"
-      }`}
+    <motion.header
+      className="fixed top-0 z-50 w-full border-b backdrop-blur-md"
+      initial={false}
+      animate={{
+        backgroundColor: scrolled ? "rgba(255,254,250,0.92)" : "rgba(255,254,250,0)",
+        borderBottomColor: scrolled ? "rgba(229,229,229,1)" : "rgba(229,229,229,0)",
+      }}
+      transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="/" className="flex items-center">
@@ -47,7 +54,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium tracking-wide transition-colors ${
+              className={`text-sm font-medium tracking-wide transition-colors duration-300 ${
                 pathname === link.href
                   ? "text-[var(--color-navy)]"
                   : "text-neutral-600 hover:text-[var(--color-navy)]"
@@ -59,12 +66,15 @@ export default function Header() {
         </nav>
 
         <div className="hidden items-center gap-5 lg:flex">
-          <Link
+          <MotionLink
             href="/contact"
-            className="rounded-full bg-[var(--color-navy)] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[var(--color-gold)]"
+            className="rounded-full bg-[var(--color-navy)] px-5 py-2.5 text-sm font-semibold text-white"
+            whileHover={{ scale: 1.03, backgroundColor: "#b08d4f" }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
           >
             Book Consultation
-          </Link>
+          </MotionLink>
         </div>
 
         <button
@@ -78,7 +88,12 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="border-t border-neutral-200 bg-background px-6 py-6 lg:hidden">
+        <motion.div
+          initial={{ opacity: 0, y: -8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+          className="border-t border-neutral-200 bg-background px-6 py-6 lg:hidden"
+        >
           <nav className="flex flex-col gap-5">
             {NAV_LINKS.map((link) => (
               <Link
@@ -103,8 +118,8 @@ export default function Header() {
               Book Consultation
             </Link>
           </nav>
-        </div>
+        </motion.div>
       )}
-    </header>
+    </motion.header>
   );
 }

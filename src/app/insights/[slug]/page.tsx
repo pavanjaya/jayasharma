@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import CTASection from "@/components/CTASection";
+import Reveal from "@/components/motion/Reveal";
+import { RevealStagger, RevealStaggerItem } from "@/components/motion/RevealStagger";
 import { BLOG_POSTS } from "@/data/blog";
 
 export function generateStaticParams() {
@@ -47,7 +49,7 @@ export default async function InsightPage({
   return (
     <>
       <section className="relative overflow-hidden bg-background pt-36 pb-16 lg:pt-44 lg:pb-20">
-        <div className="relative mx-auto max-w-3xl px-6 lg:px-8">
+        <Reveal className="relative mx-auto max-w-3xl px-6 lg:px-8">
           <Link
             href="/insights"
             className="inline-flex items-center gap-2 text-sm font-medium text-neutral-600 hover:text-[var(--color-navy)]"
@@ -72,11 +74,11 @@ export default async function InsightPage({
               {post.readTime}
             </span>
           </div>
-        </div>
+        </Reveal>
       </section>
 
       <article className="mx-auto max-w-3xl px-6 pb-20 lg:px-8">
-        <div className="space-y-8">
+        <Reveal className="space-y-8">
           {post.content.map((block, i) => (
             <div key={i}>
               {block.heading && (
@@ -104,33 +106,34 @@ export default async function InsightPage({
               )}
             </div>
           ))}
-        </div>
+        </Reveal>
 
-        <div className="mt-12 rounded-xl border border-neutral-200 bg-surface px-6 py-5">
+        <Reveal delay={0.1} className="mt-12 rounded-xl border border-neutral-200 bg-surface px-6 py-5">
           <p className="text-xs leading-relaxed text-neutral-500">
             This article is for general informational purposes only and does
             not constitute legal advice. Every matter has its own facts —
             please consult directly for guidance specific to your situation.
           </p>
-        </div>
+        </Reveal>
 
         {related.length > 0 && (
           <div className="mt-14 border-t border-neutral-200 pt-10">
             <p className="text-sm font-semibold text-[var(--color-navy)]">
               Related Reading
             </p>
-            <div className="mt-5 grid gap-4 sm:grid-cols-2">
+            <RevealStagger className="mt-5 grid gap-4 sm:grid-cols-2">
               {related.map((r) => (
-                <Link
-                  key={r.slug}
-                  href={`/insights/${r.slug}`}
-                  className="rounded-xl border border-neutral-200 bg-white p-5 transition-colors hover:border-[var(--color-navy)]/30"
-                >
-                  <p className="font-medium text-[var(--color-navy)]">{r.title}</p>
-                  <p className="mt-1.5 text-sm text-neutral-500">{r.excerpt}</p>
-                </Link>
+                <RevealStaggerItem key={r.slug}>
+                  <Link
+                    href={`/insights/${r.slug}`}
+                    className="block rounded-xl border border-neutral-200 bg-white p-5 transition-colors duration-300 hover:border-[var(--color-navy)]/30"
+                  >
+                    <p className="font-medium text-[var(--color-navy)]">{r.title}</p>
+                    <p className="mt-1.5 text-sm text-neutral-500">{r.excerpt}</p>
+                  </Link>
+                </RevealStaggerItem>
               ))}
-            </div>
+            </RevealStagger>
           </div>
         )}
       </article>

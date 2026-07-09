@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
+import Reveal from "@/components/motion/Reveal";
 import { FAQS } from "@/data/content";
 
 export const metadata: Metadata = {
@@ -20,7 +21,9 @@ export default function FAQPage() {
       />
 
       <section className="mx-auto max-w-3xl px-6 pb-28 lg:px-8">
-        <FAQAccordion items={FAQS} />
+        <Reveal>
+          <FAQAccordion items={FAQS} />
+        </Reveal>
       </section>
 
       <CTASection />

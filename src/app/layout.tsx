@@ -1,15 +1,8 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Serif } from "next/font/google";
 import DisclaimerModal from "@/components/DisclaimerModal";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
-
-const ibmPlexSerif = IBM_Plex_Serif({
-  variable: "--font-ibm-plex-serif",
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Advocate Jaya Sharma & Associates | Nashik",
@@ -23,10 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${ibmPlexSerif.variable} h-full antialiased scroll-smooth`}
-    >
+    <html lang="en" className="h-full antialiased scroll-smooth">
       <link rel="preconnect" href="https://api.fontshare.com" />
       <link
         rel="stylesheet"

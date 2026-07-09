@@ -1,15 +1,7 @@
 import Link from "next/link";
-import { Award, ArrowRight, BookOpen, Briefcase, Landmark, Scale } from "lucide-react";
-import { HIGHLIGHTS, SKILLS } from "@/data/content";
+import { ArrowRight, BookOpen } from "lucide-react";
+import { SKILLS } from "@/data/content";
 import Reveal from "./motion/Reveal";
-import { RevealStagger, RevealStaggerItem } from "./motion/RevealStagger";
-
-const HIGHLIGHT_ICONS: Record<string, typeof Scale> = {
-  "bar-registration": Award,
-  "current-practice": Scale,
-  "high-court": Briefcase,
-  "panel-advocate": Landmark,
-};
 
 export default function About() {
   return (
@@ -21,7 +13,7 @@ export default function About() {
         <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
           14+ years of dedicated legal practice
         </h2>
-        <p className="mt-6 text-base leading-relaxed text-neutral-600">
+        <p className="mt-6 text-2xl leading-snug text-neutral-800 sm:text-3xl">
           Advocate Jaya Sharma holds B.Com., LL.B., and LL.M. credentials, with
           over 14 years of experience spanning litigation, arbitration, and
           corporate advisory work across the Debt Recovery Tribunal, NCLT, the
@@ -33,26 +25,7 @@ export default function About() {
         </p>
       </Reveal>
 
-      <RevealStagger className="mt-10 grid gap-6 sm:grid-cols-2">
-        {HIGHLIGHTS.slice(0, 4).map((item) => {
-          const Icon = HIGHLIGHT_ICONS[item.id];
-          return (
-            <RevealStaggerItem key={item.id} className="flex gap-4">
-              <div className="mt-0.5 flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-[var(--color-navy)]/5">
-                <Icon size={19} className="text-[var(--color-gold)]" />
-              </div>
-              <div>
-                <p className="font-medium text-[var(--color-navy)]">{item.title}</p>
-                <p className="mt-1 text-sm leading-relaxed text-neutral-500">
-                  {item.description}
-                </p>
-              </div>
-            </RevealStaggerItem>
-          );
-        })}
-      </RevealStagger>
-
-      <Reveal delay={0.1} className="mt-10">
+      <Reveal delay={0.1} className="mt-12">
         <p className="flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)]">
           <BookOpen size={16} className="text-[var(--color-gold)]" />
           Areas of Expertise

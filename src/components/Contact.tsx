@@ -6,53 +6,55 @@ import { RevealStagger, RevealStaggerItem } from "./motion/RevealStagger";
 export default function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-7xl px-6 pb-28 lg:px-8">
-      <div className="grid gap-12 lg:grid-cols-[1fr_1fr]">
-        <RevealStagger className="space-y-4">
-          <RevealStaggerItem className="flex gap-4 rounded-2xl border border-neutral-200 bg-white p-6">
-            <div className="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-[var(--color-navy)]/5">
-              <Phone size={19} className="text-[var(--color-gold)]" />
-            </div>
+      <div className="grid gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
+        <RevealStagger className="divide-y divide-neutral-200">
+          <RevealStaggerItem className="flex gap-4 pb-7">
+            <Phone size={20} className="mt-0.5 flex-none text-[var(--color-gold)]" />
             <div>
-              <p className="font-medium text-[var(--color-navy)]">Phone</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
+                Phone
+              </p>
               <a
                 href="tel:+919986758567"
-                className="mt-1 block text-sm text-neutral-600 hover:text-[var(--color-gold)]"
+                className="mt-1.5 block text-lg text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
               >
                 +91 99867 58567
               </a>
             </div>
           </RevealStaggerItem>
 
-          <RevealStaggerItem className="flex gap-4 rounded-2xl border border-neutral-200 bg-white p-6">
-            <div className="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-[var(--color-navy)]/5">
-              <Mail size={19} className="text-[var(--color-gold)]" />
-            </div>
+          <RevealStaggerItem className="flex gap-4 py-7">
+            <Mail size={20} className="mt-0.5 flex-none text-[var(--color-gold)]" />
             <div>
-              <p className="font-medium text-[var(--color-navy)]">Email</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
+                Email
+              </p>
               <a
                 href="mailto:advjayaosharma@gmail.com"
-                className="mt-1 block text-sm text-neutral-600 hover:text-[var(--color-gold)]"
+                className="mt-1.5 block text-lg text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
               >
                 advjayaosharma@gmail.com
               </a>
             </div>
           </RevealStaggerItem>
 
-          <RevealStaggerItem className="flex gap-4 rounded-2xl border border-neutral-200 bg-white p-6">
-            <div className="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-[var(--color-navy)]/5">
-              <MapPin size={19} className="text-[var(--color-gold)]" />
-            </div>
-            <div className="space-y-3">
+          <RevealStaggerItem className="flex gap-4 py-7">
+            <MapPin size={20} className="mt-0.5 flex-none text-[var(--color-gold)]" />
+            <div className="space-y-4">
               <div>
-                <p className="font-medium text-[var(--color-navy)]">Chamber Office</p>
-                <p className="mt-1 text-sm leading-relaxed text-neutral-600">
+                <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
+                  Chamber Office
+                </p>
+                <p className="mt-1.5 text-base leading-relaxed text-neutral-700">
                   Chamber No. 16, Maruti Chambers, District Court, Nashik,
                   Maharashtra – 422002
                 </p>
               </div>
               <div>
-                <p className="font-medium text-[var(--color-navy)]">Office</p>
-                <p className="mt-1 text-sm leading-relaxed text-neutral-600">
+                <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
+                  Office
+                </p>
+                <p className="mt-1.5 text-base leading-relaxed text-neutral-700">
                   No. 622, 6th Floor, Lotus Capital, Ashok Stambh, Nashik –
                   422002
                 </p>
@@ -60,13 +62,13 @@ export default function Contact() {
             </div>
           </RevealStaggerItem>
 
-          <RevealStaggerItem className="flex gap-4 rounded-2xl border border-neutral-200 bg-white p-6">
-            <div className="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-[var(--color-navy)]/5">
-              <Clock size={19} className="text-[var(--color-gold)]" />
-            </div>
+          <RevealStaggerItem className="flex gap-4 pt-7">
+            <Clock size={20} className="mt-0.5 flex-none text-[var(--color-gold)]" />
             <div>
-              <p className="font-medium text-[var(--color-navy)]">Office Hours</p>
-              <p className="mt-1 text-sm leading-relaxed text-neutral-600">
+              <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
+                Office Hours
+              </p>
+              <p className="mt-1.5 text-base leading-relaxed text-neutral-700">
                 Mon – Fri: 9:00 AM – 6:00 PM
                 <br />
                 Saturday: 10:00 AM – 2:00 PM

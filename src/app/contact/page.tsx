@@ -30,11 +30,9 @@ export default function ContactPage() {
       <Contact />
 
       <section className="mx-auto max-w-7xl px-6 pb-28 lg:px-8">
-        <div className="grid gap-6 lg:grid-cols-2">
-          <Reveal className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-neutral-200 bg-surface px-8 py-16 text-center">
-            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--color-navy)]">
-              <MapPin size={24} className="text-[var(--color-gold-light)]" />
-            </div>
+        <Reveal className="grid gap-12 divide-y divide-neutral-200 sm:grid-cols-2 sm:gap-8 sm:divide-y-0 sm:divide-x">
+          <div className="flex flex-col items-center gap-4 pb-12 text-center sm:pb-0">
+            <MapPin size={22} className="text-[var(--color-gold)]" />
             <div>
               <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
                 Chamber No. 16, Maruti Chambers
@@ -47,17 +45,15 @@ export default function ContactPage() {
               href={`https://www.google.com/maps/search/?api=1&query=${CHAMBER_MAP_QUERY}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-flex items-center gap-2 rounded-full bg-[var(--color-navy)] px-6 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[var(--color-gold)]"
+              className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
             >
               <Navigation size={15} />
               Get Directions
             </a>
-          </Reveal>
+          </div>
 
-          <Reveal delay={0.1} className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-neutral-200 bg-surface px-8 py-16 text-center">
-            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--color-navy)]">
-              <MapPin size={24} className="text-[var(--color-gold-light)]" />
-            </div>
+          <div className="flex flex-col items-center gap-4 pt-12 text-center sm:pt-0 sm:pl-8">
+            <MapPin size={22} className="text-[var(--color-gold)]" />
             <div>
               <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
                 No. 622, 6th Floor, Lotus Capital
@@ -70,13 +66,13 @@ export default function ContactPage() {
               href={`https://www.google.com/maps/search/?api=1&query=${OFFICE_MAP_QUERY}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-flex items-center gap-2 rounded-full bg-[var(--color-navy)] px-6 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[var(--color-gold)]"
+              className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
             >
               <Navigation size={15} />
               Get Directions
             </a>
-          </Reveal>
-        </div>
+          </div>
+        </Reveal>
       </section>
     </>
   );

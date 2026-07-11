@@ -7,6 +7,9 @@ import { EASE_OUT } from "@/lib/motion-variants";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mbdnrraq";
 
+const fieldClass =
+  "w-full border-b border-neutral-300 bg-transparent px-0 py-2.5 text-base text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-[var(--color-gold)]";
+
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -44,7 +47,7 @@ export default function ContactForm() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: EASE_OUT }}
-          className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-neutral-200 bg-white px-8 py-16 text-center"
+          className="flex flex-col items-center justify-center gap-3 py-20 text-center"
         >
           <CheckCircle2 className="text-[var(--color-gold)]" size={40} />
           <p className="font-serif-display text-xl font-semibold text-[var(--color-navy)]">
@@ -62,9 +65,13 @@ export default function ContactForm() {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3, ease: EASE_OUT }}
           onSubmit={handleSubmit}
-          className="space-y-5 rounded-2xl border border-neutral-200 bg-white p-8"
+          className="space-y-8"
         >
-          <div className="grid gap-5 sm:grid-cols-2">
+          <p className="font-serif-display text-2xl font-semibold text-[var(--color-navy)]">
+            Your Details
+          </p>
+
+          <div className="grid gap-x-8 gap-y-7 sm:grid-cols-2">
             <div>
               <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-neutral-700">
                 Full Name
@@ -75,7 +82,7 @@ export default function ContactForm() {
                 type="text"
                 required
                 placeholder="Your name"
-                className="w-full rounded-lg border border-neutral-300 px-4 py-2.5 text-sm text-neutral-900 outline-none transition-colors focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold)]"
+                className={fieldClass}
               />
             </div>
             <div>
@@ -88,7 +95,7 @@ export default function ContactForm() {
                 type="tel"
                 required
                 placeholder="+91 00000 00000"
-                className="w-full rounded-lg border border-neutral-300 px-4 py-2.5 text-sm text-neutral-900 outline-none transition-colors focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold)]"
+                className={fieldClass}
               />
             </div>
           </div>
@@ -103,7 +110,7 @@ export default function ContactForm() {
               type="email"
               required
               placeholder="you@example.com"
-              className="w-full rounded-lg border border-neutral-300 px-4 py-2.5 text-sm text-neutral-900 outline-none transition-colors focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold)]"
+              className={fieldClass}
             />
           </div>
 
@@ -117,7 +124,7 @@ export default function ContactForm() {
               rows={4}
               required
               placeholder="Briefly describe your legal matter"
-              className="w-full resize-none rounded-lg border border-neutral-300 px-4 py-2.5 text-sm text-neutral-900 outline-none transition-colors focus:border-[var(--color-gold)] focus:ring-1 focus:ring-[var(--color-gold)]"
+              className={`${fieldClass} resize-none`}
             />
           </div>
 
@@ -131,9 +138,9 @@ export default function ContactForm() {
           <motion.button
             type="submit"
             disabled={submitting}
-            className="w-full rounded-lg bg-[var(--color-navy)] px-6 py-3.5 text-sm font-semibold text-white disabled:opacity-60"
-            whileHover={submitting ? undefined : { scale: 1.01, backgroundColor: "#b08d4f" }}
-            whileTap={submitting ? undefined : { scale: 0.99 }}
+            className="inline-flex items-center justify-center gap-2 bg-[var(--color-navy)] px-8 py-3.5 text-sm font-semibold text-white disabled:opacity-60"
+            whileHover={submitting ? undefined : { scale: 1.02, backgroundColor: "#b08d4f" }}
+            whileTap={submitting ? undefined : { scale: 0.98 }}
             transition={{ duration: 0.25, ease: EASE_OUT }}
           >
             {submitting ? "Sending..." : "Send Message"}

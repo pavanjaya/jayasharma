@@ -9,7 +9,6 @@ import ZoomImage from "@/components/motion/ZoomImage";
 import {
   BAR_REGISTRATION,
   CERTIFICATIONS,
-  CREDENTIALS,
   EDUCATION,
   EXPERIENCE,
   HIGHLIGHTS,
@@ -182,34 +181,27 @@ export default function AboutPage() {
             ))}
           </RevealStagger>
 
-          <Reveal delay={0.1} className="mt-6 flex flex-wrap items-center justify-center gap-2">
-            {CREDENTIALS.map((c) => (
-              <span
-                key={c}
-                className="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600"
-              >
-                {c}
-              </span>
-            ))}
-          </Reveal>
-
-          <Reveal delay={0.15} className="mt-14 mx-auto max-w-2xl">
+          <Reveal delay={0.1} className="mt-14">
             <p className="text-center text-sm font-semibold text-[var(--color-navy)]">
               Certifications
             </p>
-            <div className="mt-5 space-y-3">
+            <div className="mt-5 grid gap-6 sm:grid-cols-3">
               {CERTIFICATIONS.map((cert) => (
                 <div
                   key={cert.title}
-                  className="flex flex-col gap-1 rounded-xl border border-neutral-200 bg-white px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
+                  className="rounded-2xl border border-neutral-200 bg-white p-7"
                 >
-                  <span className="text-sm font-medium text-[var(--color-navy)]">
+                  <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
                     {cert.title}
-                  </span>
-                  <span className="text-xs text-neutral-500">
+                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-neutral-600">
                     {cert.issuer}
-                    {cert.period ? ` · ${cert.period}` : ""}
-                  </span>
+                  </p>
+                  {cert.period && (
+                    <p className="mt-2 text-xs font-semibold uppercase tracking-wider text-[var(--color-gold)]">
+                      {cert.period}
+                    </p>
+                  )}
                 </div>
               ))}
             </div>

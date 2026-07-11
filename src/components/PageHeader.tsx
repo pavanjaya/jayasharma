@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Scale } from "lucide-react";
 import { fadeUp, staggerContainer } from "@/lib/motion-variants";
 
 export default function PageHeader({
@@ -23,12 +22,9 @@ export default function PageHeader({
         animate="visible"
         variants={staggerContainer(0.12, 0.1)}
       >
-        <motion.div variants={fadeUp} className="mx-auto flex items-center justify-center">
-          <Scale className="text-[var(--color-navy)]" size={40} />
-        </motion.div>
         <motion.p
           variants={fadeUp}
-          className="mt-5 text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]"
+          className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]"
         >
           {eyebrow}
         </motion.p>

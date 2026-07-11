@@ -158,10 +158,7 @@ export default function AboutPage() {
 
           <RevealStagger className="mt-14 grid gap-6 sm:grid-cols-3">
             {EDUCATION.map((item) => (
-              <RevealStaggerItem
-                key={item.degree}
-                className="rounded-2xl border border-neutral-200 bg-white p-7"
-              >
+              <RevealStaggerItem key={item.degree} className="bg-white p-7">
                 <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-[var(--color-navy)]/5">
                   <GraduationCap size={20} className="text-[var(--color-gold)]" />
                 </div>
@@ -187,10 +184,7 @@ export default function AboutPage() {
             </p>
             <div className="mt-5 grid gap-6 sm:grid-cols-3">
               {CERTIFICATIONS.map((cert) => (
-                <div
-                  key={cert.title}
-                  className="rounded-2xl border border-neutral-200 bg-white p-7"
-                >
+                <div key={cert.title} className="bg-white p-7">
                   <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
                     {cert.title}
                   </p>

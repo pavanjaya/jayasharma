@@ -38,7 +38,7 @@ export default function Footer() {
               and excellence. Trusted counsel for individuals and businesses in
               Nashik since 2010.
             </p>
-            <div className="mt-5 flex items-center gap-3">
+            <div className="mt-5 flex items-center gap-4">
               {SOCIAL_LINKS.map((social) => (
                 <a
                   key={social.label}
@@ -46,9 +46,9 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="flex h-9 w-9 items-center justify-center border border-neutral-300 text-neutral-700 transition-colors hover:border-[var(--color-navy)] hover:text-[var(--color-navy)]"
+                  className="text-neutral-700 transition-colors hover:text-[var(--color-navy)]"
                 >
-                  <social.icon size={16} />
+                  <social.icon size={26} />
                 </a>
               ))}
             </div>

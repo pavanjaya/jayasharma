@@ -42,8 +42,8 @@ export default function AboutPage() {
       />
 
       {/* Bio */}
-      <section className="mx-auto max-w-4xl px-6 py-20 lg:px-8">
-        <Reveal className="relative mx-auto max-w-2xl">
+      <section className="mx-auto max-w-5xl px-6 pb-20 lg:px-8">
+        <Reveal className="relative mx-auto max-w-[54.6rem]">
           <div className="absolute -inset-3 -z-10 border border-[var(--color-gold)]/30" />
           <ZoomImage className="relative aspect-[1160/522] w-full overflow-hidden bg-surface">
             <Image
@@ -51,11 +51,11 @@ export default function AboutPage() {
               alt="Advocate Jaya Sharma"
               fill
               className="object-cover"
-              sizes="(min-width: 1024px) 42rem, 90vw"
+              sizes="(min-width: 1024px) 54.6rem, 90vw"
             />
           </ZoomImage>
         </Reveal>
-        <Reveal delay={0.1} className="mt-10 space-y-5 text-base leading-relaxed text-neutral-600">
+        <Reveal delay={0.1} className="mx-auto mt-10 max-w-4xl space-y-5 text-base leading-relaxed text-neutral-600">
           <p>
             Advocate Jaya Sharma is an experienced legal practitioner with
             over 15 years of expertise handling cases across the Debt

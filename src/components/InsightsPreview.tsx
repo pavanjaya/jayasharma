@@ -15,7 +15,7 @@ export default function InsightsPreview() {
             Legal Insights
           </p>
           <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
-            From the Desk of Advocate Jaya Sharma
+            Legal Insights &amp; Explainers
           </h2>
           <p className="mt-4 text-base leading-relaxed text-neutral-600">
             General legal information and explainers on topics clients ask

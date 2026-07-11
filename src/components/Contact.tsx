@@ -75,9 +75,6 @@ export default function Contact() {
                 <br />
                 Sunday: By appointment
               </p>
-              <p className="mt-2 text-sm font-medium text-[var(--color-gold)]">
-                Emergency legal assistance available 24/7
-              </p>
             </div>
           </RevealStaggerItem>
         </RevealStagger>

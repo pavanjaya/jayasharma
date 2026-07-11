@@ -24,7 +24,7 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Get in Touch"
         title="Contact Us"
-        description="Reach out to discuss your legal matter. Available for consultations by appointment, with 24/7 support for urgent needs."
+        description="Reach out to discuss your legal matter. Available for consultations by appointment."
       />
 
       <Contact />

@@ -310,7 +310,7 @@ export const FAQS = [
   {
     question: "How do I schedule a consultation?",
     answer:
-      "You can reach out by phone, email, or the contact form on this website. Consultations are available Monday through Saturday during office hours, with 24/7 support for urgent matters.",
+      "You can reach out by phone, email, or the contact form on this website. Consultations are available Monday through Saturday during office hours.",
   },
   {
     question: "What should I bring to my first consultation?",

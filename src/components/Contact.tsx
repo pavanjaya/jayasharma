@@ -7,8 +7,8 @@ export default function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-7xl px-6 pb-28 lg:px-8">
       <div className="grid gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
-        <RevealStagger className="divide-y divide-neutral-200">
-          <RevealStaggerItem className="flex gap-4 pb-7">
+        <RevealStagger className="space-y-8">
+          <RevealStaggerItem className="flex gap-4">
             <Phone size={20} className="mt-0.5 flex-none text-[var(--color-gold)]" />
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
@@ -23,7 +23,7 @@ export default function Contact() {
             </div>
           </RevealStaggerItem>
 
-          <RevealStaggerItem className="flex gap-4 py-7">
+          <RevealStaggerItem className="flex gap-4">
             <Mail size={20} className="mt-0.5 flex-none text-[var(--color-gold)]" />
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
@@ -38,7 +38,7 @@ export default function Contact() {
             </div>
           </RevealStaggerItem>
 
-          <RevealStaggerItem className="flex gap-4 py-7">
+          <RevealStaggerItem className="flex gap-4">
             <MapPin size={20} className="mt-0.5 flex-none text-[var(--color-gold)]" />
             <div className="space-y-4">
               <div>
@@ -62,7 +62,7 @@ export default function Contact() {
             </div>
           </RevealStaggerItem>
 
-          <RevealStaggerItem className="flex gap-4 pt-7">
+          <RevealStaggerItem className="flex gap-4">
             <Clock size={20} className="mt-0.5 flex-none text-[var(--color-gold)]" />
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500">

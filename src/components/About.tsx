@@ -10,11 +10,11 @@ export default function About() {
           About Our Firm
         </p>
         <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
-          14+ years of dedicated legal practice
+          15+ years of dedicated legal practice
         </h2>
         <p className="mt-6 text-2xl leading-snug text-neutral-800 sm:text-3xl">
           Advocate Jaya Sharma holds B.Com., LL.B., and LL.M. credentials, with
-          over 14 years of experience spanning litigation, arbitration, and
+          over 15 years of experience spanning litigation, arbitration, and
           corporate advisory work across the Debt Recovery Tribunal, NCLT, the
           Karnataka High Court, and the Nashik District Court. She runs her own
           independent legal practice in Nashik and also serves as a Legal

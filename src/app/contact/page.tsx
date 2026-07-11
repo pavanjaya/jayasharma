@@ -10,8 +10,12 @@ export const metadata: Metadata = {
     "Get in touch with Advocate Jaya Sharma & Associates in Nashik. Phone, email, office locations, and consultation hours.",
 };
 
-const MAP_QUERY = encodeURIComponent(
+const CHAMBER_MAP_QUERY = encodeURIComponent(
   "Maruti Chambers, District Court, Nashik, Maharashtra 422002"
+);
+
+const OFFICE_MAP_QUERY = encodeURIComponent(
+  "Lotus Capital, Ashok Stambh, Nashik, Maharashtra 422002"
 );
 
 export default function ContactPage() {
@@ -26,28 +30,53 @@ export default function ContactPage() {
       <Contact />
 
       <section className="mx-auto max-w-7xl px-6 pb-28 lg:px-8">
-        <Reveal className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-neutral-200 bg-surface px-8 py-16 text-center">
-          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--color-navy)]">
-            <MapPin size={24} className="text-[var(--color-gold-light)]" />
-          </div>
-          <div>
-            <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
-              Chamber No. 16, Maruti Chambers
-            </p>
-            <p className="mt-1 text-sm text-neutral-500">
-              District Court, Nashik, Maharashtra – 422002
-            </p>
-          </div>
-          <a
-            href={`https://www.google.com/maps/search/?api=1&query=${MAP_QUERY}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2 inline-flex items-center gap-2 rounded-full bg-[var(--color-navy)] px-6 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[var(--color-gold)]"
-          >
-            <Navigation size={15} />
-            Get Directions
-          </a>
-        </Reveal>
+        <div className="grid gap-6 lg:grid-cols-2">
+          <Reveal className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-neutral-200 bg-surface px-8 py-16 text-center">
+            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--color-navy)]">
+              <MapPin size={24} className="text-[var(--color-gold-light)]" />
+            </div>
+            <div>
+              <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
+                Chamber No. 16, Maruti Chambers
+              </p>
+              <p className="mt-1 text-sm text-neutral-500">
+                District Court, Nashik, Maharashtra – 422002
+              </p>
+            </div>
+            <a
+              href={`https://www.google.com/maps/search/?api=1&query=${CHAMBER_MAP_QUERY}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex items-center gap-2 rounded-full bg-[var(--color-navy)] px-6 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[var(--color-gold)]"
+            >
+              <Navigation size={15} />
+              Get Directions
+            </a>
+          </Reveal>
+
+          <Reveal delay={0.1} className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-neutral-200 bg-surface px-8 py-16 text-center">
+            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--color-navy)]">
+              <MapPin size={24} className="text-[var(--color-gold-light)]" />
+            </div>
+            <div>
+              <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
+                No. 622, 6th Floor, Lotus Capital
+              </p>
+              <p className="mt-1 text-sm text-neutral-500">
+                Ashok Stambh, Nashik – 422002
+              </p>
+            </div>
+            <a
+              href={`https://www.google.com/maps/search/?api=1&query=${OFFICE_MAP_QUERY}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex items-center gap-2 rounded-full bg-[var(--color-navy)] px-6 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[var(--color-gold)]"
+            >
+              <Navigation size={15} />
+              Get Directions
+            </a>
+          </Reveal>
+        </div>
       </section>
     </>
   );

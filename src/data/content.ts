@@ -231,7 +231,7 @@ export const SERVICES: Service[] = [
     shortDescription:
       "Skilled representation in civil disputes, from filing through trial and appeal.",
     longDescription:
-      "Civil disputes demand patience, procedural precision, and a clear-eyed litigation strategy. With over 14 years handling civil and commercial matters before the Nashik District Court, this practice covers the full lifecycle of a dispute — from the initial notice through trial and, where necessary, appeal.",
+      "Civil disputes demand patience, procedural precision, and a clear-eyed litigation strategy. With over 15 years handling civil and commercial matters before the Nashik District Court, this practice covers the full lifecycle of a dispute — from the initial notice through trial and, where necessary, appeal.",
     bullets: [
       "Recovery suits and contractual disputes",
       "Injunctions and interim relief applications",

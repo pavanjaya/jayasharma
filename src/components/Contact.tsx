@@ -30,10 +30,10 @@ export default function Contact() {
             <div>
               <p className="font-medium text-[var(--color-navy)]">Email</p>
               <a
-                href="mailto:jayapjangid@gmail.com"
+                href="mailto:advjayaosharma@gmail.com"
                 className="mt-1 block text-sm text-neutral-600 hover:text-[var(--color-gold)]"
               >
-                jayapjangid@gmail.com
+                advjayaosharma@gmail.com
               </a>
             </div>
           </RevealStaggerItem>
@@ -51,10 +51,10 @@ export default function Contact() {
                 </p>
               </div>
               <div>
-                <p className="font-medium text-[var(--color-navy)]">Residential Office</p>
+                <p className="font-medium text-[var(--color-navy)]">Office</p>
                 <p className="mt-1 text-sm leading-relaxed text-neutral-600">
-                  1, Janaki Bungalow, Architect Colony, Savarkar Nagar,
-                  Gangapur Road, Nashik – 422013
+                  No. 622, 6th Floor, Lotus Capital, Ashok Stambh, Nashik –
+                  422002
                 </p>
               </div>
             </div>

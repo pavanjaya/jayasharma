@@ -18,7 +18,7 @@ export default function PracticeAreasPage() {
       <PageHeader
         eyebrow="What We Do"
         title="Practice Areas"
-        description="Comprehensive legal services tailored to individuals and businesses, backed by 14+ years of courtroom and advisory experience."
+        description="Comprehensive legal services tailored to individuals and businesses, backed by 15+ years of courtroom and advisory experience."
       />
 
       <section className="mx-auto max-w-5xl space-y-6 px-6 pb-28 lg:px-8">

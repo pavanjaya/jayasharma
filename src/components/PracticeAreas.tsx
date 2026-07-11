@@ -18,7 +18,7 @@ export default function PracticeAreas() {
           </h2>
           <p className="mt-4 text-base leading-relaxed text-neutral-600">
             Comprehensive legal services tailored to individuals and
-            businesses, backed by 14+ years of courtroom and advisory
+            businesses, backed by 15+ years of courtroom and advisory
             experience.
           </p>
         </Reveal>

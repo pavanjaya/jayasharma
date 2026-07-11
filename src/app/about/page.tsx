@@ -20,7 +20,7 @@ import {
 export const metadata: Metadata = {
   title: "About | Advocate Jaya Sharma & Associates",
   description:
-    "Learn about Advocate Jaya Sharma's education, credentials, and 14+ years of experience in litigation, arbitration, and corporate advisory.",
+    "Learn about Advocate Jaya Sharma's education, credentials, and 15+ years of experience in litigation, arbitration, and corporate advisory.",
 };
 
 const HIGHLIGHT_ICONS: Record<string, typeof Scale> = {
@@ -38,7 +38,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="About Advocate Jaya Sharma"
         title="A Practice Built on Integrity and Precision"
-        description="B.Com., LL.B., LL.M. — 14+ years spanning litigation, arbitration, and corporate advisory, with a practical, business-first approach to every matter."
+        description="B.Com., LL.B., LL.M. — 15+ years spanning litigation, arbitration, and corporate advisory, with a practical, business-first approach to every matter."
       />
 
       {/* Bio */}
@@ -58,7 +58,7 @@ export default function AboutPage() {
         <Reveal delay={0.1} className="mt-10 space-y-5 text-base leading-relaxed text-neutral-600">
           <p>
             Advocate Jaya Sharma is an experienced legal practitioner with
-            over 14 years of expertise handling cases across the Debt
+            over 15 years of expertise handling cases across the Debt
             Recovery Tribunal (DRT), NCLT, the Karnataka High Court, District
             Courts, and various other legal forums. She is registered with
             the Bar Council of India (Reg. No. {BAR_REGISTRATION}) and cleared

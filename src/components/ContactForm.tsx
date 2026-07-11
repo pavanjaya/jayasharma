@@ -5,8 +5,36 @@ import { AnimatePresence, motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 import { EASE_OUT } from "@/lib/motion-variants";
 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mbdnrraq";
+
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+    setError(false);
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(e.currentTarget),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
   return (
     <AnimatePresence mode="wait">
@@ -33,10 +61,7 @@ export default function ContactForm() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3, ease: EASE_OUT }}
-          onSubmit={(e) => {
-            e.preventDefault();
-            setSubmitted(true);
-          }}
+          onSubmit={handleSubmit}
           className="space-y-5 rounded-2xl border border-neutral-200 bg-white p-8"
         >
           <div className="grid gap-5 sm:grid-cols-2">
@@ -96,14 +121,22 @@ export default function ContactForm() {
             />
           </div>
 
+          {error && (
+            <p className="text-sm text-red-600">
+              Something went wrong sending your message. Please try again or
+              call us directly.
+            </p>
+          )}
+
           <motion.button
             type="submit"
-            className="w-full rounded-lg bg-[var(--color-navy)] px-6 py-3.5 text-sm font-semibold text-white"
-            whileHover={{ scale: 1.01, backgroundColor: "#b08d4f" }}
-            whileTap={{ scale: 0.99 }}
+            disabled={submitting}
+            className="w-full rounded-lg bg-[var(--color-navy)] px-6 py-3.5 text-sm font-semibold text-white disabled:opacity-60"
+            whileHover={submitting ? undefined : { scale: 1.01, backgroundColor: "#b08d4f" }}
+            whileTap={submitting ? undefined : { scale: 0.99 }}
             transition={{ duration: 0.25, ease: EASE_OUT }}
           >
-            Send Message
+            {submitting ? "Sending..." : "Send Message"}
           </motion.button>
         </motion.form>
       )}

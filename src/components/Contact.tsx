@@ -43,20 +43,20 @@ export default function Contact() {
             <div className="space-y-4">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
-                  Chamber Office
-                </p>
-                <p className="mt-1.5 text-base leading-relaxed text-neutral-700">
-                  Chamber No. 16, Maruti Chambers, District Court, Nashik,
-                  Maharashtra – 422002
-                </p>
-              </div>
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
                   Office
                 </p>
                 <p className="mt-1.5 text-base leading-relaxed text-neutral-700">
                   No. 622, 6th Floor, Lotus Capital, Ashok Stambh, Nashik –
                   422002
+                </p>
+              </div>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
+                  Chamber Office
+                </p>
+                <p className="mt-1.5 text-base leading-relaxed text-neutral-700">
+                  Chamber No. 16, Maruti Chambers, District Court, Nashik,
+                  Maharashtra – 422002
                 </p>
               </div>
             </div>

@@ -35,14 +35,14 @@ export default function ContactPage() {
             <MapPin size={22} className="text-[var(--color-gold)]" />
             <div>
               <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
-                Chamber No. 16, Maruti Chambers
+                No. 622, 6th Floor, Lotus Capital
               </p>
               <p className="mt-1 text-sm text-neutral-500">
-                District Court, Nashik, Maharashtra – 422002
+                Ashok Stambh, Nashik – 422002
               </p>
             </div>
             <a
-              href={`https://www.google.com/maps/search/?api=1&query=${CHAMBER_MAP_QUERY}`}
+              href={`https://www.google.com/maps/search/?api=1&query=${OFFICE_MAP_QUERY}`}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
@@ -56,14 +56,14 @@ export default function ContactPage() {
             <MapPin size={22} className="text-[var(--color-gold)]" />
             <div>
               <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
-                No. 622, 6th Floor, Lotus Capital
+                Chamber No. 16, Maruti Chambers
               </p>
               <p className="mt-1 text-sm text-neutral-500">
-                Ashok Stambh, Nashik – 422002
+                District Court, Nashik, Maharashtra – 422002
               </p>
             </div>
             <a
-              href={`https://www.google.com/maps/search/?api=1&query=${OFFICE_MAP_QUERY}`}
+              href={`https://www.google.com/maps/search/?api=1&query=${CHAMBER_MAP_QUERY}`}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"

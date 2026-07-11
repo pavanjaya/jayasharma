@@ -39,7 +39,8 @@ body {
    IBM Plex Serif. Every genuine copy paragraph in this codebase uses
    leading-relaxed for readability; short UI labels/links/tags never do,
    which makes it a reliable hook instead of chasing individual elements. */
-.leading-relaxed {
+.leading-relaxed,
+.font-plex-serif {
   font-family: var(--font-ibm-plex-serif), Georgia, serif;
 }
 

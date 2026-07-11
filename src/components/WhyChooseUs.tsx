@@ -1,4 +1,3 @@
-import { CheckCircle2 } from "lucide-react";
 import { WHY_CHOOSE_US } from "@/data/content";
 import Reveal from "./motion/Reveal";
 import { RevealStagger, RevealStaggerItem } from "./motion/RevealStagger";
@@ -20,23 +19,18 @@ export default function WhyChooseUs() {
           </p>
         </Reveal>
 
-        <RevealStagger className="mt-16 grid gap-6 sm:grid-cols-2">
-          {WHY_CHOOSE_US.map((item) => (
-            <RevealStaggerItem
-              key={item.id}
-              className="flex gap-4 rounded-2xl border border-neutral-200 bg-white p-7 transition-transform duration-300 hover:-translate-y-1"
-            >
-              <div className="flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-[var(--color-navy)]/5">
-                <CheckCircle2 size={19} className="text-[var(--color-gold)]" />
-              </div>
-              <div>
-                <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
-                  {item.title}
-                </p>
-                <p className="mt-1.5 text-sm leading-relaxed text-neutral-600">
-                  {item.description}
-                </p>
-              </div>
+        <RevealStagger className="mt-16 grid gap-x-16 gap-y-12 sm:grid-cols-2">
+          {WHY_CHOOSE_US.map((item, index) => (
+            <RevealStaggerItem key={item.id}>
+              <p className="font-serif-display text-3xl font-semibold text-[var(--color-gold)]">
+                {`0${index + 1}`}
+              </p>
+              <p className="mt-3 font-serif-display text-lg font-semibold text-[var(--color-navy)]">
+                {item.title}
+              </p>
+              <p className="mt-1.5 text-sm leading-relaxed text-neutral-600">
+                {item.description}
+              </p>
             </RevealStaggerItem>
           ))}
         </RevealStagger>

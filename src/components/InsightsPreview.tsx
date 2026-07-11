@@ -1,5 +1,8 @@
+"use client";
+
+import { useRef } from "react";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { BLOG_POSTS } from "@/data/blog";
 import type { Service } from "@/data/content";
 import ServiceIcon from "./ServiceIcon";
@@ -21,7 +24,17 @@ function formatDate(dateStr: string) {
 }
 
 export default function InsightsPreview() {
-  const posts = BLOG_POSTS.slice(0, 3);
+  const posts = BLOG_POSTS.slice(0, 6);
+  const scrollerRef = useRef<HTMLDivElement>(null);
+
+  const scrollByCard = (direction: 1 | -1) => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    const card = el.firstElementChild as HTMLElement | null;
+    const gap = 24;
+    const amount = card ? card.offsetWidth + gap : 320;
+    el.scrollBy({ left: amount * direction, behavior: "smooth" });
+  };
 
   return (
     <section className="bg-surface py-28">
@@ -48,14 +61,20 @@ export default function InsightsPreview() {
           </Link>
         </Reveal>
 
-        <RevealStagger className="mt-14 grid gap-10 sm:grid-cols-3">
+        <RevealStagger
+          ref={scrollerRef}
+          className="scrollbar-hide mt-14 flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth pb-2"
+        >
           {posts.map((post) => (
-            <RevealStaggerItem key={post.slug}>
+            <RevealStaggerItem
+              key={post.slug}
+              className="w-[260px] flex-none snap-start sm:w-[300px] lg:w-[23%]"
+            >
               <Link href={`/insights/${post.slug}`} className="group block">
-                <div className="flex aspect-[4/3] items-center justify-center bg-[var(--color-navy)]/5 transition-colors duration-300 group-hover:bg-[var(--color-navy)]/10">
+                <div className="flex aspect-[16/9] items-center justify-center bg-[var(--color-navy)]/5 transition-colors duration-300 group-hover:bg-[var(--color-navy)]/10">
                   <ServiceIcon
                     icon={CATEGORY_ICON[post.category] ?? "civil"}
-                    size={40}
+                    size={32}
                     className="text-[var(--color-navy)]"
                   />
                 </div>
@@ -74,6 +93,25 @@ export default function InsightsPreview() {
             </RevealStaggerItem>
           ))}
         </RevealStagger>
+
+        <div className="mt-8 flex items-center justify-end gap-3">
+          <button
+            type="button"
+            onClick={() => scrollByCard(-1)}
+            aria-label="Previous insights"
+            className="flex h-11 w-11 items-center justify-center border border-neutral-300 text-[var(--color-navy)] transition-colors duration-300 hover:border-[var(--color-navy)]"
+          >
+            <ArrowLeft size={18} />
+          </button>
+          <button
+            type="button"
+            onClick={() => scrollByCard(1)}
+            aria-label="Next insights"
+            className="flex h-11 w-11 items-center justify-center border border-neutral-300 text-[var(--color-navy)] transition-colors duration-300 hover:border-[var(--color-navy)]"
+          >
+            <ArrowRight size={18} />
+          </button>
+        </div>
       </div>
     </section>
   );

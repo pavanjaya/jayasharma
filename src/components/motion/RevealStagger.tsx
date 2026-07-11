@@ -1,20 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import type { ReactNode } from "react";
+import { forwardRef, type ReactNode } from "react";
 import { fadeUp, staggerContainer } from "@/lib/motion-variants";
 
-export function RevealStagger({
-  children,
-  className,
-  stagger = 0.12,
-}: {
-  children: ReactNode;
-  className?: string;
-  stagger?: number;
-}) {
+export const RevealStagger = forwardRef<
+  HTMLDivElement,
+  {
+    children: ReactNode;
+    className?: string;
+    stagger?: number;
+  }
+>(function RevealStagger({ children, className, stagger = 0.12 }, ref) {
   return (
     <motion.div
+      ref={ref}
       className={className}
       initial="hidden"
       whileInView="visible"
@@ -24,7 +24,7 @@ export function RevealStagger({
       {children}
     </motion.div>
   );
-}
+});
 
 export function RevealStaggerItem({
   children,

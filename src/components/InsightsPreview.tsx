@@ -35,26 +35,17 @@ export default function InsightsPreview() {
   return (
     <section className="bg-surface py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <Reveal className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-          <div className="max-w-xl">
-            <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
-              Legal Insights
-            </p>
-            <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
-              Legal Insights &amp; Explainers
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-neutral-600">
-              General legal information and explainers on topics clients ask
-              about most.
-            </p>
-          </div>
-          <Link
-            href="/insights"
-            className="group inline-flex flex-none items-center gap-2 border border-neutral-300 bg-white px-6 py-3 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 hover:border-[var(--color-navy)]"
-          >
-            View All Insights
-            <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-0.5" />
-          </Link>
+        <Reveal className="mx-auto max-w-2xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
+            Legal Insights
+          </p>
+          <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
+            Legal Insights &amp; Explainers
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-neutral-600">
+            General legal information and explainers on topics clients ask
+            about most.
+          </p>
         </Reveal>
 
         <Reveal delay={0.1} className="relative mt-14 overflow-hidden">
@@ -115,6 +106,16 @@ export default function InsightsPreview() {
             ))}
           </div>
         )}
+
+        <Reveal delay={0.15} className="mt-12 text-center">
+          <Link
+            href="/insights"
+            className="group inline-flex items-center justify-center gap-2 border border-neutral-300 bg-white px-7 py-3.5 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 hover:border-[var(--color-navy)]"
+          >
+            View All Insights
+            <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-0.5" />
+          </Link>
+        </Reveal>
       </div>
     </section>
   );

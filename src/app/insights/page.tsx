@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
@@ -35,31 +36,42 @@ export default function InsightsPage() {
             <RevealStaggerItem key={post.slug} className="h-full">
               <Link
                 href={`/insights/${post.slug}`}
-                className="group flex h-full flex-col rounded-2xl border border-neutral-200 bg-white p-7 transition-transform duration-300 hover:-translate-y-1"
+                className="group flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white transition-transform duration-300 hover:-translate-y-1"
               >
-                <span className="w-fit rounded-full bg-[var(--color-navy)]/5 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[var(--color-gold)]">
-                  {post.category}
-                </span>
-                <h2 className="mt-5 font-serif-display text-xl font-semibold leading-snug text-[var(--color-navy)]">
-                  {post.title}
-                </h2>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-neutral-600">
-                  {post.excerpt}
-                </p>
-                <div className="mt-6 flex items-center gap-4 text-xs text-neutral-500">
-                  <span className="flex items-center gap-1.5">
-                    <Calendar size={13} />
-                    {formatDate(post.date)}
+                <div className="relative aspect-[16/9] overflow-hidden bg-[var(--color-navy)]/5">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(min-width: 1024px) 30vw, 90vw"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col p-7">
+                  <span className="w-fit rounded-full bg-[var(--color-navy)]/5 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[var(--color-gold)]">
+                    {post.category}
                   </span>
-                  <span className="flex items-center gap-1.5">
-                    <Clock size={13} />
-                    {post.readTime}
+                  <h2 className="mt-5 font-serif-display text-xl font-semibold leading-snug text-[var(--color-navy)]">
+                    {post.title}
+                  </h2>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-neutral-600">
+                    {post.excerpt}
+                  </p>
+                  <div className="mt-6 flex items-center gap-4 text-xs text-neutral-500">
+                    <span className="flex items-center gap-1.5">
+                      <Calendar size={13} />
+                      {formatDate(post.date)}
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <Clock size={13} />
+                      {post.readTime}
+                    </span>
+                  </div>
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)]">
+                    Read More
+                    <ArrowRight size={15} className="transition-transform duration-300 group-hover:translate-x-0.5" />
                   </span>
                 </div>
-                <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)]">
-                  Read More
-                  <ArrowRight size={15} className="transition-transform duration-300 group-hover:translate-x-0.5" />
-                </span>
               </Link>
             </RevealStaggerItem>
           ))}

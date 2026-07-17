@@ -1,22 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, Circle } from "lucide-react";
 import { BLOG_POSTS } from "@/data/blog";
-import type { Service } from "@/data/content";
 import { EASE_OUT } from "@/lib/motion-variants";
-import ServiceIcon from "./ServiceIcon";
 import Reveal from "./motion/Reveal";
-
-const CATEGORY_ICON: Record<string, Service["icon"]> = {
-  "Banking & Recovery": "banking",
-  "Criminal Defense": "criminal",
-  "Property Law": "property",
-  "Family Law": "family",
-  "Legal Documentation": "documentation",
-};
 
 function formatDate(dateStr: string) {
   return new Date(dateStr)
@@ -60,11 +51,13 @@ export default function InsightsPreview() {
             >
               {visible.map((post) => (
                 <Link key={post.slug} href={`/insights/${post.slug}`} className="group block">
-                  <div className="flex aspect-[16/9] items-center justify-center bg-[var(--color-navy)]/5 transition-colors duration-300 group-hover:bg-[var(--color-navy)]/10">
-                    <ServiceIcon
-                      icon={CATEGORY_ICON[post.category] ?? "civil"}
-                      size={32}
-                      className="text-[var(--color-navy)]"
+                  <div className="relative aspect-[16/9] overflow-hidden bg-[var(--color-navy)]/5">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(min-width: 1024px) 30vw, 90vw"
                     />
                   </div>
                   <h3 className="mt-5 font-serif-display text-lg font-semibold leading-snug text-[var(--color-navy)]">

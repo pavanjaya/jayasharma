@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
@@ -77,7 +78,20 @@ export default async function InsightPage({
         </Reveal>
       </section>
 
-      <article className="mx-auto max-w-3xl px-6 pb-20 lg:px-8">
+      <div className="mx-auto max-w-3xl px-6 lg:px-8">
+        <Reveal className="relative aspect-[16/9] w-full overflow-hidden bg-surface">
+          <Image
+            src={post.image}
+            alt={post.title}
+            fill
+            priority
+            className="object-cover"
+            sizes="(min-width: 1024px) 48rem, 90vw"
+          />
+        </Reveal>
+      </div>
+
+      <article className="mx-auto max-w-3xl px-6 pb-20 pt-10 lg:px-8">
         <Reveal className="space-y-8">
           {post.content.map((block, i) => (
             <div key={i}>

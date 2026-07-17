@@ -5,12 +5,14 @@ export type BlogPost = {
   excerpt: string;
   date: string;
   readTime: string;
+  image: string;
   content: { heading?: string; paragraphs: string[]; bullets?: string[] }[];
 };
 
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "understanding-sarfaesi-recovery",
+    image: "/insights/sarfaesi-recovery.jpg",
     title: "Understanding SARFAESI: What Banks and Borrowers Should Know",
     category: "Banking & Recovery",
     excerpt:
@@ -51,6 +53,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "nclt-vs-drt-which-forum",
+    image: "/insights/nclt-vs-drt.jpg",
     title: "NCLT vs DRT: Which Forum Handles Your Recovery Matter?",
     category: "Banking & Recovery",
     excerpt:
@@ -90,6 +93,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cheque-bounce-section-138",
+    image: "/insights/cheque-bounce.jpg",
     title: "What Happens in a Cheque Bounce Case Under Section 138?",
     category: "Criminal Defense",
     excerpt:
@@ -130,6 +134,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "property-due-diligence-checklist",
+    image: "/insights/property-due-diligence.jpg",
     title: "Property Due Diligence: A Checklist Before You Buy",
     category: "Property Law",
     excerpt:
@@ -171,6 +176,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "child-custody-what-courts-consider",
+    image: "/insights/child-custody.jpg",
     title: "Child Custody in India: What Courts Actually Consider",
     category: "Family Law",
     excerpt:
@@ -212,6 +218,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "drafting-a-legal-notice",
+    image: "/insights/legal-notice.jpg",
     title: "Drafting a Legal Notice: Why Precision Matters",
     category: "Legal Documentation",
     excerpt:

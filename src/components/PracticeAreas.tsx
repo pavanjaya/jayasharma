@@ -11,7 +11,7 @@ export default function PracticeAreas() {
 
   return (
     <section id="practice-areas" className="relative overflow-hidden bg-surface py-28">
-      <div className="pointer-events-none absolute -left-40 -bottom-40 h-[28rem] w-[28rem] rounded-full bg-[var(--color-mint)]/25 blur-3xl" />
+      <div className="pointer-events-none absolute -left-40 -bottom-40 h-[28rem] w-[28rem] rounded-full bg-[var(--color-gold)]/15 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <Reveal className="mx-auto max-w-2xl text-center">
@@ -35,7 +35,7 @@ export default function PracticeAreas() {
                 href={`/practice-areas#${service.slug}`}
                 className="flex h-full flex-col p-10 transition-colors duration-300 group-hover:bg-[var(--color-navy)]"
               >
-                <div className="flex h-16 w-16 items-center justify-center bg-[var(--color-mint)] transition-colors duration-300 group-hover:bg-[var(--color-gold)]">
+                <div className="flex h-16 w-16 items-center justify-center bg-[var(--color-gold-light)] transition-colors duration-300 group-hover:bg-[var(--color-gold)]">
                   <ServiceIcon
                     icon={service.icon}
                     size={30}

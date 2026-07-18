@@ -35,13 +35,11 @@ export default function PracticeAreas() {
                 href={`/practice-areas#${service.slug}`}
                 className="flex h-full flex-col p-10 transition-colors duration-300 group-hover:bg-[var(--color-navy)]"
               >
-                <div className="flex h-16 w-16 items-center justify-center bg-[var(--color-gold-light)] transition-colors duration-300 group-hover:bg-[var(--color-gold)]">
-                  <ServiceIcon
-                    icon={service.icon}
-                    size={30}
-                    className="text-[var(--color-navy)] transition-colors duration-300 group-hover:text-white"
-                  />
-                </div>
+                <ServiceIcon
+                  icon={service.icon}
+                  size={48}
+                  className="text-[var(--color-gold)] transition-colors duration-300 group-hover:text-[var(--color-gold-light)]"
+                />
                 <h3 className="mt-8 font-serif-display text-xl font-semibold text-[var(--color-navy)] transition-colors duration-300 group-hover:text-white">
                   {service.title}
                 </h3>

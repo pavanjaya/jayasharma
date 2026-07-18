@@ -10,10 +10,10 @@ export default function FAQPreview() {
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
           Common Questions
         </p>
-        <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
+        <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
           Frequently Asked Questions
         </h2>
-        <p className="mt-4 text-base leading-relaxed text-neutral-600">
+        <p className="mt-4 text-lg leading-relaxed text-neutral-600">
           Answers to a few things clients often ask before their first
           consultation.
         </p>

@@ -8,7 +8,7 @@ export default function About() {
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
           About Our Firm
         </p>
-        <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
+        <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
           15+ years of dedicated legal practice
         </h2>
         <p className="font-plex-serif mt-6 text-2xl leading-snug text-neutral-800 sm:text-3xl">

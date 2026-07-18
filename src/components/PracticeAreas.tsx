@@ -18,10 +18,10 @@ export default function PracticeAreas() {
           <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
             What We Do
           </p>
-          <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
+          <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
             Practice Areas
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-neutral-600">
+          <p className="mt-4 text-lg leading-relaxed text-neutral-600">
             Comprehensive legal services tailored to individuals and
             businesses, backed by 15+ years of courtroom and advisory
             experience.

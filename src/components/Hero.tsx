@@ -26,7 +26,7 @@ export default function Hero() {
 
           <motion.h1
             variants={fadeUp}
-            className="mt-8 max-w-xl font-serif-display text-4xl font-semibold uppercase leading-[0.95] text-[var(--color-navy)] sm:text-5xl lg:text-6xl"
+            className="mt-8 max-w-2xl font-serif-display text-5xl font-bold uppercase leading-[0.95] tracking-tight text-[var(--color-navy)] sm:text-6xl lg:text-7xl"
           >
             <span className="block">Law with Clarity.</span>
             <span className="block">Practice with Integrity.</span>

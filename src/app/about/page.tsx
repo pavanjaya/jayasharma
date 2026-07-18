@@ -90,10 +90,10 @@ export default function AboutPage() {
           <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
             Empanelments
           </p>
-          <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
+          <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
             Panel Advocate For
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-neutral-600">
+          <p className="mt-4 text-lg leading-relaxed text-neutral-600">
             Trusted by banks and institutions for recovery, compliance, and
             ongoing legal representation.
           </p>
@@ -116,7 +116,7 @@ export default function AboutPage() {
           <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
             Career
           </p>
-          <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
+          <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
             Professional Experience
           </h2>
         </Reveal>
@@ -148,7 +148,7 @@ export default function AboutPage() {
             <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
               Education
             </p>
-            <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
+            <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
               Academic Credentials
             </h2>
           </Reveal>
@@ -206,7 +206,7 @@ export default function AboutPage() {
           <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
             Professional Standing
           </p>
-          <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
+          <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
             Professional Highlights
           </h2>
         </Reveal>
@@ -237,7 +237,7 @@ export default function AboutPage() {
           <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
             Her Approach
           </p>
-          <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
+          <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
             Clarity Before Strategy
           </h2>
           <p className="mt-6 text-base leading-relaxed text-neutral-600">
@@ -260,7 +260,7 @@ export default function AboutPage() {
           <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
             Areas of Expertise
           </p>
-          <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
+          <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
             Skills &amp; Specialisations
           </h2>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-2.5">

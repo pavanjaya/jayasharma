@@ -20,10 +20,10 @@ export default function WhyChooseUs() {
           <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
             Why Choose Us
           </p>
-          <h2 className="mt-3 font-serif-display text-3xl font-semibold text-[var(--color-navy)] sm:text-4xl">
+          <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
             A practice built on trust
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-neutral-600">
+          <p className="mt-4 text-lg leading-relaxed text-neutral-600">
             Four principles that shape every client engagement, from the
             first consultation to the final resolution.
           </p>

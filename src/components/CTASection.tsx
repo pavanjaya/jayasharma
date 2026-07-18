@@ -9,10 +9,10 @@ export default function CTASection() {
         <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[var(--color-gold)]/15 blur-3xl" />
 
         <div className="relative">
-          <h2 className="font-serif-display text-3xl font-semibold text-white sm:text-4xl">
+          <h2 className="font-serif-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">
             Ready to discuss your legal matter?
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/70">
+          <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-white/70">
             Schedule a consultation with Advocate Jaya Sharma to get clarity on
             where you stand and what to do next.
           </p>

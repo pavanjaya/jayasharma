@@ -121,12 +121,9 @@ export default function AboutPage() {
           </h2>
         </Reveal>
 
-        <RevealStagger className="mt-14 space-y-6">
+        <RevealStagger className="mt-14 divide-y divide-neutral-200">
           {EXPERIENCE.map((job) => (
-            <RevealStaggerItem
-              key={`${job.firm}-${job.period}`}
-              className="rounded-2xl border border-neutral-200 bg-white p-7 sm:p-8"
-            >
+            <RevealStaggerItem key={`${job.firm}-${job.period}`} className="py-7 first:pt-0">
               <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
                 <h3 className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
                   {job.role} · {job.firm}
@@ -218,10 +215,7 @@ export default function AboutPage() {
           {HIGHLIGHTS.map((item) => {
             const Icon = HIGHLIGHT_ICONS[item.id];
             return (
-              <RevealStaggerItem
-                key={item.id}
-                className="flex gap-4 rounded-2xl border border-neutral-200 bg-white p-7"
-              >
+              <RevealStaggerItem key={item.id} className="flex gap-4">
                 <div className="mt-0.5 flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-[var(--color-navy)]/5">
                   <Icon size={19} className="text-[var(--color-gold)]" />
                 </div>

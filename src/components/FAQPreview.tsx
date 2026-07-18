@@ -1,6 +1,5 @@
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { FAQS } from "@/data/content";
+import Button from "./Button";
 import FAQAccordion from "./FAQAccordion";
 import Reveal from "./motion/Reveal";
 
@@ -25,13 +24,9 @@ export default function FAQPreview() {
       </Reveal>
 
       <Reveal delay={0.15} className="mt-10 text-center">
-        <Link
-          href="/faq"
-          className="group inline-flex items-center justify-center gap-2 text-sm font-semibold text-[var(--color-navy)]"
-        >
+        <Button href="/faq" variant="outline">
           View All FAQs
-          <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-0.5" />
-        </Link>
+        </Button>
       </Reveal>
     </section>
   );

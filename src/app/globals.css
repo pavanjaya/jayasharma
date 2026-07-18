@@ -48,3 +48,10 @@ body {
   border-radius: 0 !important;
   box-shadow: none !important;
 }
+
+/* The single shared CTA button (see Button.tsx) is the one deliberate
+   exception to the flat, sharp-corner rule above — every button on the
+   site is a pill, nothing else is. */
+.btn-pill {
+  border-radius: 9999px !important;
+}

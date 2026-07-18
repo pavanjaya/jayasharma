@@ -21,13 +21,9 @@ export default function PracticeAreasPage() {
         description="Comprehensive legal services tailored to individuals and businesses, backed by 15+ years of courtroom and advisory experience."
       />
 
-      <section className="mx-auto max-w-5xl space-y-6 px-6 pb-28 lg:px-8">
+      <section className="mx-auto max-w-5xl divide-y divide-neutral-200 px-6 pb-28 lg:px-8">
         {SERVICES.map((service, index) => (
-          <Reveal
-            key={service.slug}
-            id={service.slug}
-            className="scroll-mt-28 rounded-3xl border border-neutral-200 bg-white p-8 sm:p-10"
-          >
+          <Reveal key={service.slug} id={service.slug} className="scroll-mt-28 py-12 first:pt-0">
             <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
               <div className="lg:w-72 lg:flex-none">
                 <div className="flex h-14 w-14 items-center justify-center bg-[var(--color-mint)]">

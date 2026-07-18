@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import Button from "./Button";
 import Reveal from "./motion/Reveal";
 
 export default function About() {
@@ -25,13 +24,9 @@ export default function About() {
       </Reveal>
 
       <Reveal delay={0.1} className="mt-10">
-        <Link
-          href="/about"
-          className="group inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)]"
-        >
+        <Button href="/about" variant="outline">
           Read Full Profile
-          <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-0.5" />
-        </Link>
+        </Button>
       </Reveal>
     </section>
   );

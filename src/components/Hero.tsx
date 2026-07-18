@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Scale } from "lucide-react";
+import { Scale } from "lucide-react";
 import { fadeUp, imageReveal, staggerContainer } from "@/lib/motion-variants";
+import Button from "./Button";
 
 export default function Hero() {
   return (
@@ -40,25 +41,10 @@ export default function Hero() {
           </motion.p>
 
           <motion.div variants={fadeUp} className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <motion.a
-              href="#contact"
-              className="group inline-flex items-center justify-center gap-2 bg-[var(--color-navy)] px-7 py-3.5 text-sm font-semibold text-white"
-              whileHover={{ scale: 1.02, backgroundColor: "#b08d4f" }}
-              whileTap={{ scale: 0.98 }}
-              transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            >
-              Book Consultation
-              <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-0.5" />
-            </motion.a>
-            <motion.a
-              href="#practice-areas"
-              className="inline-flex items-center justify-center gap-2 border border-neutral-300 px-7 py-3.5 text-sm font-semibold text-[var(--color-navy)]"
-              whileHover={{ scale: 1.02, backgroundColor: "#ffeed3", borderColor: "#333465" }}
-              whileTap={{ scale: 0.98 }}
-              transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            >
+            <Button href="#contact">Book Consultation</Button>
+            <Button href="#practice-areas" variant="outline" trailingIcon={null}>
               Our Services
-            </motion.a>
+            </Button>
           </motion.div>
         </motion.div>
 

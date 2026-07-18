@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { Menu, Phone, X } from "lucide-react";
+import Button from "./Button";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -15,8 +16,6 @@ const NAV_LINKS = [
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];
-
-const MotionLink = motion(Link);
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -66,15 +65,9 @@ export default function Header() {
         </nav>
 
         <div className="hidden items-center gap-5 lg:flex">
-          <MotionLink
-            href="/contact"
-            className="rounded-full bg-[var(--color-navy)] px-5 py-2.5 text-sm font-semibold text-white"
-            whileHover={{ scale: 1.03, backgroundColor: "#b08d4f" }}
-            whileTap={{ scale: 0.98 }}
-            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-          >
+          <Button href="/contact" trailingIcon={null} className="px-5 py-2.5">
             Book Consultation
-          </MotionLink>
+          </Button>
         </div>
 
         <button
@@ -111,12 +104,9 @@ export default function Header() {
               <Phone size={17} />
               +91 99867 58567
             </a>
-            <Link
-              href="/contact"
-              className="mt-1 rounded-full bg-[var(--color-navy)] px-5 py-3 text-center text-sm font-semibold text-white"
-            >
+            <Button href="/contact" trailingIcon={null} className="mt-1 w-full">
               Book Consultation
-            </Link>
+            </Button>
           </nav>
         </motion.div>
       )}

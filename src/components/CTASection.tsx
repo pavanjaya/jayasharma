@@ -1,11 +1,6 @@
-"use client";
-
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { ArrowRight, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
+import Button from "./Button";
 import Reveal from "./motion/Reveal";
-
-const MotionLink = motion(Link);
 
 export default function CTASection() {
   return (
@@ -23,23 +18,15 @@ export default function CTASection() {
           </p>
 
           <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <MotionLink
-              href="/contact"
-              className="group inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-gold)] px-7 py-3.5 text-sm font-semibold text-white"
-              whileHover={{ scale: 1.03, backgroundColor: "#d4b878" }}
-              whileTap={{ scale: 0.98 }}
-              transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            >
-              Book Consultation
-              <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-0.5" />
-            </MotionLink>
-            <a
+            <Button href="/contact" variant="tertiary">Book Consultation</Button>
+            <Button
               href="tel:+919986758567"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-7 py-3.5 text-sm font-semibold text-white transition-colors duration-300 hover:bg-white/10"
+              variant="light"
+              leadingIcon={<Phone size={16} />}
+              trailingIcon={null}
             >
-              <Phone size={16} />
               +91 99867 58567
-            </a>
+            </Button>
           </div>
         </div>
       </Reveal>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { MapPin, Navigation } from "lucide-react";
+import Button from "@/components/Button";
 import PageHeader from "@/components/PageHeader";
 import Contact from "@/components/Contact";
 import Reveal from "@/components/motion/Reveal";
@@ -41,15 +42,15 @@ export default function ContactPage() {
                 Ashok Stambh, Nashik – 422002
               </p>
             </div>
-            <a
+            <Button
               href={`https://www.google.com/maps/search/?api=1&query=${OFFICE_MAP_QUERY}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
+              variant="outline"
+              leadingIcon={<Navigation size={15} />}
+              trailingIcon={null}
+              className="mt-2"
             >
-              <Navigation size={15} />
               Get Directions
-            </a>
+            </Button>
           </div>
 
           <div className="flex flex-col items-center gap-4 pt-12 text-center sm:pt-0 sm:pl-8">
@@ -62,15 +63,15 @@ export default function ContactPage() {
                 District Court, Nashik, Maharashtra – 422002
               </p>
             </div>
-            <a
+            <Button
               href={`https://www.google.com/maps/search/?api=1&query=${CHAMBER_MAP_QUERY}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
+              variant="outline"
+              leadingIcon={<Navigation size={15} />}
+              trailingIcon={null}
+              className="mt-2"
             >
-              <Navigation size={15} />
               Get Directions
-            </a>
+            </Button>
           </div>
         </Reveal>
       </section>

@@ -75,8 +75,8 @@ export default function DisclaimerModal() {
             <motion.button
               type="button"
               onClick={handleContinue}
-              className="mt-8 w-full rounded-full bg-[var(--color-navy)] px-7 py-3.5 text-sm font-semibold text-white sm:w-auto sm:px-10"
-              whileHover={{ scale: 1.02, backgroundColor: "#b08d4f" }}
+              className="btn-pill mt-8 w-full border border-[var(--color-navy)] bg-[var(--color-navy)] px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.08em] text-white sm:w-auto sm:px-10"
+              whileHover={{ backgroundColor: "#b08d4f", borderColor: "#b08d4f" }}
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.25, ease: EASE_OUT }}
             >

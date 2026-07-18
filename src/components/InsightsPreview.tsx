@@ -4,9 +4,10 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, Circle } from "lucide-react";
+import { Circle } from "lucide-react";
 import { BLOG_POSTS } from "@/data/blog";
 import { EASE_OUT } from "@/lib/motion-variants";
+import Button from "./Button";
 import Reveal from "./motion/Reveal";
 
 function formatDate(dateStr: string) {
@@ -101,13 +102,9 @@ export default function InsightsPreview() {
         )}
 
         <Reveal delay={0.15} className="mt-12 text-center">
-          <Link
-            href="/insights"
-            className="group inline-flex items-center justify-center gap-2 border border-neutral-300 bg-white px-7 py-3.5 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 hover:border-[var(--color-navy)]"
-          >
+          <Button href="/insights" variant="outline">
             View All Insights
-            <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-0.5" />
-          </Link>
+          </Button>
         </Reveal>
       </div>
     </section>

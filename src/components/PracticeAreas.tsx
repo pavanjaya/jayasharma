@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { SERVICES } from "@/data/content";
+import Button from "./Button";
 import ServiceIcon from "./ServiceIcon";
 import Reveal from "./motion/Reveal";
 import { RevealStagger, RevealStaggerItem } from "./motion/RevealStagger";
@@ -60,13 +61,9 @@ export default function PracticeAreas() {
         </RevealStagger>
 
         <Reveal delay={0.1} className="mt-12 text-center">
-          <Link
-            href="/practice-areas"
-            className="group inline-flex items-center justify-center gap-2 rounded-full border border-neutral-300 bg-white px-7 py-3.5 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 hover:border-[var(--color-navy)]"
-          >
+          <Button href="/practice-areas" variant="outline">
             View All Practice Areas
-            <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-0.5" />
-          </Link>
+          </Button>
         </Reveal>
       </div>
     </section>

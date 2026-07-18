@@ -34,10 +34,7 @@ export default function InsightsPage() {
         <RevealStagger className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {BLOG_POSTS.map((post) => (
             <RevealStaggerItem key={post.slug} className="h-full">
-              <Link
-                href={`/insights/${post.slug}`}
-                className="group flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white transition-transform duration-300 hover:-translate-y-1"
-              >
+              <Link href={`/insights/${post.slug}`} className="group flex h-full flex-col">
                 <div className="relative aspect-[16/9] overflow-hidden bg-[var(--color-navy)]/5">
                   <Image
                     src={post.image}
@@ -47,11 +44,11 @@ export default function InsightsPage() {
                     sizes="(min-width: 1024px) 30vw, 90vw"
                   />
                 </div>
-                <div className="flex flex-1 flex-col p-7">
-                  <span className="w-fit rounded-full bg-[var(--color-navy)]/5 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[var(--color-gold)]">
+                <div className="flex flex-1 flex-col pt-5">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-[var(--color-gold)]">
                     {post.category}
                   </span>
-                  <h2 className="mt-5 font-serif-display text-xl font-semibold leading-snug text-[var(--color-navy)]">
+                  <h2 className="mt-3 font-serif-display text-xl font-semibold leading-snug text-[var(--color-navy)]">
                     {post.title}
                   </h2>
                   <p className="mt-3 flex-1 text-sm leading-relaxed text-neutral-600">

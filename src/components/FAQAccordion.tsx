@@ -11,18 +11,15 @@ export default function FAQAccordion({ items }: { items: FAQItem[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <div className="space-y-3">
+    <div className="divide-y divide-neutral-200">
       {items.map((item, index) => {
         const isOpen = openIndex === index;
         return (
-          <div
-            key={item.question}
-            className="overflow-hidden rounded-2xl border border-neutral-200 bg-white"
-          >
+          <div key={item.question}>
             <button
               type="button"
               onClick={() => setOpenIndex(isOpen ? null : index)}
-              className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+              className="flex w-full items-center justify-between gap-4 py-5 text-left"
               aria-expanded={isOpen}
             >
               <span className="font-medium text-[var(--color-navy)]">{item.question}</span>
@@ -43,7 +40,7 @@ export default function FAQAccordion({ items }: { items: FAQItem[] }) {
                   transition={{ duration: 0.35, ease: EASE_OUT }}
                   style={{ overflow: "hidden" }}
                 >
-                  <p className="px-6 pb-5 text-sm leading-relaxed text-neutral-600">
+                  <p className="pb-5 text-sm leading-relaxed text-neutral-600">
                     {item.answer}
                   </p>
                 </motion.div>

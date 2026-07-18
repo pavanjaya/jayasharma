@@ -122,7 +122,7 @@ export default async function InsightPage({
           ))}
         </Reveal>
 
-        <Reveal delay={0.1} className="mt-12 rounded-xl border border-neutral-200 bg-surface px-6 py-5">
+        <Reveal delay={0.1} className="mt-12 bg-surface px-6 py-5">
           <p className="text-xs leading-relaxed text-neutral-500">
             This article is for general informational purposes only and does
             not constitute legal advice. Every matter has its own facts —
@@ -140,9 +140,11 @@ export default async function InsightPage({
                 <RevealStaggerItem key={r.slug}>
                   <Link
                     href={`/insights/${r.slug}`}
-                    className="block rounded-xl border border-neutral-200 bg-white p-5 transition-colors duration-300 hover:border-[var(--color-navy)]/30"
+                    className="group block"
                   >
-                    <p className="font-medium text-[var(--color-navy)]">{r.title}</p>
+                    <p className="font-medium text-[var(--color-navy)] transition-colors duration-300 group-hover:text-[var(--color-gold)]">
+                      {r.title}
+                    </p>
                     <p className="mt-1.5 text-sm text-neutral-500">{r.excerpt}</p>
                   </Link>
                 </RevealStaggerItem>

@@ -30,7 +30,7 @@ export default function PracticeAreas() {
 
         <RevealStagger className="mt-16 grid gap-px overflow-hidden bg-neutral-200 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
-            <RevealStaggerItem key={service.slug} className="group bg-surface">
+            <RevealStaggerItem key={service.slug} className="group bg-background">
               <Link
                 href={`/practice-areas#${service.slug}`}
                 className="flex h-full flex-col p-10 transition-colors duration-300 group-hover:bg-[var(--color-navy)]"

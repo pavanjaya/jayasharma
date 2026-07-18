@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Serif } from "next/font/google";
+import { BookingModalProvider } from "@/components/BookingModalContext";
 import DisclaimerModal from "@/components/DisclaimerModal";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -35,12 +36,14 @@ export default function RootLayout({
         precedence="default"
       />
       <body className="min-h-full flex flex-col bg-background text-neutral-900">
-        <DisclaimerModal />
-        <Header />
-        <main className="flex-1">
-          <MotionProvider>{children}</MotionProvider>
-        </main>
-        <Footer />
+        <BookingModalProvider>
+          <DisclaimerModal />
+          <Header />
+          <main className="flex-1">
+            <MotionProvider>{children}</MotionProvider>
+          </main>
+          <Footer />
+        </BookingModalProvider>
       </body>
     </html>
   );

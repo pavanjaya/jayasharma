@@ -4,9 +4,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Scale } from "lucide-react";
 import { fadeUp, imageReveal, staggerContainer } from "@/lib/motion-variants";
+import { useBookingModal } from "./BookingModalContext";
 import Button from "./Button";
 
 export default function Hero() {
+  const { open: openBookingModal } = useBookingModal();
+
   return (
     <section className="relative overflow-hidden pt-28 pb-28 lg:pt-32 lg:pb-36">
       <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
@@ -41,7 +44,7 @@ export default function Hero() {
           </motion.p>
 
           <motion.div variants={fadeUp} className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <Button href="#contact">Book Consultation</Button>
+            <Button onClick={openBookingModal}>Book Consultation</Button>
             <Button href="#practice-areas" variant="outline" trailingIcon={null}>
               Our Services
             </Button>

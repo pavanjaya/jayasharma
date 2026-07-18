@@ -26,13 +26,15 @@ const MotionLink = motion(Link);
 
 export default function Button({
   href,
+  onClick,
   children,
   variant = "primary",
   leadingIcon,
   trailingIcon,
   className = "",
 }: {
-  href: string;
+  href?: string;
+  onClick?: () => void;
   children: ReactNode;
   variant?: ButtonVariant;
   leadingIcon?: ReactNode;
@@ -59,6 +61,14 @@ export default function Button({
     whileTap: { scale: 0.98 },
     transition: { duration: 0.25, ease: EASE_OUT },
   };
+
+  if (!href) {
+    return (
+      <motion.button type="button" onClick={onClick} {...motionProps}>
+        {content}
+      </motion.button>
+    );
+  }
 
   if (href.startsWith("/") || href.startsWith("#")) {
     return (

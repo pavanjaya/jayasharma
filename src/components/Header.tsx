@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { Menu, Phone, X } from "lucide-react";
+import { useBookingModal } from "./BookingModalContext";
 import Button from "./Button";
 
 const NAV_LINKS = [
@@ -21,6 +22,7 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+  const { open: openBookingModal } = useBookingModal();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -65,7 +67,7 @@ export default function Header() {
         </nav>
 
         <div className="hidden items-center gap-5 lg:flex">
-          <Button href="/contact" trailingIcon={null} className="px-5 py-2.5">
+          <Button onClick={openBookingModal} trailingIcon={null} className="px-5 py-2.5">
             Book Consultation
           </Button>
         </div>
@@ -104,7 +106,14 @@ export default function Header() {
               <Phone size={17} />
               +91 99867 58567
             </a>
-            <Button href="/contact" trailingIcon={null} className="mt-1 w-full">
+            <Button
+              onClick={() => {
+                setMenuOpen(false);
+                openBookingModal();
+              }}
+              trailingIcon={null}
+              className="mt-1 w-full"
+            >
               Book Consultation
             </Button>
           </nav>

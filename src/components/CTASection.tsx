@@ -1,8 +1,13 @@
+"use client";
+
 import { Phone } from "lucide-react";
+import { useBookingModal } from "./BookingModalContext";
 import Button from "./Button";
 import Reveal from "./motion/Reveal";
 
 export default function CTASection() {
+  const { open: openBookingModal } = useBookingModal();
+
   return (
     <section className="mx-auto max-w-7xl px-6 pb-28 lg:px-8">
       <Reveal className="relative overflow-hidden rounded-3xl bg-[var(--color-navy)] px-8 py-16 text-center sm:px-16">
@@ -18,7 +23,7 @@ export default function CTASection() {
           </p>
 
           <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button href="/contact" variant="tertiary">Book Consultation</Button>
+            <Button onClick={openBookingModal} variant="tertiary">Book Consultation</Button>
             <Button
               href="tel:+919986758567"
               variant="light"

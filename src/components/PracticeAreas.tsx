@@ -29,7 +29,7 @@ export default function PracticeAreas() {
         </Reveal>
 
         <RevealStagger className="mt-16 grid gap-px overflow-hidden bg-neutral-200 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <RevealStaggerItem key={service.slug} className="group bg-white">
               <Link
                 href={`/practice-areas#${service.slug}`}
@@ -42,10 +42,7 @@ export default function PracticeAreas() {
                     className="text-[var(--color-navy)] transition-colors duration-300 group-hover:text-white"
                   />
                 </div>
-                <p className="mt-8 text-xs font-semibold uppercase tracking-widest text-[var(--color-gold)] transition-colors duration-300 group-hover:text-[var(--color-gold-light)]">
-                  {`0${index + 1}`}
-                </p>
-                <h3 className="mt-2 font-serif-display text-xl font-semibold text-[var(--color-navy)] transition-colors duration-300 group-hover:text-white">
+                <h3 className="mt-8 font-serif-display text-xl font-semibold text-[var(--color-navy)] transition-colors duration-300 group-hover:text-white">
                   {service.title}
                 </h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-neutral-600 transition-colors duration-300 group-hover:text-white/70">

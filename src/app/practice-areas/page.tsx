@@ -22,17 +22,14 @@ export default function PracticeAreasPage() {
       />
 
       <section className="mx-auto max-w-5xl divide-y divide-neutral-200 px-6 pb-28 lg:px-8">
-        {SERVICES.map((service, index) => (
+        {SERVICES.map((service) => (
           <Reveal key={service.slug} id={service.slug} className="scroll-mt-28 py-12 first:pt-0">
             <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
               <div className="lg:w-72 lg:flex-none">
                 <div className="flex h-14 w-14 items-center justify-center bg-[var(--color-gold-light)]">
                   <ServiceIcon icon={service.icon} size={26} className="text-[var(--color-navy)]" />
                 </div>
-                <p className="mt-4 text-xs font-semibold uppercase tracking-widest text-[var(--color-gold)]">
-                  {`0${index + 1}`}
-                </p>
-                <h2 className="mt-2 font-serif-display text-2xl font-semibold text-[var(--color-navy)]">
+                <h2 className="mt-4 font-serif-display text-2xl font-semibold text-[var(--color-navy)]">
                   {service.title}
                 </h2>
               </div>

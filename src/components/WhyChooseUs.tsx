@@ -30,7 +30,7 @@ export default function WhyChooseUs() {
         </Reveal>
 
         <RevealStagger className="mt-16 grid gap-x-16 gap-y-14 sm:grid-cols-2">
-          {WHY_CHOOSE_US.map((item, index) => {
+          {WHY_CHOOSE_US.map((item) => {
             const Icon = ICONS[item.id];
             return (
               <RevealStaggerItem key={item.id} className="flex gap-6">
@@ -38,10 +38,7 @@ export default function WhyChooseUs() {
                   <Icon size={28} className="text-[var(--color-gold-light)]" />
                 </div>
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-gold)]">
-                    {`0${index + 1}`}
-                  </p>
-                  <p className="mt-1.5 font-serif-display text-xl font-semibold text-[var(--color-navy)]">
+                  <p className="font-serif-display text-xl font-semibold text-[var(--color-navy)]">
                     {item.title}
                   </p>
                   <p className="mt-2 text-sm leading-relaxed text-neutral-600">

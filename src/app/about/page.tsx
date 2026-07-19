@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Award, Briefcase, GraduationCap, Landmark, Scale, ShieldCheck } from "lucide-react";
+import { Award, Briefcase, GraduationCap, Landmark, Quote, Scale, ShieldCheck } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import Reveal from "@/components/motion/Reveal";
@@ -97,12 +97,13 @@ export default function AboutPage() {
             Trusted by banks and institutions for recovery, compliance, and
             ongoing legal representation.
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             {PANEL_ADVOCATE_FOR.map((name) => (
               <span
                 key={name}
-                className="rounded-full border border-neutral-200 bg-white px-5 py-2.5 text-sm font-medium text-[var(--color-navy)]"
+                className="flex items-center gap-2.5 border border-[var(--color-gold)]/25 bg-white px-5 py-3 text-sm font-semibold text-[var(--color-navy)]"
               >
+                <Landmark size={16} className="text-[var(--color-gold)]" />
                 {name}
               </span>
             ))}
@@ -156,8 +157,8 @@ export default function AboutPage() {
           <RevealStagger className="mt-14 grid gap-6 sm:grid-cols-3">
             {EDUCATION.map((item) => (
               <RevealStaggerItem key={item.degree} className="bg-white p-7">
-                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-[var(--color-navy)]/5">
-                  <GraduationCap size={20} className="text-[var(--color-gold)]" />
+                <div className="flex h-14 w-14 items-center justify-center bg-[var(--color-navy)]">
+                  <GraduationCap size={24} className="text-[var(--color-gold-light)]" />
                 </div>
                 <p className="mt-5 font-serif-display text-lg font-semibold text-[var(--color-navy)]">
                   {item.degree}
@@ -182,7 +183,10 @@ export default function AboutPage() {
             <div className="mt-5 grid gap-6 sm:grid-cols-3">
               {CERTIFICATIONS.map((cert) => (
                 <div key={cert.title} className="bg-white p-7">
-                  <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
+                  <div className="flex h-14 w-14 items-center justify-center bg-[var(--color-navy)]">
+                    <Award size={24} className="text-[var(--color-gold-light)]" />
+                  </div>
+                  <p className="mt-5 font-serif-display text-lg font-semibold text-[var(--color-navy)]">
                     {cert.title}
                   </p>
                   <p className="mt-2 text-sm leading-relaxed text-[#2d2e39]">
@@ -234,24 +238,28 @@ export default function AboutPage() {
       </section>
 
       {/* Approach */}
-      <section className="bg-surface py-20">
-        <Reveal className="mx-auto max-w-4xl px-6 text-center lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
+      <section className="relative overflow-hidden bg-surface py-24">
+        <div className="pointer-events-none absolute -right-40 -top-20 h-[26rem] w-[26rem] rounded-full bg-[var(--color-gold)]/10 blur-3xl" />
+        <Reveal className="relative mx-auto max-w-3xl px-6 text-center lg:px-8">
+          <Quote size={40} strokeWidth={1.5} className="mx-auto text-[var(--color-gold)]" />
+          <p className="mt-5 text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
             Her Approach
           </p>
           <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
             Clarity Before Strategy
           </h2>
-          <p className="mt-6 text-base leading-relaxed text-[#2d2e39]">
+          <p className="font-plex-serif mt-8 text-2xl leading-snug text-[var(--color-navy)]">
             Before any strategy is decided, Advocate Jaya Sharma starts by
             making sure a client understands exactly where they stand — what
             the law says, what the realistic options are, and what each
-            option costs in time and effort. That clarity is what allows
-            clients to make informed decisions about their own matter, rather
-            than simply following instructions they don&apos;t fully
-            understand. It is a simple approach, but one that requires
-            discipline: careful listening, honest assessment, and precise
-            documentation at every step.
+            option costs in time and effort.
+          </p>
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-[#2d2e39]">
+            That clarity is what allows clients to make informed decisions
+            about their own matter, rather than simply following
+            instructions they don&apos;t fully understand. It is a simple
+            approach, but one that requires discipline: careful listening,
+            honest assessment, and precise documentation at every step.
           </p>
         </Reveal>
       </section>
@@ -265,12 +273,13 @@ export default function AboutPage() {
           <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
             Skills &amp; Specialisations
           </h2>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-2.5">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             {SKILLS.map((skill) => (
               <span
                 key={skill}
-                className="rounded-full bg-neutral-100 px-4 py-1.5 text-sm font-medium text-[#2d2e39]"
+                className="flex items-center gap-2 border border-[var(--color-gold)]/25 bg-white px-4 py-2 text-sm font-semibold text-[var(--color-navy)]"
               >
+                <span className="h-1.5 w-1.5 flex-none bg-[var(--color-gold)]" />
                 {skill}
               </span>
             ))}

@@ -12,13 +12,15 @@ export default function About() {
           15+ years of dedicated legal practice
         </h2>
         <p className="font-plex-serif mt-6 text-xl leading-snug text-[#2d2e39] sm:text-2xl">
-          Advocate Jaya Sharma brings over 15 years of legal experience,
-          having represented individuals, businesses, and institutions
-          before the Karnataka High Court, the Debt Recovery Tribunal, and
-          the NCLT. A B.Com., LL.B., and LL.M. in Business Law, she now
-          leads her independent practice in Nashik — where every strategy
+          Advocate Jaya Sharma leads an independent legal practice in
+          Nashik, providing strategic counsel and representation across
+          civil, criminal, and commercial matters — where every strategy
           starts with a clear-eyed read of where a client actually stands,
-          not a template answer.
+          not a template answer. A B.Com., LL.B., and LL.M. in Business
+          Law, she brings over 15 years of experience to that approach,
+          including having represented individuals, businesses, and
+          institutions before the Karnataka High Court, the Debt Recovery
+          Tribunal, and the NCLT.
         </p>
       </Reveal>
 

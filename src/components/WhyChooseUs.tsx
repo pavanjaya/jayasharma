@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
         </Reveal>
 
         <div className="mt-16 grid items-center gap-16 lg:grid-cols-[0.85fr_1.15fr]">
-          <Reveal className="relative mx-auto aspect-[4/3] w-full max-w-sm overflow-hidden lg:mx-0">
+          <Reveal className="relative mx-auto aspect-[4/3] w-full max-w-[31.2rem] overflow-hidden lg:mx-0">
             <Image
               src="/images/scales-justice-hand.jpg"
               alt="Scales of justice"

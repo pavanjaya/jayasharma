@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Scale } from "lucide-react";
 import { fadeUp, imageReveal, staggerContainer } from "@/lib/motion-variants";
 import { useBookingModal } from "./BookingModalContext";
 import Button from "./Button";
@@ -19,17 +18,9 @@ export default function Hero() {
           animate="visible"
           variants={staggerContainer(0.15, 0.5)}
         >
-          <motion.div
-            variants={fadeUp}
-            className="flex items-center gap-2 border border-neutral-200 bg-white px-4 py-1.5 text-xs font-medium tracking-wide text-[var(--color-navy)]"
-          >
-            <Scale size={14} className="text-[var(--color-gold)]" />
-            Trusted Legal Counsel Since 2010
-          </motion.div>
-
           <motion.h1
             variants={fadeUp}
-            className="mt-8 max-w-2xl font-serif-display text-5xl font-bold uppercase leading-[0.95] tracking-tight text-[var(--color-navy)] sm:text-6xl lg:text-7xl"
+            className="max-w-2xl font-serif-display text-5xl font-bold uppercase leading-[0.95] tracking-tight text-[var(--color-navy)] sm:text-6xl lg:text-7xl"
           >
             <span className="block">Law with Clarity.</span>
             <span className="block">Practice with Integrity.</span>

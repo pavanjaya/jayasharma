@@ -3,8 +3,8 @@ import Reveal from "./motion/Reveal";
 
 export default function About() {
   return (
-    <section id="about" className="mx-auto max-w-4xl px-6 py-28 lg:px-8">
-      <Reveal>
+    <section id="about" className="mx-auto max-w-7xl px-6 py-28 lg:px-8">
+      <Reveal className="max-w-4xl">
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
           About Our Firm
         </p>
@@ -27,7 +27,7 @@ export default function About() {
         </p>
       </Reveal>
 
-      <Reveal delay={0.1} className="mt-10">
+      <Reveal delay={0.1} className="mt-10 max-w-4xl">
         <Button href="/about" variant="outline">
           Read Full Profile
         </Button>

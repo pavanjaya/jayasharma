@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Circle } from "lucide-react";
 import { BLOG_POSTS } from "@/data/blog";
 import { EASE_OUT } from "@/lib/motion-variants";
@@ -23,7 +23,6 @@ export default function InsightsPreview() {
   const posts = BLOG_POSTS.slice(0, 6);
   const pageCount = Math.ceil(posts.length / PAGE_SIZE);
   const [page, setPage] = useState(0);
-  const visible = posts.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
 
   useEffect(() => {
     if (pageCount <= 1) return;
@@ -49,42 +48,48 @@ export default function InsightsPreview() {
           </p>
         </Reveal>
 
-        <Reveal delay={0.1} className="relative mt-14 overflow-hidden">
-          <AnimatePresence mode="wait" initial={false}>
-            <motion.div
-              key={page}
-              initial={{ opacity: 0, x: 24 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -24 }}
-              transition={{ duration: 0.4, ease: EASE_OUT }}
-              className="grid gap-10 sm:grid-cols-3"
-            >
-              {visible.map((post) => (
-                <Link key={post.slug} href={`/insights/${post.slug}`} className="group block">
-                  <div className="relative aspect-[16/9] overflow-hidden bg-[var(--color-navy)]/5">
-                    <Image
-                      src={post.image}
-                      alt={post.title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      sizes="(min-width: 1024px) 30vw, 90vw"
-                    />
-                  </div>
-                  <h3 className="mt-5 font-serif-display text-lg font-semibold leading-snug text-[var(--color-navy)]">
-                    {post.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-[#2d2e39]">
-                    {post.excerpt}
-                  </p>
-                  <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-[#2d2e39]">
-                    {post.category}
-                    <span className="mx-2 text-[#2d2e39]">·</span>
-                    {formatDate(post.date)}
-                  </p>
-                </Link>
-              ))}
-            </motion.div>
-          </AnimatePresence>
+        <Reveal delay={0.1} className="mt-14 overflow-hidden">
+          <motion.div
+            className="flex"
+            animate={{ x: `-${page * 100}%` }}
+            transition={{ duration: 0.6, ease: EASE_OUT }}
+            style={{ width: `${pageCount * 100}%` }}
+          >
+            {Array.from({ length: pageCount }).map((_, pageIndex) => (
+              <div
+                key={pageIndex}
+                className="grid flex-none gap-10 sm:grid-cols-3"
+                style={{ width: `${100 / pageCount}%` }}
+              >
+                {posts
+                  .slice(pageIndex * PAGE_SIZE, pageIndex * PAGE_SIZE + PAGE_SIZE)
+                  .map((post) => (
+                    <Link key={post.slug} href={`/insights/${post.slug}`} className="group block">
+                      <div className="relative aspect-[16/9] overflow-hidden bg-[var(--color-navy)]/5">
+                        <Image
+                          src={post.image}
+                          alt={post.title}
+                          fill
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          sizes="(min-width: 1024px) 30vw, 90vw"
+                        />
+                      </div>
+                      <h3 className="mt-5 font-serif-display text-lg font-semibold leading-snug text-[var(--color-navy)]">
+                        {post.title}
+                      </h3>
+                      <p className="mt-3 text-sm leading-relaxed text-[#2d2e39]">
+                        {post.excerpt}
+                      </p>
+                      <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-[#2d2e39]">
+                        {post.category}
+                        <span className="mx-2 text-[#2d2e39]">·</span>
+                        {formatDate(post.date)}
+                      </p>
+                    </Link>
+                  ))}
+              </div>
+            ))}
+          </motion.div>
         </Reveal>
 
         {pageCount > 1 && (

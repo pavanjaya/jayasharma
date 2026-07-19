@@ -11,7 +11,7 @@ export default function About() {
         <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
           15+ years of dedicated legal practice
         </h2>
-        <p className="font-plex-serif mt-6 text-2xl leading-snug text-neutral-800 sm:text-3xl">
+        <p className="font-plex-serif mt-6 text-2xl leading-snug text-[#2d2e39] sm:text-3xl">
           Advocate Jaya Sharma holds B.Com., LL.B., and LL.M. credentials, with
           over 15 years of experience spanning litigation, arbitration, and
           corporate advisory work across the Debt Recovery Tribunal, NCLT, the

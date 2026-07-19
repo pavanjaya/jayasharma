@@ -38,7 +38,7 @@ export default function ContactPage() {
               <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
                 No. 622, 6th Floor, Lotus Capital
               </p>
-              <p className="mt-1 text-sm text-neutral-500">
+              <p className="mt-1 text-sm text-[#2d2e39]">
                 Ashok Stambh, Nashik – 422002
               </p>
             </div>
@@ -59,7 +59,7 @@ export default function ContactPage() {
               <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
                 Chamber No. 16, Maruti Chambers
               </p>
-              <p className="mt-1 text-sm text-neutral-500">
+              <p className="mt-1 text-sm text-[#2d2e39]">
                 District Court, Nashik, Maharashtra – 422002
               </p>
             </div>

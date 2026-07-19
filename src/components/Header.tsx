@@ -58,7 +58,7 @@ export default function Header() {
               className={`text-sm font-medium tracking-wide transition-colors duration-300 ${
                 pathname === link.href
                   ? "text-[var(--color-navy)]"
-                  : "text-neutral-600 hover:text-[var(--color-navy)]"
+                  : "text-[#2d2e39] hover:text-[var(--color-navy)]"
               }`}
             >
               {link.label}
@@ -94,14 +94,14 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-base font-medium text-neutral-800"
+                className="text-base font-medium text-[#2d2e39]"
               >
                 {link.label}
               </Link>
             ))}
             <a
               href="tel:+919986758567"
-              className="flex items-center gap-2 text-base font-medium text-neutral-800"
+              className="flex items-center gap-2 text-base font-medium text-[#2d2e39]"
             >
               <Phone size={17} />
               +91 99867 58567

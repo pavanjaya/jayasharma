@@ -9,7 +9,7 @@ import { SERVICES } from "@/data/content";
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mbdnrraq";
 
 const fieldClass =
-  "w-full border-b border-neutral-300 bg-transparent px-0 py-2.5 text-base text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-[var(--color-gold)]";
+  "w-full border-b border-neutral-300 bg-transparent px-0 py-2.5 text-base text-[#2d2e39] outline-none transition-colors placeholder:text-neutral-400 focus:border-[var(--color-gold)]";
 
 export default function BookingModal({
   isOpen,
@@ -90,7 +90,7 @@ export default function BookingModal({
               type="button"
               onClick={handleClose}
               aria-label="Close"
-              className="absolute right-6 top-6 text-neutral-400 transition-colors duration-300 hover:text-[var(--color-navy)]"
+              className="absolute right-6 top-6 text-[#2d2e39] transition-colors duration-300 hover:text-[var(--color-navy)]"
             >
               <X size={20} />
             </button>
@@ -108,7 +108,7 @@ export default function BookingModal({
                   <p className="font-serif-display text-xl font-semibold text-[var(--color-navy)]">
                     Consultation Requested
                   </p>
-                  <p className="max-w-sm text-sm text-neutral-500">
+                  <p className="max-w-sm text-sm text-[#2d2e39]">
                     Thank you for reaching out. Our team will contact you
                     shortly to confirm your appointment.
                   </p>
@@ -126,7 +126,7 @@ export default function BookingModal({
                     <p className="font-serif-display text-2xl font-semibold text-[var(--color-navy)]">
                       Book a Consultation
                     </p>
-                    <p className="mt-1.5 text-sm text-neutral-500">
+                    <p className="mt-1.5 text-sm text-[#2d2e39]">
                       Share a few details and we&apos;ll confirm a time that
                       works for you.
                     </p>
@@ -136,7 +136,7 @@ export default function BookingModal({
 
                   <div className="grid gap-x-6 gap-y-6 sm:grid-cols-2">
                     <div>
-                      <label htmlFor="booking-name" className="mb-1.5 block text-sm font-medium text-neutral-700">
+                      <label htmlFor="booking-name" className="mb-1.5 block text-sm font-medium text-[#2d2e39]">
                         Full Name
                       </label>
                       <input
@@ -149,7 +149,7 @@ export default function BookingModal({
                       />
                     </div>
                     <div>
-                      <label htmlFor="booking-phone" className="mb-1.5 block text-sm font-medium text-neutral-700">
+                      <label htmlFor="booking-phone" className="mb-1.5 block text-sm font-medium text-[#2d2e39]">
                         Phone Number
                       </label>
                       <input
@@ -164,7 +164,7 @@ export default function BookingModal({
                   </div>
 
                   <div>
-                    <label htmlFor="booking-email" className="mb-1.5 block text-sm font-medium text-neutral-700">
+                    <label htmlFor="booking-email" className="mb-1.5 block text-sm font-medium text-[#2d2e39]">
                       Email Address
                     </label>
                     <input
@@ -178,7 +178,7 @@ export default function BookingModal({
                   </div>
 
                   <div>
-                    <label htmlFor="booking-practice-area" className="mb-1.5 block text-sm font-medium text-neutral-700">
+                    <label htmlFor="booking-practice-area" className="mb-1.5 block text-sm font-medium text-[#2d2e39]">
                       Practice Area
                     </label>
                     <select
@@ -201,7 +201,7 @@ export default function BookingModal({
 
                   <div className="grid gap-x-6 gap-y-6 sm:grid-cols-2">
                     <div>
-                      <label htmlFor="booking-date" className="mb-1.5 block text-sm font-medium text-neutral-700">
+                      <label htmlFor="booking-date" className="mb-1.5 block text-sm font-medium text-[#2d2e39]">
                         Preferred Date
                       </label>
                       <input
@@ -213,7 +213,7 @@ export default function BookingModal({
                       />
                     </div>
                     <div>
-                      <label htmlFor="booking-time" className="mb-1.5 block text-sm font-medium text-neutral-700">
+                      <label htmlFor="booking-time" className="mb-1.5 block text-sm font-medium text-[#2d2e39]">
                         Preferred Time
                       </label>
                       <input
@@ -227,7 +227,7 @@ export default function BookingModal({
                   </div>
 
                   <div>
-                    <label htmlFor="booking-message" className="mb-1.5 block text-sm font-medium text-neutral-700">
+                    <label htmlFor="booking-message" className="mb-1.5 block text-sm font-medium text-[#2d2e39]">
                       Briefly Describe Your Matter (Optional)
                     </label>
                     <textarea

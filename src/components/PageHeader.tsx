@@ -36,7 +36,7 @@ export default function PageHeader({
         </motion.h1>
         <motion.p
           variants={fadeUp}
-          className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-neutral-600"
+          className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-[#2d2e39]"
         >
           {description}
         </motion.p>

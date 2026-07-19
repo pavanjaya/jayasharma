@@ -34,7 +34,7 @@ export default function InsightsPreview() {
           <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
             Legal Insights &amp; Explainers
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-neutral-600">
+          <p className="mt-4 text-lg leading-relaxed text-[#2d2e39]">
             General legal information and explainers on topics clients ask
             about most.
           </p>
@@ -64,12 +64,12 @@ export default function InsightsPreview() {
                   <h3 className="mt-5 font-serif-display text-lg font-semibold leading-snug text-[var(--color-navy)]">
                     {post.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-neutral-600">
+                  <p className="mt-3 text-sm leading-relaxed text-[#2d2e39]">
                     {post.excerpt}
                   </p>
-                  <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+                  <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-[#2d2e39]">
                     {post.category}
-                    <span className="mx-2 text-neutral-300">·</span>
+                    <span className="mx-2 text-[#2d2e39]">·</span>
                     {formatDate(post.date)}
                   </p>
                 </Link>
@@ -93,7 +93,7 @@ export default function InsightsPreview() {
                   className={
                     i === page
                       ? "fill-[var(--color-navy)] text-[var(--color-navy)]"
-                      : "fill-neutral-300 text-neutral-300"
+                      : "fill-neutral-300 text-[#2d2e39]"
                   }
                 />
               </button>

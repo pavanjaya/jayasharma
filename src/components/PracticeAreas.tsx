@@ -21,7 +21,7 @@ export default function PracticeAreas() {
           <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
             Practice Areas
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-neutral-600">
+          <p className="mt-4 text-lg leading-relaxed text-[#2d2e39]">
             Comprehensive legal services tailored to individuals and
             businesses, backed by 15+ years of courtroom and advisory
             experience.
@@ -43,7 +43,7 @@ export default function PracticeAreas() {
                 <h3 className="mt-8 font-serif-display text-xl font-semibold text-[var(--color-navy)] transition-colors duration-300 group-hover:text-white">
                   {service.title}
                 </h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-neutral-600 transition-colors duration-300 group-hover:text-white/70">
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-[#2d2e39] transition-colors duration-300 group-hover:text-white/70">
                   {service.shortDescription}
                 </p>
                 <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 group-hover:text-white">

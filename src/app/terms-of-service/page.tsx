@@ -17,7 +17,7 @@ export default function TermsOfServicePage() {
       />
 
       <section className="mx-auto max-w-3xl px-6 pb-28 lg:px-8">
-        <Reveal className="space-y-6 text-sm leading-relaxed text-neutral-600">
+        <Reveal className="space-y-6 text-sm leading-relaxed text-[#2d2e39]">
           <p>
             By accessing this website, you agree to the following terms. If you
             do not agree, please discontinue use of the website.

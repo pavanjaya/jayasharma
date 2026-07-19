@@ -54,7 +54,7 @@ export default function AboutPage() {
             />
           </ZoomImage>
         </Reveal>
-        <Reveal delay={0.1} className="mx-auto mt-10 max-w-4xl space-y-5 text-base leading-relaxed text-neutral-600">
+        <Reveal delay={0.1} className="mx-auto mt-10 max-w-4xl space-y-5 text-base leading-relaxed text-[#2d2e39]">
           <p>
             Advocate Jaya Sharma is an experienced legal practitioner with
             over 15 years of expertise handling cases across the Debt
@@ -93,7 +93,7 @@ export default function AboutPage() {
           <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
             Panel Advocate For
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-neutral-600">
+          <p className="mt-4 text-lg leading-relaxed text-[#2d2e39]">
             Trusted by banks and institutions for recovery, compliance, and
             ongoing legal representation.
           </p>
@@ -132,8 +132,8 @@ export default function AboutPage() {
                   {job.period}
                 </span>
               </div>
-              <p className="mt-1 text-sm text-neutral-500">{job.location}</p>
-              <p className="mt-3 text-sm leading-relaxed text-neutral-600">
+              <p className="mt-1 text-sm text-[#2d2e39]">{job.location}</p>
+              <p className="mt-3 text-sm leading-relaxed text-[#2d2e39]">
                 {job.description}
               </p>
             </RevealStaggerItem>
@@ -162,10 +162,10 @@ export default function AboutPage() {
                 <p className="mt-5 font-serif-display text-lg font-semibold text-[var(--color-navy)]">
                   {item.degree}
                 </p>
-                <p className="mt-2 text-sm leading-relaxed text-neutral-600">
+                <p className="mt-2 text-sm leading-relaxed text-[#2d2e39]">
                   {item.institution}
                 </p>
-                <p className="text-sm leading-relaxed text-neutral-500">
+                <p className="text-sm leading-relaxed text-[#2d2e39]">
                   {item.university}
                 </p>
                 <p className="mt-2 text-xs font-semibold uppercase tracking-wider text-[var(--color-gold)]">
@@ -185,7 +185,7 @@ export default function AboutPage() {
                   <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
                     {cert.title}
                   </p>
-                  <p className="mt-2 text-sm leading-relaxed text-neutral-600">
+                  <p className="mt-2 text-sm leading-relaxed text-[#2d2e39]">
                     {cert.issuer}
                   </p>
                   {cert.period && (
@@ -221,7 +221,7 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <p className="font-medium text-[var(--color-navy)]">{item.title}</p>
-                  <p className="mt-1.5 text-sm leading-relaxed text-neutral-600">
+                  <p className="mt-1.5 text-sm leading-relaxed text-[#2d2e39]">
                     {item.description}
                   </p>
                 </div>
@@ -240,7 +240,7 @@ export default function AboutPage() {
           <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
             Clarity Before Strategy
           </h2>
-          <p className="mt-6 text-base leading-relaxed text-neutral-600">
+          <p className="mt-6 text-base leading-relaxed text-[#2d2e39]">
             Before any strategy is decided, Advocate Jaya Sharma starts by
             making sure a client understands exactly where they stand — what
             the law says, what the realistic options are, and what each
@@ -267,7 +267,7 @@ export default function AboutPage() {
             {SKILLS.map((skill) => (
               <span
                 key={skill}
-                className="rounded-full bg-neutral-100 px-4 py-1.5 text-sm font-medium text-neutral-700"
+                className="rounded-full bg-neutral-100 px-4 py-1.5 text-sm font-medium text-[#2d2e39]"
               >
                 {skill}
               </span>

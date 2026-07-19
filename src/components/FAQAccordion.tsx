@@ -40,7 +40,7 @@ export default function FAQAccordion({ items }: { items: FAQItem[] }) {
                   transition={{ duration: 0.35, ease: EASE_OUT }}
                   style={{ overflow: "hidden" }}
                 >
-                  <p className="pb-5 text-sm leading-relaxed text-neutral-600">
+                  <p className="pb-5 text-sm leading-relaxed text-[#2d2e39]">
                     {item.answer}
                   </p>
                 </motion.div>

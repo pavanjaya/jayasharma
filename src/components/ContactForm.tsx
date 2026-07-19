@@ -8,7 +8,7 @@ import { EASE_OUT } from "@/lib/motion-variants";
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mbdnrraq";
 
 const fieldClass =
-  "w-full border-b border-neutral-300 bg-transparent px-0 py-2.5 text-base text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-[var(--color-gold)]";
+  "w-full border-b border-neutral-300 bg-transparent px-0 py-2.5 text-base text-[#2d2e39] outline-none transition-colors placeholder:text-neutral-400 focus:border-[var(--color-gold)]";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -53,7 +53,7 @@ export default function ContactForm() {
           <p className="font-serif-display text-xl font-semibold text-[var(--color-navy)]">
             Thank you for reaching out
           </p>
-          <p className="max-w-sm text-sm text-neutral-500">
+          <p className="max-w-sm text-sm text-[#2d2e39]">
             Your message has been received. Our team will get back to you
             shortly.
           </p>
@@ -73,7 +73,7 @@ export default function ContactForm() {
 
           <div className="grid gap-x-8 gap-y-7 sm:grid-cols-2">
             <div>
-              <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-neutral-700">
+              <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-[#2d2e39]">
                 Full Name
               </label>
               <input
@@ -86,7 +86,7 @@ export default function ContactForm() {
               />
             </div>
             <div>
-              <label htmlFor="phone" className="mb-1.5 block text-sm font-medium text-neutral-700">
+              <label htmlFor="phone" className="mb-1.5 block text-sm font-medium text-[#2d2e39]">
                 Phone Number
               </label>
               <input
@@ -101,7 +101,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label htmlFor="email" className="mb-1.5 block text-sm font-medium text-neutral-700">
+            <label htmlFor="email" className="mb-1.5 block text-sm font-medium text-[#2d2e39]">
               Email Address
             </label>
             <input
@@ -115,7 +115,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label htmlFor="message" className="mb-1.5 block text-sm font-medium text-neutral-700">
+            <label htmlFor="message" className="mb-1.5 block text-sm font-medium text-[#2d2e39]">
               How can we help?
             </label>
             <textarea

@@ -17,7 +17,7 @@ export default function PrivacyPolicyPage() {
       />
 
       <section className="mx-auto max-w-3xl px-6 pb-28 lg:px-8">
-        <Reveal className="space-y-6 text-sm leading-relaxed text-neutral-600">
+        <Reveal className="space-y-6 text-sm leading-relaxed text-[#2d2e39]">
           <p>
             This Privacy Policy explains how information is collected and used
             when you visit this website or submit the contact form. It applies

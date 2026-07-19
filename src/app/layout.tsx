@@ -35,7 +35,7 @@ export default function RootLayout({
         href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
         precedence="default"
       />
-      <body className="min-h-full flex flex-col bg-background text-neutral-900">
+      <body className="min-h-full flex flex-col bg-background text-[#2d2e39]">
         <BookingModalProvider>
           <DisclaimerModal />
           <Header />

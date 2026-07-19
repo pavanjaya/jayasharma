@@ -35,12 +35,12 @@ export default function PracticeAreasPage() {
               </div>
 
               <div className="flex-1">
-                <p className="text-base leading-relaxed text-neutral-600">
+                <p className="text-base leading-relaxed text-[#2d2e39]">
                   {service.longDescription}
                 </p>
                 <ul className="mt-6 grid gap-3 sm:grid-cols-2">
                   {service.bullets.map((bullet) => (
-                    <li key={bullet} className="flex items-start gap-2.5 text-sm text-neutral-700">
+                    <li key={bullet} className="flex items-start gap-2.5 text-sm text-[#2d2e39]">
                       <CheckCircle2 size={16} className="mt-0.5 flex-none text-[var(--color-gold)]" />
                       {bullet}
                     </li>

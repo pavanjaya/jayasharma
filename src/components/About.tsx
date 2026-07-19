@@ -6,7 +6,7 @@ export default function About() {
     <section id="about" className="mx-auto max-w-7xl px-6 py-28 lg:px-8">
       <Reveal className="max-w-4xl">
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
-          About Our Firm
+          About Us
         </p>
         <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
           15+ years of dedicated legal practice

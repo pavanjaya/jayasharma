@@ -6,7 +6,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { Menu, Phone, X } from "lucide-react";
-import type Lenis from "lenis";
 import { useBookingModal } from "./BookingModalContext";
 import Button from "./Button";
 
@@ -39,12 +38,7 @@ export default function Header() {
   const handleLogoClick = (e: React.MouseEvent) => {
     if (pathname !== "/") return;
     e.preventDefault();
-    const lenis = (window as typeof window & { lenisInstance?: Lenis }).lenisInstance;
-    if (lenis) {
-      lenis.scrollTo(0);
-    } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (

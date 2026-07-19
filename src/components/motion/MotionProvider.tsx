@@ -28,6 +28,7 @@ export default function MotionProvider({
       smoothWheel: true,
     });
     lenisRef.current = lenis;
+    (window as typeof window & { lenisInstance?: Lenis }).lenisInstance = lenis;
 
     let frameId: number;
     function raf(time: number) {
@@ -55,6 +56,7 @@ export default function MotionProvider({
       document.removeEventListener("click", handleAnchorClick);
       lenis.destroy();
       lenisRef.current = null;
+      (window as typeof window & { lenisInstance?: Lenis }).lenisInstance = undefined;
     };
   }, []);
 

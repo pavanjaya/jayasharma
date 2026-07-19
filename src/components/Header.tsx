@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { Menu, Phone, X } from "lucide-react";
+import type Lenis from "lenis";
 import { useBookingModal } from "./BookingModalContext";
 import Button from "./Button";
 
@@ -35,6 +36,17 @@ export default function Header() {
     setMenuOpen(false);
   }, [pathname]);
 
+  const handleLogoClick = (e: React.MouseEvent) => {
+    if (pathname !== "/") return;
+    e.preventDefault();
+    const lenis = (window as typeof window & { lenisInstance?: Lenis }).lenisInstance;
+    if (lenis) {
+      lenis.scrollTo(0);
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <motion.header
       className="fixed top-0 z-50 w-full border-b backdrop-blur-md"
@@ -46,7 +58,7 @@ export default function Header() {
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center" onClick={handleLogoClick}>
           <Image src="/logo.svg" alt="Jaya Sharma & Associates" width={214} height={50} priority />
         </Link>
 

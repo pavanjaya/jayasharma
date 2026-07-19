@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Scale } from "lucide-react";
+import type Lenis from "lenis";
 import { EASE_OUT } from "@/lib/motion-variants";
 
 const STORAGE_KEY = "disclaimer-acknowledged";
@@ -17,9 +18,16 @@ export default function DisclaimerModal() {
   }, []);
 
   useEffect(() => {
+    const lenis = (window as typeof window & { lenisInstance?: Lenis }).lenisInstance;
     document.body.style.overflow = open ? "hidden" : "";
+    if (open) {
+      lenis?.stop();
+    } else {
+      lenis?.start();
+    }
     return () => {
       document.body.style.overflow = "";
+      lenis?.start();
     };
   }, [open]);
 

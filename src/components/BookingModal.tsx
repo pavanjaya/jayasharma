@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CheckCircle2, X } from "lucide-react";
+import type Lenis from "lenis";
 import { EASE_OUT } from "@/lib/motion-variants";
 import { SERVICES } from "@/data/content";
 
@@ -24,13 +25,16 @@ export default function BookingModal({
 
   useEffect(() => {
     if (!isOpen) return;
+    const lenis = (window as typeof window & { lenisInstance?: Lenis }).lenisInstance;
     document.body.style.overflow = "hidden";
+    lenis?.stop();
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
     };
     window.addEventListener("keydown", onKeyDown);
     return () => {
       document.body.style.overflow = "";
+      lenis?.start();
       window.removeEventListener("keydown", onKeyDown);
     };
   }, [isOpen, onClose]);

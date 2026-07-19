@@ -185,35 +185,35 @@ export type Service = {
 
 export const SERVICES: Service[] = [
   {
-    slug: "corporate-law",
-    title: "Corporate Law",
-    icon: "corporate",
+    slug: "civil-litigation",
+    title: "Civil Litigation",
+    icon: "civil",
     shortDescription:
-      "Business structuring, compliance, contracts, and advisory support for companies of every size.",
+      "Skilled representation in civil disputes, from filing through trial and appeal.",
     longDescription:
-      "From incorporation to ongoing governance, corporate clients need counsel that understands both the law and the practical realities of running a business. Advocate Jaya Sharma's corporate practice spans civil, criminal, and corporate matters through her independent practice in Nashik and her association with Jayant D Jaybhave and Associates, giving her a grounded, business-first perspective on every engagement.",
+      "Civil disputes demand patience, procedural precision, and a clear-eyed litigation strategy. With over 15 years handling civil and commercial matters before the Nashik District Court, this practice covers the full lifecycle of a dispute — from the initial notice through trial and, where necessary, appeal.",
     bullets: [
-      "Company incorporation and regulatory compliance",
-      "Drafting and vetting of commercial contracts",
-      "Shareholder and partnership agreements",
-      "Corporate governance advisory",
-      "Vendor, licensing, and service agreements",
+      "Recovery suits and contractual disputes",
+      "Injunctions and interim relief applications",
+      "Commercial and business disputes",
+      "Appeals before appellate courts",
+      "Settlement negotiation and mediation support",
     ],
   },
   {
-    slug: "banking-recovery-nclt",
-    title: "Banking, Recovery & NCLT",
-    icon: "banking",
+    slug: "property-law",
+    title: "Property Law",
+    icon: "property",
     shortDescription:
-      "Debt recovery, DRT and NCLT proceedings, and banking dispute resolution for financial institutions.",
+      "Title verification, disputes, and transactions handled with due diligence.",
     longDescription:
-      "As Senior Advocate at H R Katti Associates, Bangalore, Advocate Jaya Sharma represented clients before the Debt Recovery Tribunal and the National Company Law Tribunal on debt recovery and corporate disputes. She is presently empanelled as Panel Advocate for Bank of Maharashtra, Vishwas Cooperative Bank, and Shree Samarth Sahakari Bank, Nashik, handling recovery and financial matters on their behalf.",
+      "Property transactions and disputes require careful due diligence to avoid costly complications down the line. This practice covers title verification, documentation review, and representation in property disputes, protecting clients' interests in one of their most significant assets.",
     bullets: [
-      "Debt Recovery Tribunal (DRT) proceedings",
-      "NCLT and insolvency-related matters",
-      "Bank recovery suits and financial disputes",
-      "Panel advocate for cooperative and nationalised banks",
-      "Search report preparation for banking due diligence",
+      "Title investigation and due diligence",
+      "Sale, lease, and gift deed drafting",
+      "Property and boundary disputes",
+      "Partition suits",
+      "Encroachment and possession matters",
     ],
   },
   {
@@ -233,19 +233,51 @@ export const SERVICES: Service[] = [
     ],
   },
   {
-    slug: "civil-litigation",
-    title: "Civil Litigation",
-    icon: "civil",
+    slug: "legal-documentation",
+    title: "Legal Documentation",
+    icon: "documentation",
     shortDescription:
-      "Skilled representation in civil disputes, from filing through trial and appeal.",
+      "Precise drafting and vetting of agreements, deeds, and legal instruments.",
     longDescription:
-      "Civil disputes demand patience, procedural precision, and a clear-eyed litigation strategy. With over 15 years handling civil and commercial matters before the Nashik District Court, this practice covers the full lifecycle of a dispute — from the initial notice through trial and, where necessary, appeal.",
+      "Well-drafted documentation is the foundation of any sound legal position, whether personal or commercial. This practice provides precise drafting and vetting of agreements, deeds, and legal instruments — the kind of careful documentation work that prevents disputes rather than merely responding to them.",
     bullets: [
-      "Recovery suits and contractual disputes",
-      "Injunctions and interim relief applications",
-      "Commercial and business disputes",
-      "Appeals before appellate courts",
-      "Settlement negotiation and mediation support",
+      "Agreements, deeds, and MOUs",
+      "Legal opinion writing",
+      "Power of attorney documentation",
+      "Wills and testamentary documents",
+      "Notices and legal correspondence",
+    ],
+  },
+  {
+    slug: "banking-recovery-nclt",
+    title: "Banking, Recovery & NCLT",
+    icon: "banking",
+    shortDescription:
+      "Debt recovery, DRT and NCLT proceedings, and banking dispute resolution for financial institutions.",
+    longDescription:
+      "As Senior Advocate at H R Katti Associates, Bangalore, Advocate Jaya Sharma represented clients before the Debt Recovery Tribunal and the National Company Law Tribunal on debt recovery and corporate disputes. She is presently empanelled as Panel Advocate for Bank of Maharashtra, Vishwas Cooperative Bank, and Shree Samarth Sahakari Bank, Nashik, handling recovery and financial matters on their behalf.",
+    bullets: [
+      "Debt Recovery Tribunal (DRT) proceedings",
+      "NCLT and insolvency-related matters",
+      "Bank recovery suits and financial disputes",
+      "Panel advocate for cooperative and nationalised banks",
+      "Search report preparation for banking due diligence",
+    ],
+  },
+  {
+    slug: "corporate-law",
+    title: "Corporate Law",
+    icon: "corporate",
+    shortDescription:
+      "Business structuring, compliance, contracts, and advisory support for companies of every size.",
+    longDescription:
+      "From incorporation to ongoing governance, corporate clients need counsel that understands both the law and the practical realities of running a business. Advocate Jaya Sharma's corporate practice spans civil, criminal, and corporate matters through her independent practice in Nashik and her association with Jayant D Jaybhave and Associates, giving her a grounded, business-first perspective on every engagement.",
+    bullets: [
+      "Company incorporation and regulatory compliance",
+      "Drafting and vetting of commercial contracts",
+      "Shareholder and partnership agreements",
+      "Corporate governance advisory",
+      "Vendor, licensing, and service agreements",
     ],
   },
   {
@@ -278,38 +310,6 @@ export const SERVICES: Service[] = [
       "Cheque bounce and financial offence matters",
       "Quashing petitions",
       "Appeals against conviction or sentence",
-    ],
-  },
-  {
-    slug: "property-law",
-    title: "Property Law",
-    icon: "property",
-    shortDescription:
-      "Title verification, disputes, and transactions handled with due diligence.",
-    longDescription:
-      "Property transactions and disputes require careful due diligence to avoid costly complications down the line. This practice covers title verification, documentation review, and representation in property disputes, protecting clients' interests in one of their most significant assets.",
-    bullets: [
-      "Title investigation and due diligence",
-      "Sale, lease, and gift deed drafting",
-      "Property and boundary disputes",
-      "Partition suits",
-      "Encroachment and possession matters",
-    ],
-  },
-  {
-    slug: "legal-documentation",
-    title: "Legal Documentation",
-    icon: "documentation",
-    shortDescription:
-      "Precise drafting and vetting of agreements, deeds, and legal instruments.",
-    longDescription:
-      "Well-drafted documentation is the foundation of any sound legal position, whether personal or commercial. This practice provides precise drafting and vetting of agreements, deeds, and legal instruments — the kind of careful documentation work that prevents disputes rather than merely responding to them.",
-    bullets: [
-      "Agreements, deeds, and MOUs",
-      "Legal opinion writing",
-      "Power of attorney documentation",
-      "Wills and testamentary documents",
-      "Notices and legal correspondence",
     ],
   },
 ];

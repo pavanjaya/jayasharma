@@ -157,9 +157,7 @@ export default function AboutPage() {
           <RevealStagger className="mt-14 grid gap-6 sm:grid-cols-3">
             {EDUCATION.map((item) => (
               <RevealStaggerItem key={item.degree} className="bg-white p-7">
-                <div className="flex h-14 w-14 items-center justify-center bg-[var(--color-navy)]">
-                  <GraduationCap size={24} className="text-[var(--color-gold-light)]" />
-                </div>
+                <GraduationCap size={32} className="text-[var(--color-gold)]" />
                 <p className="mt-5 font-serif-display text-lg font-semibold text-[var(--color-navy)]">
                   {item.degree}
                 </p>
@@ -183,9 +181,7 @@ export default function AboutPage() {
             <div className="mt-5 grid gap-6 sm:grid-cols-3">
               {CERTIFICATIONS.map((cert) => (
                 <div key={cert.title} className="bg-white p-7">
-                  <div className="flex h-14 w-14 items-center justify-center bg-[var(--color-navy)]">
-                    <Award size={24} className="text-[var(--color-gold-light)]" />
-                  </div>
+                  <Award size={32} className="text-[var(--color-gold)]" />
                   <p className="mt-5 font-serif-display text-lg font-semibold text-[var(--color-navy)]">
                     {cert.title}
                   </p>
@@ -220,9 +216,7 @@ export default function AboutPage() {
             const Icon = HIGHLIGHT_ICONS[item.id];
             return (
               <RevealStaggerItem key={item.id} className="flex gap-5">
-                <div className="flex h-14 w-14 flex-none items-center justify-center bg-[var(--color-navy)]">
-                  <Icon size={24} className="text-[var(--color-gold-light)]" />
-                </div>
+                <Icon size={28} className="flex-none text-[var(--color-gold)]" />
                 <div>
                   <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
                     {item.title}

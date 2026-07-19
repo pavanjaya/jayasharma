@@ -31,7 +31,7 @@ export default function InsightsPage() {
       />
 
       <section className="mx-auto max-w-7xl px-6 pb-28 lg:px-8">
-        <RevealStagger className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <RevealStagger className="grid gap-x-6 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
           {BLOG_POSTS.map((post) => (
             <RevealStaggerItem key={post.slug} className="h-full">
               <Link href={`/insights/${post.slug}`} className="group flex h-full flex-col">

@@ -31,7 +31,7 @@ export default function Footer() {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2 lg:col-span-2">
             <Link href="/" className="flex items-center">
-              <Image src="/logo.svg" alt="Jaya Sharma & Associates" width={160} height={42} />
+              <Image src="/logo.svg" alt="Jaya Sharma & Associates" width={180} height={42} />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-[#2d2e39]">
               Providing expert legal representation with integrity, dedication,

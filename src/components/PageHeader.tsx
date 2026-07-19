@@ -13,11 +13,9 @@ export default function PageHeader({
   description: string;
 }) {
   return (
-    <section className="relative overflow-hidden bg-background pt-36 pb-16 lg:pt-44 lg:pb-20">
-      <div className="pointer-events-none absolute -right-40 -top-40 h-[28rem] w-[28rem] rounded-full bg-[var(--color-gold)]/10 blur-3xl" />
-
+    <section className="bg-background pt-36 pb-16 lg:pt-44 lg:pb-20">
       <motion.div
-        className="relative mx-auto max-w-4xl px-6 text-center lg:px-8"
+        className="mx-auto max-w-4xl px-6 text-center lg:px-8"
         initial="hidden"
         animate="visible"
         variants={staggerContainer(0.12, 0.1)}

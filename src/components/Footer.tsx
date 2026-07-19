@@ -110,7 +110,7 @@ export default function Footer() {
 
         <div className="mt-6 flex flex-col gap-4 pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-[#2d2e39]">
-            {`© ${year} Advocate Jaya Sharma & Associates. All rights reserved.`}
+            {`© ${year} Advocate Jaya Sharma. All rights reserved.`}
           </p>
           <div className="flex flex-wrap gap-x-6 gap-y-2">
             {LEGAL_LINKS.map((link) => (

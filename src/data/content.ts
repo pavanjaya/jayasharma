@@ -55,11 +55,19 @@ export const HIGHLIGHTS = [
 export const EXPERIENCE = [
   {
     role: "Advocate",
-    firm: "Independent Practice & Jayant D Jaybhave and Associates",
+    firm: "Independent Practice",
     location: "Nashik, Maharashtra",
     period: "Feb 2022 – Present",
     description:
-      "Runs her own independent legal practice in Nashik, while also serving as a Legal Associate with Jayant D Jaybhave and Associates. Handles cases in civil, criminal, and corporate law, providing legal representation and drafting essential documents, with strategic legal advice tailored to each client's challenges.",
+      "Runs her own independent legal practice in Nashik, handling cases in civil, criminal, and corporate law, providing legal representation and drafting essential documents, with strategic legal advice tailored to each client's challenges.",
+  },
+  {
+    role: "Legal Associate",
+    firm: "Jayant D Jaybhave and Associates",
+    location: "Nashik, Maharashtra",
+    period: "Feb 2022 – Present",
+    description:
+      "Serves as a Legal Associate handling civil, criminal, and corporate matters, providing legal representation and drafting essential documents, with strategic legal advice tailored to each client's challenges.",
   },
   {
     role: "Senior Advocate",

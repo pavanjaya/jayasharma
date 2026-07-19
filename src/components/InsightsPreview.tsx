@@ -51,7 +51,7 @@ export default function InsightsPreview() {
         <Reveal delay={0.1} className="mt-14 overflow-hidden">
           <motion.div
             className="flex"
-            animate={{ x: `-${page * 100}%` }}
+            animate={{ x: `-${page * (100 / pageCount)}%` }}
             transition={{ duration: 0.6, ease: EASE_OUT }}
             style={{ width: `${pageCount * 100}%` }}
           >

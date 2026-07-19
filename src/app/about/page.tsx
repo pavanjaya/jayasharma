@@ -211,16 +211,18 @@ export default function AboutPage() {
           </h2>
         </Reveal>
 
-        <RevealStagger className="mt-14 grid gap-6 sm:grid-cols-2">
+        <RevealStagger className="mt-14 grid gap-x-16 gap-y-12 sm:grid-cols-2">
           {HIGHLIGHTS.map((item) => {
             const Icon = HIGHLIGHT_ICONS[item.id];
             return (
-              <RevealStaggerItem key={item.id} className="flex gap-4">
-                <div className="mt-0.5 flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-[var(--color-navy)]/5">
-                  <Icon size={19} className="text-[var(--color-gold)]" />
+              <RevealStaggerItem key={item.id} className="flex gap-5">
+                <div className="flex h-14 w-14 flex-none items-center justify-center bg-[var(--color-navy)]">
+                  <Icon size={24} className="text-[var(--color-gold-light)]" />
                 </div>
                 <div>
-                  <p className="font-medium text-[var(--color-navy)]">{item.title}</p>
+                  <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
+                    {item.title}
+                  </p>
                   <p className="mt-1.5 text-sm leading-relaxed text-[#2d2e39]">
                     {item.description}
                   </p>

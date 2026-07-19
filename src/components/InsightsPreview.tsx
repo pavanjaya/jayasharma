@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
@@ -17,12 +17,21 @@ function formatDate(dateStr: string) {
 }
 
 const PAGE_SIZE = 3;
+const AUTO_ADVANCE_MS = 5000;
 
 export default function InsightsPreview() {
   const posts = BLOG_POSTS.slice(0, 6);
   const pageCount = Math.ceil(posts.length / PAGE_SIZE);
   const [page, setPage] = useState(0);
   const visible = posts.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
+
+  useEffect(() => {
+    if (pageCount <= 1) return;
+    const id = setInterval(() => {
+      setPage((p) => (p + 1) % pageCount);
+    }, AUTO_ADVANCE_MS);
+    return () => clearInterval(id);
+  }, [page, pageCount]);
 
   return (
     <section className="bg-surface py-28">
@@ -89,11 +98,11 @@ export default function InsightsPreview() {
                 className="p-1"
               >
                 <Circle
-                  size={8}
+                  size={i === page ? 12 : 8}
                   className={
                     i === page
-                      ? "fill-[var(--color-navy)] text-[var(--color-navy)]"
-                      : "fill-neutral-300 text-[#2d2e39]"
+                      ? "fill-[var(--color-navy)] text-[var(--color-navy)] transition-all duration-300"
+                      : "fill-neutral-300 text-[#2d2e39] transition-all duration-300"
                   }
                 />
               </button>

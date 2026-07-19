@@ -57,29 +57,59 @@ export default function AboutPage() {
         <Reveal delay={0.1} className="mx-auto mt-10 max-w-4xl space-y-5 text-base leading-relaxed text-[#2d2e39]">
           <p>
             Advocate Jaya Sharma is an experienced legal practitioner with
-            over 15 years of expertise handling cases across the Debt
-            Recovery Tribunal (DRT), NCLT, the Karnataka High Court, District
-            Courts, and various other legal forums. She is registered with
-            the Bar Council of India (Reg. No. {BAR_REGISTRATION}) and cleared
-            the All India Bar Examination in March 2011.
+            over 15 years of professional experience in litigation, legal
+            advisory, and dispute resolution. Enrolled with the Bar Council
+            of India (Registration No. {BAR_REGISTRATION}) and having
+            successfully cleared the All India Bar Examination, she has
+            built a reputation for delivering practical, strategic, and
+            client-focused legal solutions with professionalism, integrity,
+            and meticulous attention to detail.
           </p>
           <p>
-            She is skilled in legal drafting, negotiation, arbitration, legal
-            opinions, and intellectual property law, and is adept in legal
-            document vetting, client counseling, and court appearances —
-            known for a keen attention to detail, versatility, and a
-            proactive approach to complex legal matters.
+            During her professional journey, she has represented clients
+            before various judicial and quasi-judicial forums, including the
+            Karnataka High Court, Debt Recovery Tribunal (DRT), National
+            Company Law Tribunal (NCLT), District Courts, and other legal
+            authorities. Her previous experience includes handling debt
+            recovery matters, banking litigation, corporate disputes,
+            commercial litigation, legal drafting, arbitration, legal
+            opinions, and complex civil proceedings, providing her with
+            extensive exposure to high-value and technically challenging
+            legal matters.
           </p>
           <p>
-            She runs her own independent legal practice in Nashik and also
-            serves as a Legal Associate with Jayant D Jaybhave and
-            Associates, handling civil, criminal, and corporate matters. She
-            is also empanelled as Panel Advocate for Bank of Maharashtra,
-            Vishwas Cooperative Bank, and Shree Samarth Sahakari Bank,
-            Nashik — representing the banks on debt recovery, NCLT
-            proceedings, and other civil and financial disputes — and has
-            been appointed as an Advocate for Indian Oil Corporation Ltd.,
-            Nashik District.
+            Today, Advocate Jaya Sharma leads her independent legal practice
+            in Nashik, Maharashtra, where she provides comprehensive legal
+            representation and strategic legal counsel to individuals,
+            businesses, and institutions. Her practice primarily focuses on
+            Civil Law, Criminal Law, Property &amp; Real Estate Matters, Legal
+            Documentation, Contract Drafting &amp; Review, Legal Opinions,
+            Arbitration, Consumer Disputes, and General Legal Advisory. She
+            is known for her meticulous legal drafting, strategic case
+            preparation, practical legal advice, and unwavering commitment
+            to protecting her clients&apos; interests.
+          </p>
+          <p>
+            In addition to her independent practice, she serves as a Legal
+            Associate with Jayant D. Jaybhave &amp; Associates, where she
+            handles civil, criminal, and corporate legal matters.
+          </p>
+          <p>
+            She is also an Empanelled Panel Advocate for Bank of
+            Maharashtra, Vishwas Cooperative Bank, and Shree Samarth Sahakari
+            Bank, Nashik, representing these institutions in debt recovery
+            proceedings, banking litigation, NCLT matters, and other civil
+            and financial disputes. She has further been appointed as an
+            Advocate for Indian Oil Corporation Limited (IOCL), Nashik
+            District, providing legal representation, litigation support,
+            and legal advisory services as required.
+          </p>
+          <p>
+            With a strong foundation in litigation and advisory practice,
+            Advocate Jaya Sharma is committed to delivering practical legal
+            solutions, transparent guidance, and dedicated representation,
+            ensuring that every client receives personalized attention and a
+            strategy tailored to achieve the best possible outcome.
           </p>
         </Reveal>
       </section>

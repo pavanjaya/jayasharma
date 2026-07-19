@@ -16,7 +16,7 @@ const ibmPlexSerif = IBM_Plex_Serif({
 export const metadata: Metadata = {
   title: "Advocate Jaya Sharma & Associates | Nashik",
   description:
-    "Advocate Jaya Sharma & Associates — expert legal counsel in corporate law, civil litigation, family law, criminal defense, property law, and legal documentation. Serving Nashik since 2010.",
+    "General information about Advocate Jaya Sharma's legal practice in Nashik — practice areas include corporate law, civil litigation, family law, criminal defense, property law, and legal documentation.",
 };
 
 export default function RootLayout({

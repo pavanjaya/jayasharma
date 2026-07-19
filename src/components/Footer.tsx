@@ -34,9 +34,9 @@ export default function Footer() {
               <Image src="/logo.svg" alt="Jaya Sharma & Associates" width={180} height={42} />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-[#2d2e39]">
-              Providing expert legal representation with integrity, dedication,
-              and excellence. Trusted counsel for individuals and businesses in
-              Nashik since 2010.
+              General information about Advocate Jaya Sharma&apos;s
+              independent legal practice, based in Nashik and serving
+              clients since 2010.
             </p>
             <div className="mt-5 flex items-center gap-4">
               {SOCIAL_LINKS.map((social) => (

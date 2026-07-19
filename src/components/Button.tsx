@@ -16,10 +16,10 @@ const VARIANT_CLASS: Record<ButtonVariant, string> = {
 };
 
 const VARIANT_HOVER: Record<ButtonVariant, Record<string, string>> = {
-  primary: { backgroundColor: "#b08d4f", borderColor: "#b08d4f" },
+  primary: { backgroundColor: "#ba8500", borderColor: "#ba8500" },
   outline: { backgroundColor: "#2d2e39", borderColor: "#2d2e39", color: "#ffffff" },
   light: { backgroundColor: "#ffffff", borderColor: "#ffffff", color: "#2d2e39" },
-  tertiary: { backgroundColor: "#b08d4f", borderColor: "#b08d4f", color: "#ffffff" },
+  tertiary: { backgroundColor: "#ba8500", borderColor: "#ba8500", color: "#ffffff" },
 };
 
 const MotionLink = motion(Link);

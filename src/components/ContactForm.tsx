@@ -139,7 +139,7 @@ export default function ContactForm() {
             type="submit"
             disabled={submitting}
             className="btn-pill inline-flex items-center justify-center gap-2 border border-[var(--color-navy)] bg-[var(--color-navy)] px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.08em] text-white disabled:opacity-60"
-            whileHover={submitting ? undefined : { backgroundColor: "#b08d4f", borderColor: "#b08d4f" }}
+            whileHover={submitting ? undefined : { backgroundColor: "#ba8500", borderColor: "#ba8500" }}
             whileTap={submitting ? undefined : { scale: 0.98 }}
             transition={{ duration: 0.25, ease: EASE_OUT }}
           >

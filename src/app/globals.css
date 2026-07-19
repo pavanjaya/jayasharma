@@ -6,7 +6,7 @@
   --foreground: #171717;
   --color-navy: #2d2e39;
   --color-navy-light: #46467d;
-  --color-gold: #b08d4f;
+  --color-gold: #ba8500;
   --color-gold-light: #d4b878;
   --font-general-sans: "General Sans", ui-sans-serif, system-ui, sans-serif;
 }
@@ -19,7 +19,7 @@
   --font-serif: var(--font-general-sans);
   --color-navy: #2d2e39;
   --color-navy-light: #46467d;
-  --color-gold: #b08d4f;
+  --color-gold: #ba8500;
   --color-gold-light: #d4b878;
 }
 

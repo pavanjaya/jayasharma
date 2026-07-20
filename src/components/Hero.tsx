@@ -51,7 +51,7 @@ export default function Hero() {
           <div className="absolute -inset-3 -z-10 border border-[var(--color-gold)]/30" />
           <div className="relative aspect-[4/5] w-full overflow-hidden bg-surface">
             <Image
-              src="/advocate-jaya-sharma-hero.png"
+              src="/advocate-jaya-sharma-hero.jpg"
               alt="Advocate Jaya Sharma"
               fill
               priority

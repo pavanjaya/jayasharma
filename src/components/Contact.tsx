@@ -16,7 +16,7 @@ export default function Contact() {
               </p>
               <a
                 href="tel:+919986758567"
-                className="mt-1.5 block text-lg text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
+                className="font-plex-serif mt-1.5 block text-lg text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
               >
                 +91 99867 58567
               </a>
@@ -31,7 +31,7 @@ export default function Contact() {
               </p>
               <a
                 href="mailto:advjayaosharma@gmail.com"
-                className="mt-1.5 block text-lg text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
+                className="font-plex-serif mt-1.5 block text-lg text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
               >
                 advjayaosharma@gmail.com
               </a>

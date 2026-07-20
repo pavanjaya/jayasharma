@@ -16,13 +16,25 @@ function formatDate(dateStr: string) {
     .toUpperCase();
 }
 
-const PAGE_SIZE = 3;
 const AUTO_ADVANCE_MS = 5000;
 
 export default function InsightsPreview() {
   const posts = BLOG_POSTS.slice(0, 6);
-  const pageCount = Math.ceil(posts.length / PAGE_SIZE);
+  const [pageSize, setPageSize] = useState(3);
+  const pageCount = Math.ceil(posts.length / pageSize);
   const [page, setPage] = useState(0);
+
+  useEffect(() => {
+    const mql = window.matchMedia("(max-width: 639px)");
+    const update = () => setPageSize(mql.matches ? 1 : 3);
+    update();
+    mql.addEventListener("change", update);
+    return () => mql.removeEventListener("change", update);
+  }, []);
+
+  useEffect(() => {
+    setPage((p) => Math.min(p, pageCount - 1));
+  }, [pageCount]);
 
   useEffect(() => {
     if (pageCount <= 1) return;
@@ -62,7 +74,7 @@ export default function InsightsPreview() {
                 style={{ width: `${100 / pageCount}%` }}
               >
                 {posts
-                  .slice(pageIndex * PAGE_SIZE, pageIndex * PAGE_SIZE + PAGE_SIZE)
+                  .slice(pageIndex * pageSize, pageIndex * pageSize + pageSize)
                   .map((post) => (
                     <Link key={post.slug} href={`/insights/${post.slug}`} className="group block">
                       <div className="relative aspect-[16/9] overflow-hidden bg-[var(--color-navy)]/5">

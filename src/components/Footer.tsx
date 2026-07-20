@@ -112,7 +112,7 @@ export default function Footer() {
           <p className="text-xs text-[#3d0b3d]">
             {`© ${year} Advocate Jaya Sharma. All rights reserved.`}
           </p>
-          <div className="flex flex-wrap gap-x-6 gap-y-2">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
             {LEGAL_LINKS.map((link) => (
               <Link
                 key={link.href}
@@ -122,10 +122,9 @@ export default function Footer() {
                 {link.label}
               </Link>
             ))}
+            <span className="text-xs text-[#3d0b3d]">By Hueness</span>
           </div>
         </div>
-
-        <p className="mt-4 text-xs text-[#3d0b3d]">Designed &amp; Developed by Hueness</p>
       </div>
     </footer>
   );

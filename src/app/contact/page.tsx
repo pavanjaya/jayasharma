@@ -30,7 +30,8 @@ export default function ContactPage() {
 
       <Contact />
 
-      <section className="mx-auto max-w-7xl px-6 pb-28 lg:px-8">
+      <section className="bg-[#FBF8F0] py-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <Reveal className="grid gap-12 divide-y divide-neutral-200 sm:grid-cols-2 sm:gap-8 sm:divide-y-0 sm:divide-x">
           <div className="flex flex-col items-center gap-4 pb-12 text-center sm:pb-0">
             <MapPin size={22} className="text-[var(--color-gold)]" />
@@ -74,6 +75,7 @@ export default function ContactPage() {
             </Button>
           </div>
         </Reveal>
+        </div>
       </section>
     </>
   );

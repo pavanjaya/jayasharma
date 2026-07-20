@@ -132,7 +132,7 @@ export default function AboutPage() {
       </section>
 
       {/* Education & Certifications */}
-      <section className="bg-surface py-24">
+      <section className="bg-[#FBF8F0] py-24">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <Reveal className="mx-auto max-w-2xl text-center">
             <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">

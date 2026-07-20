@@ -33,7 +33,7 @@ export default function InsightsPreview() {
   }, [page, pageCount]);
 
   return (
-    <section className="bg-surface py-28">
+    <section className="py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">

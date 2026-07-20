@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, type PanInfo } from "framer-motion";
 import { Circle } from "lucide-react";
 import { BLOG_POSTS } from "@/data/blog";
 import { EASE_OUT } from "@/lib/motion-variants";
@@ -44,6 +44,19 @@ export default function InsightsPreview() {
     return () => clearInterval(id);
   }, [page, pageCount]);
 
+  const handlePanEnd = (
+    _event: MouseEvent | TouchEvent | PointerEvent,
+    info: PanInfo
+  ) => {
+    const swipeThreshold = 40;
+    const velocityThreshold = 300;
+    if (info.offset.x < -swipeThreshold || info.velocity.x < -velocityThreshold) {
+      setPage((p) => Math.min(p + 1, pageCount - 1));
+    } else if (info.offset.x > swipeThreshold || info.velocity.x > velocityThreshold) {
+      setPage((p) => Math.max(p - 1, 0));
+    }
+  };
+
   return (
     <section className="bg-[#FBF8F0] py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -62,10 +75,11 @@ export default function InsightsPreview() {
 
         <Reveal delay={0.1} className="mt-14 overflow-hidden">
           <motion.div
-            className="flex"
+            className="flex touch-pan-y"
             animate={{ x: `-${page * (100 / pageCount)}%` }}
             transition={{ duration: 0.6, ease: EASE_OUT }}
             style={{ width: `${pageCount * 100}%` }}
+            onPanEnd={handlePanEnd}
           >
             {Array.from({ length: pageCount }).map((_, pageIndex) => (
               <div

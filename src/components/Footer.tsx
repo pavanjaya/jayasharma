@@ -122,7 +122,17 @@ export default function Footer() {
                 {link.label}
               </Link>
             ))}
-            <span className="text-xs text-[#3d0b3d]">Made by Hueness</span>
+            <span className="text-xs text-[#3d0b3d]">
+              Made by{" "}
+              <a
+                href="https://www.hueness.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[var(--color-gold)]"
+              >
+                Hueness
+              </a>
+            </span>
           </div>
         </div>
       </div>

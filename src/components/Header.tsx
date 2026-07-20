@@ -46,7 +46,7 @@ export default function Header() {
       className="fixed top-0 z-50 w-full border-b backdrop-blur-md"
       initial={false}
       animate={{
-        backgroundColor: scrolled ? "rgba(255,248,253,0.92)" : "rgba(255,248,253,0)",
+        backgroundColor: scrolled ? "rgba(255,254,250,0.92)" : "rgba(255,254,250,0)",
         borderBottomColor: scrolled ? "rgba(229,229,229,1)" : "rgba(229,229,229,0)",
       }}
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}

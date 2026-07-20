@@ -53,7 +53,7 @@ export default function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="/" className="flex items-center" onClick={handleLogoClick}>
-          <Image src="/logo.svg" alt="Jaya Sharma & Associates" width={215} height={50} priority />
+          <Image src="/logo.svg" alt="Jaya Sharma & Associates" width={200} height={50} priority />
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">

@@ -10,7 +10,7 @@ export default function PracticeAreas() {
   const services = SERVICES.slice(0, 6);
 
   return (
-    <section id="practice-areas" className="relative scroll-mt-24 overflow-hidden bg-[#FFF8FD] py-28">
+    <section id="practice-areas" className="relative scroll-mt-24 overflow-hidden bg-surface py-28">
       <div className="pointer-events-none absolute -left-40 -bottom-40 h-[28rem] w-[28rem] rounded-full bg-[var(--color-gold)]/15 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">

@@ -76,7 +76,7 @@ export default function DisclaimerModal() {
               type="button"
               onClick={handleContinue}
               className="btn-pill mt-8 w-full border border-[var(--color-navy)] bg-[var(--color-navy)] px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.08em] text-white sm:w-auto sm:px-10"
-              whileHover={{ backgroundColor: "#ba8500", borderColor: "#ba8500" }}
+              whileHover={{ backgroundColor: "#861888", borderColor: "#861888" }}
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.25, ease: EASE_OUT }}
             >

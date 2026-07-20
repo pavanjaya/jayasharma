@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     "Corporate law, civil litigation, family law, criminal defense, property law, and legal documentation services in Nashik.",
 };
 
+const ILLUSTRATIONS: Record<string, string> = {
+  "civil-litigation": "/images/civil-litigation.png",
+  "property-law": "/images/property-law.png",
+};
+
 export default function PracticeAreasPage() {
   return (
     <>
@@ -27,11 +32,11 @@ export default function PracticeAreasPage() {
           <Reveal key={service.slug} id={service.slug} className="scroll-mt-28 py-12 first:pt-0">
             <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
               <div className="lg:w-72 lg:flex-none">
-                {service.slug === "civil-litigation" ? (
+                {ILLUSTRATIONS[service.slug] ? (
                   <div className="relative aspect-square w-full max-w-[220px]">
                     <Image
-                      src="/images/civil-litigation.png"
-                      alt="Illustration of civil litigation proceedings"
+                      src={ILLUSTRATIONS[service.slug]}
+                      alt={`Illustration of ${service.title.toLowerCase()}`}
                       fill
                       className="object-contain"
                       sizes="220px"

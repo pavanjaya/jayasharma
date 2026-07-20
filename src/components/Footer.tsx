@@ -122,7 +122,7 @@ export default function Footer() {
                 {link.label}
               </Link>
             ))}
-            <span className="text-xs text-[#3d0b3d]">Crafted by Hueness</span>
+            <span className="text-xs text-[#3d0b3d]">Made by Hueness</span>
           </div>
         </div>
       </div>

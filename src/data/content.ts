@@ -133,10 +133,22 @@ export const CERTIFICATIONS = [
 ];
 
 export const PANEL_ADVOCATE_FOR = [
-  "Bank of Maharashtra",
-  "Vishwas Cooperative Bank",
-  "Shree Samarth Sahakari Bank, Nashik",
-  "Indian Oil Corporation Ltd.",
+  {
+    name: "Bank of Maharashtra",
+    role: "Panel Advocate — Debt Recovery",
+  },
+  {
+    name: "Vishwas Cooperative Bank",
+    role: "Panel Advocate — Recovery & Compliance",
+  },
+  {
+    name: "Shree Samarth Sahakari Bank, Nashik",
+    role: "Panel Advocate — Civil & Financial Disputes",
+  },
+  {
+    name: "Indian Oil Corporation Ltd.",
+    role: "Appointed Advocate — Nashik District",
+  },
 ];
 
 export const WHY_CHOOSE_US = [

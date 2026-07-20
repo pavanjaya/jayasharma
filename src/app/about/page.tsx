@@ -193,51 +193,84 @@ export default function AboutPage() {
 
       {/* Panel Advocate */}
       <section className="py-24">
-        <Reveal className="mx-auto max-w-3xl px-6 text-center lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
-            Empanelments
-          </p>
-          <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
-            Panel Advocate For
-          </h2>
-          <p className="mt-4 text-lg leading-relaxed text-[#3d0b3d]">
-            Trusted by banks and institutions for recovery, compliance, and
-            ongoing legal representation.
-          </p>
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-4">
-            {PANEL_ADVOCATE_FOR.map((name, i) => (
-              <span key={name} className="flex items-center gap-x-3">
-                {i > 0 && <Landmark size={14} className="text-[var(--color-gold)]/40" />}
-                <span className="text-sm font-semibold uppercase tracking-wide text-[var(--color-navy)]">
-                  {name}
-                </span>
-              </span>
-            ))}
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
+            <Reveal>
+              <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
+                Empanelments
+              </p>
+              <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
+                Panel Advocate For
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-[#3d0b3d]">
+                Trusted by banks and institutions for recovery, compliance,
+                and ongoing legal representation.
+              </p>
+            </Reveal>
+
+            <RevealStagger className="grid gap-x-10 gap-y-8 sm:grid-cols-2">
+              {PANEL_ADVOCATE_FOR.map((item) => (
+                <RevealStaggerItem
+                  key={item.name}
+                  className="border-t border-[var(--color-gold)]/25 pt-5"
+                >
+                  <Landmark size={20} className="text-[var(--color-gold)]" />
+                  <p className="mt-4 font-serif-display text-lg font-semibold leading-snug text-[var(--color-navy)]">
+                    {item.name}
+                  </p>
+                  <p className="mt-1.5 text-sm text-[#3d0b3d]">{item.role}</p>
+                </RevealStaggerItem>
+              ))}
+            </RevealStagger>
           </div>
-        </Reveal>
+        </div>
       </section>
 
       {/* Skills */}
-      <section className="bg-surface py-24 text-center">
-        <Reveal className="mx-auto max-w-4xl px-6 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
-            Areas of Expertise
-          </p>
-          <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
-            Skills &amp; Specialisations
-          </h2>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
-            {SKILLS.map((skill) => (
-              <span
-                key={skill}
-                className="flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)]"
-              >
-                <span className="h-1.5 w-1.5 flex-none bg-[var(--color-gold)]" />
-                {skill}
-              </span>
-            ))}
+      <section className="bg-surface py-24">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <Reveal className="mx-auto max-w-2xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
+              Areas of Expertise
+            </p>
+            <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
+              Skills &amp; Specialisations
+            </h2>
+          </Reveal>
+
+          <div className="mt-14 grid gap-x-16 sm:grid-cols-2">
+            <RevealStagger className="divide-y divide-[var(--color-navy)]/10">
+              {SKILLS.slice(0, Math.ceil(SKILLS.length / 2)).map((skill, i) => (
+                <RevealStaggerItem
+                  key={skill}
+                  className="flex items-center gap-4 py-4 first:pt-0"
+                >
+                  <span className="font-serif-display text-sm font-semibold text-[var(--color-gold)]">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span className="text-base font-semibold text-[var(--color-navy)]">
+                    {skill}
+                  </span>
+                </RevealStaggerItem>
+              ))}
+            </RevealStagger>
+            <RevealStagger className="divide-y divide-[var(--color-navy)]/10">
+              {SKILLS.slice(Math.ceil(SKILLS.length / 2)).map((skill, i) => (
+                <RevealStaggerItem
+                  key={skill}
+                  className="flex items-center gap-4 py-4 first:pt-0"
+                >
+                  <span className="font-serif-display text-sm font-semibold text-[var(--color-gold)]">
+                    {String(i + 1 + Math.ceil(SKILLS.length / 2)).padStart(2, "0")}
+                  </span>
+                  <span className="text-base font-semibold text-[var(--color-navy)]">
+                    {skill}
+                  </span>
+                </RevealStaggerItem>
+              ))}
+            </RevealStagger>
           </div>
-        </Reveal>
+        </div>
       </section>
 
       <CTASection />

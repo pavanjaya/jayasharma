@@ -35,6 +35,13 @@ export default function Header() {
     setMenuOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menuOpen]);
+
   const handleLogoClick = (e: React.MouseEvent) => {
     if (pathname !== "/") return;
     e.preventDefault();
@@ -90,24 +97,24 @@ export default function Header() {
 
       {menuOpen && (
         <motion.div
-          initial={{ opacity: 0, y: -8 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="border-t border-neutral-200 bg-background px-6 py-6 lg:hidden"
+          className="fixed inset-0 z-40 overflow-y-auto border-t border-neutral-200 bg-background px-6 pb-10 pt-24 lg:hidden"
         >
-          <nav className="flex flex-col gap-5">
+          <nav className="flex flex-col gap-6">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-base font-medium text-[#3d0b3d]"
+                className="text-lg font-medium text-[#3d0b3d]"
               >
                 {link.label}
               </Link>
             ))}
             <a
               href="tel:+919986758567"
-              className="flex items-center gap-2 text-base font-medium text-[#3d0b3d]"
+              className="flex items-center gap-2 text-lg font-medium text-[#3d0b3d]"
             >
               <Phone size={17} />
               +91 99867 58567
@@ -118,7 +125,7 @@ export default function Header() {
                 openBookingModal();
               }}
               trailingIcon={null}
-              className="mt-1 w-full"
+              className="mt-2 w-full"
             >
               Book Consultation
             </Button>

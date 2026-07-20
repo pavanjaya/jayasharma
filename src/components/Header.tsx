@@ -49,15 +49,16 @@ export default function Header() {
   };
 
   return (
-    <motion.header
-      className="fixed top-0 z-50 w-full border-b backdrop-blur-md"
-      initial={false}
-      animate={{
-        backgroundColor: scrolled ? "rgba(255,254,250,0.92)" : "rgba(255,254,250,0)",
-        borderBottomColor: scrolled ? "rgba(229,229,229,1)" : "rgba(229,229,229,0)",
-      }}
-      transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-    >
+    <>
+      <motion.header
+        className="fixed top-0 z-50 w-full border-b backdrop-blur-md"
+        initial={false}
+        animate={{
+          backgroundColor: scrolled ? "rgba(255,254,250,0.92)" : "rgba(255,254,250,0)",
+          borderBottomColor: scrolled ? "rgba(229,229,229,1)" : "rgba(229,229,229,0)",
+        }}
+        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+      >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="/" className="flex items-center" onClick={handleLogoClick}>
           <Image src="/logo.svg" alt="Jaya Sharma & Associates" width={200} height={50} priority />
@@ -94,6 +95,7 @@ export default function Header() {
           {menuOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
       </div>
+      </motion.header>
 
       {menuOpen && (
         <motion.div
@@ -132,6 +134,6 @@ export default function Header() {
           </nav>
         </motion.div>
       )}
-    </motion.header>
+    </>
   );
 }

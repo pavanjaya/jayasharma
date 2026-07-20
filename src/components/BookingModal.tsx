@@ -127,8 +127,9 @@ export default function BookingModal({
                       Book a Consultation
                     </p>
                     <p className="mt-1.5 text-sm text-[#3d0b3d]">
-                      Share a few details and we&apos;ll confirm a time that
-                      works for you.
+                      Share a few details and your preferred time, and
+                      we&apos;ll get back to you to confirm based on
+                      availability.
                     </p>
                   </div>
 

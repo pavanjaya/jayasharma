@@ -45,9 +45,7 @@ export default function DisclaimerModal() {
             transition={{ duration: 0.45, ease: EASE_OUT }}
             className="w-full max-w-lg rounded-2xl border border-neutral-200 bg-white p-8 text-center sm:p-10 my-auto"
           >
-            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-navy)]">
-              <Scale className="text-[var(--color-gold-light)]" size={22} />
-            </div>
+            <Scale className="mx-auto text-[var(--color-gold)]" size={32} />
 
             <h2 className="mt-5 font-serif-display text-2xl font-semibold text-[var(--color-navy)]">
               Disclaimer

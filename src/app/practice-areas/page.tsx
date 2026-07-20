@@ -17,6 +17,11 @@ const ILLUSTRATIONS: Record<string, string> = {
   "civil-litigation": "/images/civil-litigation.png",
   "property-law": "/images/property-law.png",
   "arbitration-adr": "/images/arbitration-adr.png",
+  "legal-documentation": "/images/legal-documentation.png",
+  "banking-recovery-nclt": "/images/banking-recovery-nclt.png",
+  "corporate-law": "/images/corporate-law.png",
+  "family-law": "/images/family-law.png",
+  "criminal-defense": "/images/criminal-defense.png",
 };
 
 export default function PracticeAreasPage() {

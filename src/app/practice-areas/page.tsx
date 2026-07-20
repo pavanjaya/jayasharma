@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 const ILLUSTRATIONS: Record<string, string> = {
   "civil-litigation": "/images/civil-litigation.png",
   "property-law": "/images/property-law.png",
+  "arbitration-adr": "/images/arbitration-adr.png",
 };
 
 export default function PracticeAreasPage() {

@@ -7,7 +7,6 @@ import Reveal from "@/components/motion/Reveal";
 import { RevealStagger, RevealStaggerItem } from "@/components/motion/RevealStagger";
 import ZoomImage from "@/components/motion/ZoomImage";
 import {
-  BAR_REGISTRATION,
   CERTIFICATIONS,
   EDUCATION,
   EXPERIENCE,
@@ -49,10 +48,9 @@ export default function AboutPage() {
             Advocate Jaya Sharma is an experienced legal practitioner with
             over 15 years of professional experience in litigation, legal
             advisory, and dispute resolution. Enrolled with the Bar Council
-            of India (Registration No. {BAR_REGISTRATION}), she has built a
-            reputation for delivering practical, strategic, and
-            client-focused legal solutions with professionalism, integrity,
-            and meticulous attention to detail.
+            of India, she has built a reputation for delivering practical,
+            strategic, and client-focused legal solutions with
+            professionalism, integrity, and meticulous attention to detail.
           </p>
           <p>
             She has represented clients before the Karnataka High Court, the

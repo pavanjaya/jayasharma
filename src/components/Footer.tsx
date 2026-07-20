@@ -33,7 +33,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center">
               <Image src="/logo.svg" alt="Jaya Sharma & Associates" width={180} height={42} />
             </Link>
-            <p className="mt-4 max-w-sm text-sm leading-relaxed text-[#2d2e39]">
+            <p className="mt-4 max-w-sm text-sm leading-relaxed text-[#3d0b3d]">
               General information about Advocate Jaya Sharma&apos;s
               independent legal practice, based in Nashik and serving
               clients since 2010.
@@ -46,7 +46,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="text-[#2d2e39] transition-colors hover:text-[var(--color-navy)]"
+                  className="text-[#3d0b3d] transition-colors hover:text-[var(--color-navy)]"
                 >
                   <social.icon size={26} />
                 </a>
@@ -59,7 +59,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               {QUICK_LINKS.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-[#2d2e39] hover:text-[var(--color-gold)]">
+                  <Link href={link.href} className="text-sm text-[#3d0b3d] hover:text-[var(--color-gold)]">
                     {link.label}
                   </Link>
                 </li>
@@ -73,7 +73,7 @@ export default function Footer() {
               <li>
                 <a
                   href="tel:+919986758567"
-                  className="flex items-center gap-2 text-sm text-[#2d2e39] hover:text-[var(--color-gold)]"
+                  className="flex items-center gap-2 text-sm text-[#3d0b3d] hover:text-[var(--color-gold)]"
                 >
                   <Phone size={14} />
                   +91 99867 58567
@@ -82,7 +82,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:advjayaosharma@gmail.com"
-                  className="flex items-center gap-2 text-sm text-[#2d2e39] hover:text-[var(--color-gold)]"
+                  className="flex items-center gap-2 text-sm text-[#3d0b3d] hover:text-[var(--color-gold)]"
                 >
                   <Mail size={14} />
                   advjayaosharma@gmail.com
@@ -93,8 +93,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 pt-8">
-          <p className="text-xs leading-relaxed text-[#2d2e39]">
-            <span className="font-semibold text-[#2d2e39]">Disclaimer:</span>{" "}
+          <p className="text-xs leading-relaxed text-[#3d0b3d]">
+            <span className="font-semibold text-[#3d0b3d]">Disclaimer:</span>{" "}
             Under the rules of the Bar Council of India, advocates are not
             permitted to solicit work or advertise. This website has been
             created solely to provide general information about Advocate
@@ -109,7 +109,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-6 flex flex-col gap-4 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs text-[#2d2e39]">
+          <p className="text-xs text-[#3d0b3d]">
             {`© ${year} Advocate Jaya Sharma. All rights reserved.`}
           </p>
           <div className="flex flex-wrap gap-x-6 gap-y-2">
@@ -117,7 +117,7 @@ export default function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-xs text-[#2d2e39] hover:text-[var(--color-gold)]"
+                className="text-xs text-[#3d0b3d] hover:text-[var(--color-gold)]"
               >
                 {link.label}
               </Link>
@@ -125,7 +125,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className="mt-4 text-xs text-[#2d2e39]">Designed &amp; Developed by Hueness</p>
+        <p className="mt-4 text-xs text-[#3d0b3d]">Designed &amp; Developed by Hueness</p>
       </div>
     </footer>
   );

@@ -51,10 +51,10 @@ export default function InsightsPage() {
                   <h2 className="mt-3 font-serif-display text-xl font-semibold leading-snug text-[var(--color-navy)]">
                     {post.title}
                   </h2>
-                  <p className="mt-3 flex-1 text-sm leading-relaxed text-[#2d2e39]">
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-[#3d0b3d]">
                     {post.excerpt}
                   </p>
-                  <div className="mt-6 flex items-center gap-4 text-xs text-[#2d2e39]">
+                  <div className="mt-6 flex items-center gap-4 text-xs text-[#3d0b3d]">
                     <span className="flex items-center gap-1.5">
                       <Calendar size={13} />
                       {formatDate(post.date)}

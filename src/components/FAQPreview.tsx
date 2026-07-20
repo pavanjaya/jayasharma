@@ -13,7 +13,7 @@ export default function FAQPreview() {
         <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
           Frequently Asked Questions
         </h2>
-        <p className="mt-4 text-lg leading-relaxed text-[#2d2e39]">
+        <p className="mt-4 text-lg leading-relaxed text-[#3d0b3d]">
           Answers to a few things clients often ask before their first
           consultation.
         </p>

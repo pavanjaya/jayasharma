@@ -89,7 +89,7 @@ export default function RootLayout({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(attorneyJsonLd) }}
       />
-      <body className="min-h-full flex flex-col bg-background text-[#2d2e39]">
+      <body className="min-h-full flex flex-col bg-background text-[#3d0b3d]">
         <BookingModalProvider>
           <DisclaimerModal />
           <Header />

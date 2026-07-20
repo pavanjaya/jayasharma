@@ -53,7 +53,7 @@ export default async function InsightPage({
         <Reveal className="relative mx-auto max-w-3xl px-6 lg:px-8">
           <Link
             href="/insights"
-            className="inline-flex items-center gap-2 text-sm font-medium text-[#2d2e39] hover:text-[var(--color-navy)]"
+            className="inline-flex items-center gap-2 text-sm font-medium text-[#3d0b3d] hover:text-[var(--color-navy)]"
           >
             <ArrowLeft size={15} />
             Back to Insights
@@ -65,7 +65,7 @@ export default async function InsightPage({
           <h1 className="mt-4 font-serif-display text-3xl font-semibold leading-tight text-[var(--color-navy)] sm:text-4xl">
             {post.title}
           </h1>
-          <div className="mt-5 flex items-center gap-4 text-sm text-[#2d2e39]">
+          <div className="mt-5 flex items-center gap-4 text-sm text-[#3d0b3d]">
             <span className="flex items-center gap-1.5">
               <Calendar size={14} />
               {formatDate(post.date)}
@@ -101,7 +101,7 @@ export default async function InsightPage({
                 </h2>
               )}
               {block.paragraphs.map((p, j) => (
-                <p key={j} className="mt-3 text-base leading-relaxed text-[#2d2e39] first:mt-0">
+                <p key={j} className="mt-3 text-base leading-relaxed text-[#3d0b3d] first:mt-0">
                   {p}
                 </p>
               ))}
@@ -110,7 +110,7 @@ export default async function InsightPage({
                   {block.bullets.map((b) => (
                     <li
                       key={b}
-                      className="flex items-start gap-2.5 text-sm leading-relaxed text-[#2d2e39]"
+                      className="flex items-start gap-2.5 text-sm leading-relaxed text-[#3d0b3d]"
                     >
                       <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-[var(--color-gold)]" />
                       {b}
@@ -123,7 +123,7 @@ export default async function InsightPage({
         </Reveal>
 
         <Reveal delay={0.1} className="mt-12 bg-surface px-6 py-5">
-          <p className="text-xs leading-relaxed text-[#2d2e39]">
+          <p className="text-xs leading-relaxed text-[#3d0b3d]">
             This article is for general informational purposes only and does
             not constitute legal advice. Every matter has its own facts —
             please consult directly for guidance specific to your situation.
@@ -145,7 +145,7 @@ export default async function InsightPage({
                     <p className="font-medium text-[var(--color-navy)] transition-colors duration-300 group-hover:text-[var(--color-gold)]">
                       {r.title}
                     </p>
-                    <p className="mt-1.5 text-sm text-[#2d2e39]">{r.excerpt}</p>
+                    <p className="mt-1.5 text-sm text-[#3d0b3d]">{r.excerpt}</p>
                   </Link>
                 </RevealStaggerItem>
               ))}

@@ -42,7 +42,7 @@ export default function InsightsPreview() {
           <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
             Legal Insights &amp; Explainers
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-[#2d2e39]">
+          <p className="mt-4 text-lg leading-relaxed text-[#3d0b3d]">
             General legal information and explainers on topics clients ask
             about most.
           </p>
@@ -77,12 +77,12 @@ export default function InsightsPreview() {
                       <h3 className="mt-5 font-serif-display text-lg font-semibold leading-snug text-[var(--color-navy)]">
                         {post.title}
                       </h3>
-                      <p className="mt-3 text-sm leading-relaxed text-[#2d2e39]">
+                      <p className="mt-3 text-sm leading-relaxed text-[#3d0b3d]">
                         {post.excerpt}
                       </p>
-                      <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-[#2d2e39]">
+                      <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-[#3d0b3d]">
                         {post.category}
-                        <span className="mx-2 text-[#2d2e39]">·</span>
+                        <span className="mx-2 text-[#3d0b3d]">·</span>
                         {formatDate(post.date)}
                       </p>
                     </Link>
@@ -107,7 +107,7 @@ export default function InsightsPreview() {
                   className={
                     i === page
                       ? "fill-[var(--color-navy)] text-[var(--color-navy)] transition-all duration-300"
-                      : "fill-neutral-300 text-[#2d2e39] transition-all duration-300"
+                      : "fill-neutral-300 text-[#3d0b3d] transition-all duration-300"
                   }
                 />
               </button>

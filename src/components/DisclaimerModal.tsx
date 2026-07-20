@@ -55,19 +55,19 @@ export default function DisclaimerModal() {
 
             <div className="mx-auto mt-3 h-px w-12 bg-[var(--color-gold)]" />
 
-            <p className="mt-6 text-sm leading-relaxed text-[#2d2e39]">
+            <p className="mt-6 text-sm leading-relaxed text-[#3d0b3d]">
               Under the Bar Council of India Rules, advocates are not permitted to
               advertise or solicit clients.
             </p>
-            <p className="mt-4 text-sm leading-relaxed text-[#2d2e39]">
+            <p className="mt-4 text-sm leading-relaxed text-[#3d0b3d]">
               This website is intended solely to provide general information about
               Advocate Jaya Sharma and her professional practice.
             </p>
-            <p className="mt-4 text-sm leading-relaxed text-[#2d2e39]">
+            <p className="mt-4 text-sm leading-relaxed text-[#3d0b3d]">
               It is not legal advice and does not create an advocate&ndash;client
               relationship.
             </p>
-            <p className="mt-4 text-sm leading-relaxed text-[#2d2e39]">
+            <p className="mt-4 text-sm leading-relaxed text-[#3d0b3d]">
               By continuing, you acknowledge that you are accessing this website
               voluntarily.
             </p>

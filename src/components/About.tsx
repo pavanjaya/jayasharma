@@ -11,7 +11,7 @@ export default function About() {
         <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
           15+ years of dedicated legal practice
         </h2>
-        <p className="font-plex-serif mt-6 text-xl leading-snug text-[#2d2e39] sm:text-2xl">
+        <p className="font-plex-serif mt-6 text-xl leading-snug text-[#3d0b3d] sm:text-2xl">
           Advocate Jaya Sharma leads an independent legal practice in
           Nashik, providing strategic counsel and representation across
           civil, criminal, and commercial matters — where every strategy

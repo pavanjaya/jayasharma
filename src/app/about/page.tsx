@@ -44,7 +44,7 @@ export default function AboutPage() {
             />
           </ZoomImage>
         </Reveal>
-        <Reveal delay={0.1} className="mx-auto mt-10 max-w-3xl space-y-5 text-base leading-relaxed text-[#2d2e39]">
+        <Reveal delay={0.1} className="mx-auto mt-10 max-w-3xl space-y-5 text-base leading-relaxed text-[#3d0b3d]">
           <p>
             Advocate Jaya Sharma is an experienced legal practitioner with
             over 15 years of professional experience in litigation, legal
@@ -90,7 +90,7 @@ export default function AboutPage() {
             the law says, what the realistic options are, and what each
             option costs in time and effort.
           </p>
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-[#2d2e39]">
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-[#3d0b3d]">
             That clarity is what allows clients to make informed decisions
             about their own matter, rather than simply following
             instructions they don&apos;t fully understand. It is a simple
@@ -122,8 +122,8 @@ export default function AboutPage() {
                   {job.period}
                 </span>
               </div>
-              <p className="mt-1 text-sm text-[#2d2e39]">{job.location}</p>
-              <p className="mt-3 text-sm leading-relaxed text-[#2d2e39]">
+              <p className="mt-1 text-sm text-[#3d0b3d]">{job.location}</p>
+              <p className="mt-3 text-sm leading-relaxed text-[#3d0b3d]">
                 {job.description}
               </p>
             </RevealStaggerItem>
@@ -157,7 +157,7 @@ export default function AboutPage() {
                         {item.period}
                       </span>
                     </div>
-                    <p className="mt-1 text-sm leading-relaxed text-[#2d2e39]">
+                    <p className="mt-1 text-sm leading-relaxed text-[#3d0b3d]">
                       {item.institution}, {item.university}
                     </p>
                   </div>
@@ -180,7 +180,7 @@ export default function AboutPage() {
                         </span>
                       )}
                     </div>
-                    <p className="mt-1 text-sm leading-relaxed text-[#2d2e39]">
+                    <p className="mt-1 text-sm leading-relaxed text-[#3d0b3d]">
                       {cert.issuer}
                     </p>
                   </div>
@@ -200,7 +200,7 @@ export default function AboutPage() {
           <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
             Panel Advocate For
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-[#2d2e39]">
+          <p className="mt-4 text-lg leading-relaxed text-[#3d0b3d]">
             Trusted by banks and institutions for recovery, compliance, and
             ongoing legal representation.
           </p>

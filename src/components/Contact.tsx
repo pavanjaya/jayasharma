@@ -11,7 +11,7 @@ export default function Contact() {
           <RevealStaggerItem className="flex gap-4">
             <Phone size={20} className="mt-0.5 flex-none text-[var(--color-gold)]" />
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2e39]">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#3d0b3d]">
                 Phone
               </p>
               <a
@@ -26,7 +26,7 @@ export default function Contact() {
           <RevealStaggerItem className="flex gap-4">
             <Mail size={20} className="mt-0.5 flex-none text-[var(--color-gold)]" />
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2e39]">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#3d0b3d]">
                 Email
               </p>
               <a
@@ -42,19 +42,19 @@ export default function Contact() {
             <MapPin size={20} className="mt-0.5 flex-none text-[var(--color-gold)]" />
             <div className="space-y-4">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2e39]">
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#3d0b3d]">
                   Office
                 </p>
-                <p className="mt-1.5 text-base leading-relaxed text-[#2d2e39]">
+                <p className="mt-1.5 text-base leading-relaxed text-[#3d0b3d]">
                   No. 622, 6th Floor, Lotus Capital, Ashok Stambh, Nashik –
                   422002
                 </p>
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2e39]">
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#3d0b3d]">
                   Chamber Office
                 </p>
-                <p className="mt-1.5 text-base leading-relaxed text-[#2d2e39]">
+                <p className="mt-1.5 text-base leading-relaxed text-[#3d0b3d]">
                   Chamber No. 16, Maruti Chambers, District Court, Nashik,
                   Maharashtra – 422002
                 </p>
@@ -65,10 +65,10 @@ export default function Contact() {
           <RevealStaggerItem className="flex gap-4">
             <Clock size={20} className="mt-0.5 flex-none text-[var(--color-gold)]" />
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2e39]">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#3d0b3d]">
                 Office Hours
               </p>
-              <p className="mt-1.5 text-base leading-relaxed text-[#2d2e39]">
+              <p className="mt-1.5 text-base leading-relaxed text-[#3d0b3d]">
                 Mon – Fri: 9:00 AM – 6:00 PM
                 <br />
                 Saturday: 10:00 AM – 2:00 PM

@@ -17,8 +17,8 @@ const VARIANT_CLASS: Record<ButtonVariant, string> = {
 
 const VARIANT_HOVER: Record<ButtonVariant, Record<string, string>> = {
   primary: { backgroundColor: "#861888", borderColor: "#861888" },
-  outline: { backgroundColor: "#2d2e39", borderColor: "#2d2e39", color: "#ffffff" },
-  light: { backgroundColor: "#ffffff", borderColor: "#ffffff", color: "#2d2e39" },
+  outline: { backgroundColor: "#3d0b3d", borderColor: "#3d0b3d", color: "#ffffff" },
+  light: { backgroundColor: "#ffffff", borderColor: "#ffffff", color: "#3d0b3d" },
   tertiary: { backgroundColor: "#861888", borderColor: "#861888", color: "#ffffff" },
 };
 

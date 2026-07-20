@@ -16,7 +16,7 @@ export default function WhyChooseUs() {
           <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
             A practice built on trust
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-[#2d2e39]">
+          <p className="mt-4 text-lg leading-relaxed text-[#3d0b3d]">
             Four principles that shape every client engagement, from the
             first consultation to the final resolution.
           </p>
@@ -39,7 +39,7 @@ export default function WhyChooseUs() {
                 <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
                   {item.title}
                 </p>
-                <p className="mt-2 text-sm leading-relaxed text-[#2d2e39]">
+                <p className="mt-2 text-sm leading-relaxed text-[#3d0b3d]">
                   {item.description}
                 </p>
               </RevealStaggerItem>

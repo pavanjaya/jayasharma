@@ -28,7 +28,7 @@ export default function Hero() {
 
           <motion.p
             variants={fadeUp}
-            className="mt-6 max-w-xl text-lg leading-relaxed text-[#2d2e39]"
+            className="mt-6 max-w-xl text-lg leading-relaxed text-[#3d0b3d]"
           >
             A practice built on professionalism, integrity, diligence, and a
             steadfast commitment to the rule of law.

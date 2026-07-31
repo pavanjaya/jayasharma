@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useContext, useState, type ReactNode } from "react";
+import { trackEvent } from "@/lib/analytics";
 import BookingModal from "./BookingModal";
 
 const BookingModalContext = createContext<{ open: () => void } | null>(null);
@@ -17,7 +18,14 @@ export function BookingModalProvider({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <BookingModalContext.Provider value={{ open: () => setIsOpen(true) }}>
+    <BookingModalContext.Provider
+      value={{
+        open: () => {
+          trackEvent("book_consultation_click");
+          setIsOpen(true);
+        },
+      }}
+    >
       {children}
       <BookingModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </BookingModalContext.Provider>

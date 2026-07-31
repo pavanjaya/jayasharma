@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 import { FacebookIcon, InstagramIcon, LinkedinIcon } from "./SocialIcons";
 
 const QUICK_LINKS = [
@@ -73,6 +76,7 @@ export default function Footer() {
               <li>
                 <a
                   href="tel:+919986758567"
+                  onClick={() => trackEvent("phone_click")}
                   className="flex items-center gap-2 text-sm text-[#3d0b3d] hover:text-[var(--color-gold)]"
                 >
                   <Phone size={14} />

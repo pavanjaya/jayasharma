@@ -1,6 +1,7 @@
 "use client";
 
 import { Phone } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 import { useBookingModal } from "./BookingModalContext";
 import Button from "./Button";
 import Reveal from "./motion/Reveal";
@@ -26,6 +27,7 @@ export default function CTASection() {
             <Button onClick={openBookingModal} variant="tertiary">Book Consultation</Button>
             <Button
               href="tel:+919986758567"
+              onClick={() => trackEvent("phone_click")}
               variant="light"
               leadingIcon={<Phone size={16} />}
               trailingIcon={null}

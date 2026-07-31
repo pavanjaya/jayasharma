@@ -1,4 +1,7 @@
+"use client";
+
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 import ContactForm from "./ContactForm";
 import Reveal from "./motion/Reveal";
 import { RevealStagger, RevealStaggerItem } from "./motion/RevealStagger";
@@ -16,6 +19,7 @@ export default function Contact() {
               </p>
               <a
                 href="tel:+919986758567"
+                onClick={() => trackEvent("phone_click")}
                 className="font-plex-serif mt-1.5 block text-lg text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
               >
                 +91 99867 58567

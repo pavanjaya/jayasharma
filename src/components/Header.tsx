@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { Menu, Phone, X } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 import { useBookingModal } from "./BookingModalContext";
 import Button from "./Button";
 
@@ -123,6 +124,7 @@ export default function Header() {
             ))}
             <a
               href="tel:+919986758567"
+              onClick={() => trackEvent("phone_click")}
               className="flex items-center gap-2 text-lg font-medium text-[#3d0b3d]"
             >
               <Phone size={17} />

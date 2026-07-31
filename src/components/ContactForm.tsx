@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 import { EASE_OUT } from "@/lib/motion-variants";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mbdnrraq";
@@ -29,6 +30,7 @@ export default function ContactForm() {
 
       if (response.ok) {
         setSubmitted(true);
+        trackEvent("contact_form_submit");
       } else {
         setError(true);
       }

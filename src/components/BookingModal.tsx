@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CheckCircle2, X } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 import { EASE_OUT } from "@/lib/motion-variants";
 import { SERVICES } from "@/data/content";
 
@@ -57,6 +58,7 @@ export default function BookingModal({
 
       if (response.ok) {
         setSubmitted(true);
+        trackEvent("book_consultation_submit");
       } else {
         setError(true);
       }

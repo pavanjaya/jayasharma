@@ -72,7 +72,7 @@ export default function Button({
 
   if (href.startsWith("/") || href.startsWith("#")) {
     return (
-      <MotionLink href={href} {...motionProps}>
+      <MotionLink href={href} onClick={onClick} {...motionProps}>
         {content}
       </MotionLink>
     );
@@ -83,6 +83,7 @@ export default function Button({
   return (
     <motion.a
       href={href}
+      onClick={onClick}
       {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       {...motionProps}
     >

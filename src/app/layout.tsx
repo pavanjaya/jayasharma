@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { IBM_Plex_Serif } from "next/font/google";
 import { BookingModalProvider } from "@/components/BookingModalContext";
 import DisclaimerModal from "@/components/DisclaimerModal";
+import FirebaseAnalytics from "@/components/FirebaseAnalytics";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MotionProvider from "@/components/motion/MotionProvider";
@@ -90,6 +91,7 @@ export default function RootLayout({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(attorneyJsonLd) }}
       />
       <body className="min-h-full flex flex-col bg-background text-[#3d0b3d]">
+        <FirebaseAnalytics />
         <BookingModalProvider>
           <DisclaimerModal />
           <Header />

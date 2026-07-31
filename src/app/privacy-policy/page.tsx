@@ -66,9 +66,13 @@ export default function PrivacyPolicyPage() {
               Cookies
             </h2>
             <p className="mt-2">
-              This website does not use tracking or advertising cookies. Basic,
-              non-identifying technical data may be processed by the hosting
-              provider to operate the website.
+              This website uses Google Firebase Analytics to understand how
+              visitors use the site, such as which pages are viewed and
+              general location and device information. This data is
+              aggregated and anonymised, and is not used for advertising or
+              sold to third parties. It does not use advertising cookies.
+              Basic, non-identifying technical data may also be processed by
+              the hosting provider to operate the website.
             </p>
           </div>
 

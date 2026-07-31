@@ -44,6 +44,9 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: ["/advocate-jaya-sharma-about.jpg"],
   },
+  verification: {
+    google: "yv_YipLCkqbP5b9NdRKrKGIomU7SjKuOxRvpEsbLffc",
+  },
 };
 
 const attorneyJsonLd = {

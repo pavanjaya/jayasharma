@@ -11,9 +11,27 @@ export const metadata: Metadata = {
     "Answers to common questions about consultations, fees, jurisdiction, confidentiality, and the legal process.",
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQS.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+
 export default function FAQPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+
       <PageHeader
         eyebrow="Common Questions"
         title="Frequently Asked Questions"

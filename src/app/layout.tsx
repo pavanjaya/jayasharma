@@ -59,12 +59,31 @@ const attorneyJsonLd = {
   email: "advjayaosharma@gmail.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Chamber No. 16, Maruti Chambers, District Court",
+    streetAddress: "No. 622, 6th Floor, Lotus Capital, Ashok Stambh",
     addressLocality: "Nashik",
     addressRegion: "Maharashtra",
     postalCode: "422002",
     addressCountry: "IN",
   },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 20.007474,
+    longitude: 73.784198,
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Saturday"],
+      opens: "10:00",
+      closes: "14:00",
+    },
+  ],
   areaServed: "Nashik, Maharashtra",
   sameAs: [
     "https://www.facebook.com/advjayasharma",

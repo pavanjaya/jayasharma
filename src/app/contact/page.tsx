@@ -75,6 +75,18 @@ export default function ContactPage() {
             </Button>
           </div>
         </Reveal>
+
+        <Reveal delay={0.1} className="mt-14">
+          <div className="relative aspect-[16/9] w-full overflow-hidden sm:aspect-[21/9]">
+            <iframe
+              src="https://www.google.com/maps?q=20.007474,73.784198&z=16&output=embed"
+              className="absolute inset-0 h-full w-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Office location on Google Maps"
+            />
+          </div>
+        </Reveal>
         </div>
       </section>
     </>

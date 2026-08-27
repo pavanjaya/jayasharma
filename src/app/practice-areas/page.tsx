@@ -8,9 +8,9 @@ import Reveal from "@/components/motion/Reveal";
 import { SERVICES } from "@/data/content";
 
 export const metadata: Metadata = {
-  title: "Practice Areas | Advocate Jaya Sharma & Associates",
+  title: "Practice Areas | Divorce, Property & Bank Recovery Lawyer in Nashik",
   description:
-    "Corporate law, civil litigation, family law, criminal defense, property law, and legal documentation services in Nashik.",
+    "Advocate Jaya Sharma is a divorce lawyer, property lawyer, and bank recovery advocate in Nashik, also handling civil litigation, criminal defense, corporate law, and legal documentation.",
 };
 
 const ILLUSTRATIONS: Record<string, string> = {

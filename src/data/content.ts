@@ -201,9 +201,9 @@ export const SERVICES: Service[] = [
     title: "Civil Litigation",
     icon: "civil",
     shortDescription:
-      "Skilled representation in civil disputes, from filing through trial and appeal.",
+      "A civil lawyer in Nashik offering skilled representation in civil disputes, from filing through trial and appeal.",
     longDescription:
-      "Civil disputes demand patience, procedural precision, and a clear-eyed litigation strategy. With over 15 years handling civil and commercial matters before the Nashik District Court, this practice covers the full lifecycle of a dispute — from the initial notice through trial and, where necessary, appeal.",
+      "Civil disputes demand patience, procedural precision, and a clear-eyed litigation strategy. As a civil lawyer in Nashik with over 15 years handling civil and commercial matters before the Nashik District Court, this practice covers the full lifecycle of a dispute — from the initial notice through trial and, where necessary, appeal.",
     bullets: [
       "Recovery suits and contractual disputes",
       "Injunctions and interim relief applications",
@@ -217,9 +217,9 @@ export const SERVICES: Service[] = [
     title: "Property Law",
     icon: "property",
     shortDescription:
-      "Title verification, disputes, and transactions handled with due diligence.",
+      "A property lawyer in Nashik for title verification, disputes, and transactions handled with due diligence.",
     longDescription:
-      "Property transactions and disputes require careful due diligence to avoid costly complications down the line. This practice covers title verification, documentation review, and representation in property disputes, protecting clients' interests in one of their most significant assets.",
+      "Property transactions and disputes require careful due diligence to avoid costly complications down the line. As a property lawyer in Nashik, this practice covers title verification, documentation review, and representation in property disputes, protecting clients' interests in one of their most significant assets.",
     bullets: [
       "Title investigation and due diligence",
       "Sale, lease, and gift deed drafting",
@@ -233,9 +233,9 @@ export const SERVICES: Service[] = [
     title: "Arbitration & Alternate Dispute Resolution",
     icon: "arbitration",
     shortDescription:
-      "Efficient, confidential resolution of disputes through arbitration, mediation, and negotiated settlement.",
+      "An arbitration lawyer in Nashik offering efficient, confidential resolution of disputes through arbitration, mediation, and negotiated settlement.",
     longDescription:
-      "Not every dispute needs a courtroom. Drawing on her skills in arbitration and negotiation developed across corporate and banking matters, Advocate Jaya Sharma helps clients resolve disputes through arbitration and mediation — often faster, more confidential, and less adversarial than litigation, while still producing a binding, enforceable outcome.",
+      "Not every dispute needs a courtroom. As an arbitration lawyer in Nashik, drawing on her skills in arbitration and negotiation developed across corporate and banking matters, Advocate Jaya Sharma helps clients resolve disputes through arbitration and mediation — often faster, more confidential, and less adversarial than litigation, while still producing a binding, enforceable outcome.",
     bullets: [
       "Drafting and vetting of arbitration clauses and agreements",
       "Representation in arbitral proceedings",
@@ -249,9 +249,9 @@ export const SERVICES: Service[] = [
     title: "Legal Documentation",
     icon: "documentation",
     shortDescription:
-      "Precise drafting and vetting of agreements, deeds, and legal instruments.",
+      "A legal documentation lawyer in Nashik for precise drafting and vetting of agreements, deeds, and legal instruments.",
     longDescription:
-      "Well-drafted documentation is the foundation of any sound legal position, whether personal or commercial. This practice provides precise drafting and vetting of agreements, deeds, and legal instruments — the kind of careful documentation work that prevents disputes rather than merely responding to them.",
+      "Well-drafted documentation is the foundation of any sound legal position, whether personal or commercial. As a legal documentation lawyer in Nashik, this practice provides precise drafting and vetting of agreements, deeds, and legal instruments — the kind of careful documentation work that prevents disputes rather than merely responding to them.",
     bullets: [
       "Agreements, deeds, and MOUs",
       "Legal opinion writing",
@@ -265,9 +265,9 @@ export const SERVICES: Service[] = [
     title: "Banking, Recovery & NCLT",
     icon: "banking",
     shortDescription:
-      "Debt recovery, DRT and NCLT proceedings, and banking dispute resolution for financial institutions.",
+      "A bank recovery advocate in Nashik handling debt recovery, DRT and NCLT proceedings, and banking dispute resolution for financial institutions.",
     longDescription:
-      "As Senior Advocate at H R Katti Associates, Bangalore, Advocate Jaya Sharma represented clients before the Debt Recovery Tribunal and the National Company Law Tribunal on debt recovery and corporate disputes. She is presently empanelled as Panel Advocate for Bank of Maharashtra, Vishwas Cooperative Bank, and Shree Samarth Sahakari Bank, Nashik, handling recovery and financial matters on their behalf.",
+      "As a bank recovery advocate in Nashik and formerly Senior Advocate at H R Katti Associates, Bangalore, Advocate Jaya Sharma represented clients before the Debt Recovery Tribunal and the National Company Law Tribunal on debt recovery and corporate disputes. She is presently empanelled as Panel Advocate for Bank of Maharashtra, Vishwas Cooperative Bank, and Shree Samarth Sahakari Bank, Nashik, handling recovery and financial matters on their behalf.",
     bullets: [
       "Debt Recovery Tribunal (DRT) proceedings",
       "NCLT and insolvency-related matters",
@@ -281,9 +281,9 @@ export const SERVICES: Service[] = [
     title: "Corporate Law",
     icon: "corporate",
     shortDescription:
-      "Business structuring, compliance, contracts, and advisory support for companies of every size.",
+      "A corporate lawyer in Nashik for business structuring, compliance, contracts, and advisory support for companies of every size.",
     longDescription:
-      "From incorporation to ongoing governance, corporate clients need counsel that understands both the law and the practical realities of running a business. Advocate Jaya Sharma's corporate practice spans civil, criminal, and corporate matters through her independent practice in Nashik and her association with Jayant D Jaybhave and Associates, giving her a grounded, business-first perspective on every engagement.",
+      "From incorporation to ongoing governance, corporate clients need counsel that understands both the law and the practical realities of running a business. As a corporate lawyer in Nashik, Advocate Jaya Sharma's corporate practice spans civil, criminal, and corporate matters through her independent practice and her association with Jayant D Jaybhave and Associates, giving her a grounded, business-first perspective on every engagement.",
     bullets: [
       "Company incorporation and regulatory compliance",
       "Drafting and vetting of commercial contracts",
@@ -297,9 +297,9 @@ export const SERVICES: Service[] = [
     title: "Family Law",
     icon: "family",
     shortDescription:
-      "Compassionate guidance through matrimonial, custody, and inheritance matters.",
+      "A divorce lawyer in Nashik offering compassionate guidance through matrimonial, custody, and inheritance matters.",
     longDescription:
-      "Family matters are rarely just legal questions — they touch every part of a client's life. This practice combines procedural rigour with a compassionate approach, guiding clients through matrimonial disputes, custody arrangements, and inheritance matters with discretion and care.",
+      "Family matters are rarely just legal questions — they touch every part of a client's life. As a divorce lawyer in Nashik, this practice combines procedural rigour with a compassionate approach, guiding clients through matrimonial disputes, custody arrangements, and inheritance matters with discretion and care.",
     bullets: [
       "Divorce and matrimonial disputes",
       "Child custody and guardianship matters",
@@ -313,9 +313,9 @@ export const SERVICES: Service[] = [
     title: "Criminal Defense",
     icon: "criminal",
     shortDescription:
-      "Rigorous defense strategy and courtroom advocacy to protect your rights.",
+      "A criminal defense lawyer in Nashik providing rigorous defense strategy and courtroom advocacy to protect your rights.",
     longDescription:
-      "A criminal matter can be one of the most stressful experiences in a person's life. This practice provides rigorous defense strategy and steady courtroom advocacy, working to protect clients' rights and interests at every stage of proceedings before the Nashik District Court.",
+      "A criminal matter can be one of the most stressful experiences in a person's life. As a criminal defense lawyer in Nashik, this practice provides rigorous defense strategy and steady courtroom advocacy, working to protect clients' rights and interests at every stage of proceedings before the Nashik District Court.",
     bullets: [
       "Bail applications and anticipatory bail",
       "Trial representation and defense strategy",

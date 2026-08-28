@@ -8,7 +8,7 @@ import { RevealStagger, RevealStaggerItem } from "./motion/RevealStagger";
 
 export default function Contact() {
   return (
-    <section id="contact" className="mx-auto max-w-7xl px-6 pb-28 lg:px-8">
+    <section id="contact" className="mx-auto max-w-7xl px-6 pt-20 pb-28 lg:px-8">
       <div className="grid gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
         <RevealStagger className="space-y-8">
           <RevealStaggerItem className="flex gap-4">

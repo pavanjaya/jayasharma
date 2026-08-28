@@ -52,31 +52,33 @@ export default function ContactPage() {
         description="Reach out to discuss your legal matter. Available for consultations by appointment."
       />
 
-      <section className="mx-auto max-w-6xl px-6 pb-20 lg:px-8">
-        <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
-            What Happens Next
-          </p>
-          <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
-            After You Reach Out
-          </h2>
-        </Reveal>
+      <section className="bg-[#FBF8F0] py-20">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <Reveal className="mx-auto max-w-2xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
+              What Happens Next
+            </p>
+            <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
+              After You Reach Out
+            </h2>
+          </Reveal>
 
-        <RevealStagger className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          {PROCESS_STEPS.map((step, i) => (
-            <RevealStaggerItem key={step.title} className="text-center lg:text-left">
-              <span className="font-serif-display text-sm font-semibold text-[var(--color-gold)]">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <p className="mt-3 font-serif-display text-lg font-semibold text-[var(--color-navy)]">
-                {step.title}
-              </p>
-              <p className="mt-2 text-sm leading-relaxed text-[#3d0b3d]">
-                {step.description}
-              </p>
-            </RevealStaggerItem>
-          ))}
-        </RevealStagger>
+          <RevealStagger className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            {PROCESS_STEPS.map((step, i) => (
+              <RevealStaggerItem key={step.title} className="text-center lg:text-left">
+                <span className="font-serif-display text-sm font-semibold text-[var(--color-gold)]">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <p className="mt-3 font-serif-display text-lg font-semibold text-[var(--color-navy)]">
+                  {step.title}
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-[#3d0b3d]">
+                  {step.description}
+                </p>
+              </RevealStaggerItem>
+            ))}
+          </RevealStagger>
+        </div>
       </section>
 
       <Contact />

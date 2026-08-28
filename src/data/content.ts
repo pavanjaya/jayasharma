@@ -332,6 +332,8 @@ export type PracticeAreaLandingPage = {
   seoDescription: string;
   heading: string;
   intro: string[];
+  process: { title: string; description: string }[];
+  commonQuestions: { question: string; answer: string }[];
   relatedPostSlugs: string[];
 };
 
@@ -344,7 +346,50 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
     heading: "Divorce & Family Lawyer in Nashik",
     intro: [
       "Family disputes are rarely just legal questions — they touch every part of a client's life, from finances to children to where someone will live next. As a family lawyer in Nashik, Advocate Jaya Sharma combines procedural rigour with a compassionate, practical approach, helping clients navigate matrimonial disputes, custody arrangements, and inheritance matters with discretion and care.",
-      "Whether the matter is a straightforward divorce by mutual consent or a more contested dispute involving custody, maintenance, or property, the priority is the same: giving clients a clear, honest picture of where they stand before deciding on a strategy, and representing them steadily before the Nashik District Court through to resolution.",
+    ],
+    process: [
+      {
+        title: "Initial Consultation",
+        description:
+          "We discuss your situation, confirm whether mutual consent divorce is possible, and outline realistic timelines for your specific circumstances.",
+      },
+      {
+        title: "Filing the Petition",
+        description:
+          "For mutual consent matters, a joint petition is filed before the Nashik Family/District Court along with agreed terms on maintenance, custody, and assets.",
+      },
+      {
+        title: "The Cooling-Off Period",
+        description:
+          "Courts typically require a six-month waiting period between the first and second motion — this can sometimes be waived where reconciliation is clearly not viable.",
+      },
+      {
+        title: "Decree & Resolution",
+        description:
+          "Once the second motion confirms consent, the court passes the divorce decree, formally concluding the matter.",
+      },
+    ],
+    commonQuestions: [
+      {
+        question: "How long does a mutual consent divorce take in Nashik?",
+        answer:
+          "With both parties in agreement and no disputes over terms, it typically takes around six to eight months, largely due to the statutory cooling-off period. Contested matters take considerably longer.",
+      },
+      {
+        question: "What if my spouse doesn't agree to a mutual consent divorce?",
+        answer:
+          "The matter proceeds as a contested divorce instead, filed on legally recognised grounds. It takes longer and involves more court appearances, but is still very much a workable path.",
+      },
+      {
+        question: "Will I automatically get custody if I file for divorce?",
+        answer:
+          "No — Indian courts decide custody based solely on the child's welfare, not on which parent initiated the case. Factors like the child's age, stability, and each parent's circumstances are what matter.",
+      },
+      {
+        question: "Is maintenance mandatory in every divorce?",
+        answer:
+          "Not automatically — it depends on the financial circumstances of both spouses and is either agreed upon (in mutual consent cases) or decided by the court based on need and capacity to pay.",
+      },
     ],
     relatedPostSlugs: ["divorce-by-mutual-consent", "child-custody-what-courts-consider"],
   },
@@ -356,7 +401,50 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
     heading: "Property Lawyer in Nashik",
     intro: [
       "Property transactions and disputes require careful due diligence to avoid costly complications down the line. As a property lawyer in Nashik, Advocate Jaya Sharma helps clients verify title, review documentation, and navigate property disputes — protecting what is often one of a client's most significant assets.",
-      "This practice covers the full range of property matters common in Nashik and across Maharashtra: due diligence before a purchase, drafting and vetting of sale deeds and other instruments, boundary and possession disputes, and partition suits among family members. Each matter starts with a clear-eyed review of the actual documents, not assumptions.",
+    ],
+    process: [
+      {
+        title: "Document Collection & Review",
+        description:
+          "We review the title chain, encumbrance certificate, tax receipts, and any prior sale deeds relevant to the property in question.",
+      },
+      {
+        title: "Verification",
+        description:
+          "The chain of ownership, statutory approvals, and the seller's actual authority to transfer the property are cross-checked against official records.",
+      },
+      {
+        title: "Drafting or Vetting",
+        description:
+          "Whether it's a sale deed, agreement to sell, or gift deed, the instrument is drafted or reviewed carefully before anyone signs.",
+      },
+      {
+        title: "Registration",
+        description:
+          "Where a transaction is involved, we support execution and registration at the Sub-Registrar's office to formally complete the transfer.",
+      },
+    ],
+    commonQuestions: [
+      {
+        question: "How far back should I check a property's title history?",
+        answer:
+          "A minimum of 30 years is the general standard where records are available, tracing the chain of ownership through each transfer to confirm there are no unresolved claims or defects.",
+      },
+      {
+        question: "What is an encumbrance certificate and why does it matter?",
+        answer:
+          "It's an official record confirming whether a property is free of registered liabilities like mortgages or legal claims. It's one of the first documents checked in any due diligence exercise.",
+      },
+      {
+        question: "Can I buy property that is involved in a family dispute?",
+        answer:
+          "It's possible but genuinely risky — buying into an active dispute can tie your ownership to litigation you weren't originally part of. This is exactly the kind of red flag a title review is meant to catch beforehand.",
+      },
+      {
+        question: "What if the seller doesn't have all the original documents?",
+        answer:
+          "Missing originals are a serious red flag that warrants closer scrutiny, though not always disqualifying — it depends on why they're missing and what can be independently verified through official records.",
+      },
     ],
     relatedPostSlugs: [
       "sale-deed-vs-agreement-to-sell",
@@ -371,8 +459,51 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
       "Advocate Jaya Sharma is a bank recovery advocate in Nashik representing banks and financial institutions in DRT and NCLT proceedings, SARFAESI matters, and recovery suits.",
     heading: "Bank Recovery Advocate in Nashik",
     intro: [
-      "As a bank recovery advocate in Nashik, Advocate Jaya Sharma represents banks and financial institutions in debt recovery matters, drawing on prior experience before the Debt Recovery Tribunal and the National Company Law Tribunal as Senior Advocate at H R Katti Associates, Bangalore.",
-      "She is presently empanelled as Panel Advocate for Bank of Maharashtra, Vishwas Cooperative Bank, and Shree Samarth Sahakari Bank, Nashik, handling SARFAESI proceedings, recovery suits, and NCLT and insolvency-related matters on their behalf — as well as search report preparation for banking due diligence.",
+      "As a bank recovery advocate in Nashik, Advocate Jaya Sharma represents banks and financial institutions in debt recovery matters, drawing on prior experience before the Debt Recovery Tribunal and the National Company Law Tribunal as Senior Advocate at H R Katti Associates, Bangalore. She is presently empanelled as Panel Advocate for Bank of Maharashtra, Vishwas Cooperative Bank, and Shree Samarth Sahakari Bank, Nashik.",
+    ],
+    process: [
+      {
+        title: "Case Assessment",
+        description:
+          "The loan account, security documents, and NPA classification are reviewed to determine the correct recovery route — SARFAESI, DRT, or NCLT.",
+      },
+      {
+        title: "Notice Stage",
+        description:
+          "For secured loans, a Section 13(2) demand notice is issued to the borrower, opening a 60-day window for repayment or objections.",
+      },
+      {
+        title: "Recovery Proceedings",
+        description:
+          "If dues remain unpaid, we proceed to possession action, a DRT recovery suit, or an NCLT insolvency application depending on the debtor and remedy sought.",
+      },
+      {
+        title: "Resolution",
+        description:
+          "Matters conclude through settlement, enforced recovery, or a tribunal order — whichever route the facts and the client's priorities point to.",
+      },
+    ],
+    commonQuestions: [
+      {
+        question: "How long does SARFAESI recovery typically take?",
+        answer:
+          "The notice-and-possession process itself can move in a matter of months if uncontested, but disputed matters that reach the DRT on appeal often take considerably longer to resolve.",
+      },
+      {
+        question: "Can a borrower stop possession proceedings?",
+        answer:
+          "Yes, in certain circumstances — by clearing dues within the notice period, raising valid objections to the Section 13(2) notice, or filing an appeal before the DRT under Section 17.",
+      },
+      {
+        question: "Should my matter go to the DRT or the NCLT?",
+        answer:
+          "It depends on who the debtor is and what you're seeking. The DRT generally handles recovery suits and SARFAESI appeals against individuals or entities; the NCLT deals with corporate insolvency and resolution matters.",
+      },
+      {
+        question: "Do I need a lawyer to respond to a bank's demand notice?",
+        answer:
+          "It's strongly advisable — the response window is short and strictly timed, and how the objection is framed often determines whether it's taken seriously by the lender or the tribunal later.",
+      },
     ],
     relatedPostSlugs: [
       "understanding-sarfaesi-recovery",

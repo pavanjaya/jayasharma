@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, CheckCircle2 } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
+import FAQAccordion from "@/components/FAQAccordion";
 import Reveal from "@/components/motion/Reveal";
 import { RevealStagger, RevealStaggerItem } from "@/components/motion/RevealStagger";
 import { PRACTICE_AREA_LANDING_PAGES, SERVICES } from "@/data/content";
@@ -42,8 +43,26 @@ export default async function PracticeAreaLandingPage({
     page.relatedPostSlugs.includes(post.slug)
   );
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: page.commonQuestions.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+
       <PageHeader
         eyebrow="Practice Area"
         title={page.heading}
@@ -57,19 +76,37 @@ export default async function PracticeAreaLandingPage({
           ))}
         </Reveal>
 
-        <Reveal delay={0.1} className="mt-12">
+        <div className="mt-14 border-t border-neutral-200 pt-10">
           <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
-            What This Covers
+            How It Works
           </p>
-          <ul className="mt-5 grid gap-3 sm:grid-cols-2">
-            {service.bullets.map((bullet) => (
-              <li key={bullet} className="flex items-start gap-2.5 text-sm text-[#3d0b3d]">
-                <CheckCircle2 size={16} className="mt-0.5 flex-none text-[var(--color-gold)]" />
-                {bullet}
-              </li>
+          <RevealStagger className="mt-6 divide-y divide-neutral-200">
+            {page.process.map((step, i) => (
+              <RevealStaggerItem key={step.title} className="flex gap-5 py-5 first:pt-0">
+                <span className="font-serif-display text-sm font-semibold text-[var(--color-gold)]">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <p className="font-serif-display text-base font-semibold text-[var(--color-navy)]">
+                    {step.title}
+                  </p>
+                  <p className="mt-1.5 text-sm leading-relaxed text-[#3d0b3d]">
+                    {step.description}
+                  </p>
+                </div>
+              </RevealStaggerItem>
             ))}
-          </ul>
-        </Reveal>
+          </RevealStagger>
+        </div>
+
+        <div className="mt-14 border-t border-neutral-200 pt-10">
+          <p className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
+            Common Questions
+          </p>
+          <div className="mt-4">
+            <FAQAccordion items={page.commonQuestions} />
+          </div>
+        </div>
 
         {relatedPosts.length > 0 && (
           <div className="mt-14 border-t border-neutral-200 pt-10">

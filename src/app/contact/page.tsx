@@ -4,6 +4,7 @@ import Button from "@/components/Button";
 import PageHeader from "@/components/PageHeader";
 import Contact from "@/components/Contact";
 import Reveal from "@/components/motion/Reveal";
+import { RevealStagger, RevealStaggerItem } from "@/components/motion/RevealStagger";
 
 export const metadata: Metadata = {
   title: "Contact | Advocate Jaya Sharma & Associates",
@@ -19,6 +20,29 @@ const OFFICE_MAP_QUERY = encodeURIComponent(
   "Lotus Capital, Ashok Stambh, Nashik, Maharashtra 422002"
 );
 
+const PROCESS_STEPS = [
+  {
+    title: "Submit Your Request",
+    description:
+      "Share a few details about your matter through the contact form or a consultation request.",
+  },
+  {
+    title: "We Review & Reach Out",
+    description:
+      "Advocate Jaya Sharma personally reviews your enquiry and contacts you to confirm a time, based on availability.",
+  },
+  {
+    title: "Consultation",
+    description:
+      "Discuss your matter directly and get clarity on where you stand and what your realistic options are.",
+  },
+  {
+    title: "Next Steps",
+    description:
+      "If you'd like to proceed, we agree on a clear, practical path forward for your matter.",
+  },
+];
+
 export default function ContactPage() {
   return (
     <>
@@ -27,6 +51,33 @@ export default function ContactPage() {
         title="Contact Us"
         description="Reach out to discuss your legal matter. Available for consultations by appointment."
       />
+
+      <section className="mx-auto max-w-6xl px-6 pb-20 lg:px-8">
+        <Reveal className="mx-auto max-w-2xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-gold)]">
+            What Happens Next
+          </p>
+          <h2 className="mt-3 font-serif-display text-4xl font-semibold tracking-tight text-[var(--color-navy)] sm:text-5xl">
+            After You Reach Out
+          </h2>
+        </Reveal>
+
+        <RevealStagger className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          {PROCESS_STEPS.map((step, i) => (
+            <RevealStaggerItem key={step.title} className="text-center lg:text-left">
+              <span className="font-serif-display text-sm font-semibold text-[var(--color-gold)]">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <p className="mt-3 font-serif-display text-lg font-semibold text-[var(--color-navy)]">
+                {step.title}
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-[#3d0b3d]">
+                {step.description}
+              </p>
+            </RevealStaggerItem>
+          ))}
+        </RevealStagger>
+      </section>
 
       <Contact />
 

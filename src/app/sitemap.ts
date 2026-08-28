@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 import { BLOG_POSTS } from "@/data/blog";
+import { PRACTICE_AREA_LANDING_PAGES } from "@/data/content";
 
 const STATIC_ROUTES = [
   "",
@@ -24,5 +25,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(post.date),
   }));
 
-  return [...staticEntries, ...blogEntries];
+  const practiceAreaEntries = PRACTICE_AREA_LANDING_PAGES.map((page) => ({
+    url: `${SITE_URL}/practice-areas/${page.slug}`,
+    lastModified: new Date(),
+  }));
+
+  return [...staticEntries, ...practiceAreaEntries, ...blogEntries];
 }

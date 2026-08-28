@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { CheckCircle2 } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ServiceIcon from "@/components/ServiceIcon";
 import Reveal from "@/components/motion/Reveal";
-import { SERVICES } from "@/data/content";
+import { PRACTICE_AREA_LANDING_PAGES, SERVICES } from "@/data/content";
 
 export const metadata: Metadata = {
   title: "Practice Areas | Divorce, Property & Bank Recovery Lawyer in Nashik",
@@ -70,6 +71,15 @@ export default function PracticeAreasPage() {
                     </li>
                   ))}
                 </ul>
+                {PRACTICE_AREA_LANDING_PAGES.some((p) => p.slug === service.slug) && (
+                  <Link
+                    href={`/practice-areas/${service.slug}`}
+                    className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
+                  >
+                    Read Full Guide
+                    <ArrowRight size={15} />
+                  </Link>
+                )}
               </div>
             </div>
           </Reveal>

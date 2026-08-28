@@ -326,6 +326,62 @@ export const SERVICES: Service[] = [
   },
 ];
 
+export type PracticeAreaLandingPage = {
+  slug: string;
+  seoTitle: string;
+  seoDescription: string;
+  heading: string;
+  intro: string[];
+  relatedPostSlugs: string[];
+};
+
+export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
+  {
+    slug: "family-law",
+    seoTitle: "Divorce & Family Lawyer in Nashik | Advocate Jaya Sharma",
+    seoDescription:
+      "Advocate Jaya Sharma is a divorce and family lawyer in Nashik handling matrimonial disputes, child custody, maintenance, and inheritance matters with a practical, compassionate approach.",
+    heading: "Divorce & Family Lawyer in Nashik",
+    intro: [
+      "Family disputes are rarely just legal questions — they touch every part of a client's life, from finances to children to where someone will live next. As a family lawyer in Nashik, Advocate Jaya Sharma combines procedural rigour with a compassionate, practical approach, helping clients navigate matrimonial disputes, custody arrangements, and inheritance matters with discretion and care.",
+      "Whether the matter is a straightforward divorce by mutual consent or a more contested dispute involving custody, maintenance, or property, the priority is the same: giving clients a clear, honest picture of where they stand before deciding on a strategy, and representing them steadily before the Nashik District Court through to resolution.",
+    ],
+    relatedPostSlugs: ["divorce-by-mutual-consent", "child-custody-what-courts-consider"],
+  },
+  {
+    slug: "property-law",
+    seoTitle: "Property Lawyer in Nashik | Advocate Jaya Sharma",
+    seoDescription:
+      "Advocate Jaya Sharma is a property lawyer in Nashik providing title verification, due diligence, sale deed drafting, and representation in property disputes and partition suits.",
+    heading: "Property Lawyer in Nashik",
+    intro: [
+      "Property transactions and disputes require careful due diligence to avoid costly complications down the line. As a property lawyer in Nashik, Advocate Jaya Sharma helps clients verify title, review documentation, and navigate property disputes — protecting what is often one of a client's most significant assets.",
+      "This practice covers the full range of property matters common in Nashik and across Maharashtra: due diligence before a purchase, drafting and vetting of sale deeds and other instruments, boundary and possession disputes, and partition suits among family members. Each matter starts with a clear-eyed review of the actual documents, not assumptions.",
+    ],
+    relatedPostSlugs: [
+      "sale-deed-vs-agreement-to-sell",
+      "property-due-diligence-checklist",
+      "who-owns-property-after-owners-death",
+    ],
+  },
+  {
+    slug: "banking-recovery-nclt",
+    seoTitle: "Bank Recovery Advocate in Nashik | DRT & NCLT | Advocate Jaya Sharma",
+    seoDescription:
+      "Advocate Jaya Sharma is a bank recovery advocate in Nashik representing banks and financial institutions in DRT and NCLT proceedings, SARFAESI matters, and recovery suits.",
+    heading: "Bank Recovery Advocate in Nashik",
+    intro: [
+      "As a bank recovery advocate in Nashik, Advocate Jaya Sharma represents banks and financial institutions in debt recovery matters, drawing on prior experience before the Debt Recovery Tribunal and the National Company Law Tribunal as Senior Advocate at H R Katti Associates, Bangalore.",
+      "She is presently empanelled as Panel Advocate for Bank of Maharashtra, Vishwas Cooperative Bank, and Shree Samarth Sahakari Bank, Nashik, handling SARFAESI proceedings, recovery suits, and NCLT and insolvency-related matters on their behalf — as well as search report preparation for banking due diligence.",
+    ],
+    relatedPostSlugs: [
+      "understanding-sarfaesi-recovery",
+      "nclt-vs-drt-which-forum",
+      "loan-guarantor-liability",
+    ],
+  },
+];
+
 export const FAQS = [
   {
     question: "How do I schedule a consultation?",

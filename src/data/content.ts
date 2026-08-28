@@ -511,6 +511,289 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
       "loan-guarantor-liability",
     ],
   },
+  {
+    slug: "civil-litigation",
+    seoTitle: "Civil Lawyer in Nashik | Advocate Jaya Sharma",
+    seoDescription:
+      "Advocate Jaya Sharma is a civil lawyer in Nashik handling recovery suits, contractual disputes, injunctions, and civil appeals before the Nashik District Court.",
+    heading: "Civil Lawyer in Nashik",
+    intro: [
+      "Civil disputes demand patience, procedural precision, and a clear-eyed litigation strategy. As a civil lawyer in Nashik with over 15 years handling civil and commercial matters before the Nashik District Court, this practice covers the full lifecycle of a dispute — from the initial notice through trial and, where necessary, appeal.",
+    ],
+    process: [
+      {
+        title: "Case Assessment",
+        description:
+          "The facts, documents, and legal merits of the dispute are reviewed before deciding on the right strategy.",
+      },
+      {
+        title: "Pre-Litigation Notice",
+        description:
+          "Where appropriate, a legal notice is sent first — this resolves a meaningful share of disputes without ever reaching court.",
+      },
+      {
+        title: "Filing & Trial",
+        description:
+          "The suit is filed, pleadings exchanged, evidence presented, and arguments made before the court.",
+      },
+      {
+        title: "Judgment & Appeal",
+        description:
+          "Once judgment is passed, the outcome is reviewed and, where warranted, an appeal is pursued before the appellate court.",
+      },
+    ],
+    commonQuestions: [
+      {
+        question: "How long does a civil suit typically take to resolve?",
+        answer:
+          "Timelines vary widely depending on the court, the complexity of the matter, and whether it's contested or settled early. A realistic estimate is shared after reviewing the specifics of your case.",
+      },
+      {
+        question: "Do I need to send a legal notice before filing a civil suit?",
+        answer:
+          "It's not always mandatory, but it's standard practice — a well-drafted notice often resolves the matter faster and more cheaply than proceeding straight to litigation.",
+      },
+      {
+        question: "What's the limitation period for filing a civil suit?",
+        answer:
+          "Generally three years from when the cause of action arose, though this varies by claim type. Missing this window can bar the claim entirely, regardless of its merits.",
+      },
+      {
+        question: "Can civil disputes be settled outside court?",
+        answer:
+          "Yes — many are resolved through negotiation or mediation, either before filing or during the proceedings, often faster and less costly than a full trial.",
+      },
+    ],
+    relatedPostSlugs: ["recovery-suits-for-unpaid-money"],
+  },
+  {
+    slug: "arbitration-adr",
+    seoTitle: "Arbitration Lawyer in Nashik | Advocate Jaya Sharma",
+    seoDescription:
+      "Advocate Jaya Sharma is an arbitration lawyer in Nashik providing efficient, confidential dispute resolution through arbitration, mediation, and negotiated settlement.",
+    heading: "Arbitration Lawyer in Nashik",
+    intro: [
+      "Not every dispute needs a courtroom. As an arbitration lawyer in Nashik, drawing on skills in arbitration and negotiation developed across corporate and banking matters, Advocate Jaya Sharma helps clients resolve disputes through arbitration and mediation — often faster, more confidential, and less adversarial than litigation, while still producing a binding, enforceable outcome.",
+    ],
+    process: [
+      {
+        title: "Clause Review",
+        description:
+          "The arbitration agreement or clause is reviewed to confirm scope, procedure, and the applicable rules.",
+      },
+      {
+        title: "Initiating Proceedings",
+        description:
+          "A notice invoking arbitration is issued, and an arbitrator is appointed as per the agreement or, if needed, by the court.",
+      },
+      {
+        title: "Arbitral Hearings",
+        description:
+          "Both sides present evidence and arguments before the arbitral tribunal, similar to a simplified trial.",
+      },
+      {
+        title: "Award & Enforcement",
+        description:
+          "The arbitrator issues a binding award, which can be enforced like a court decree if not honoured voluntarily.",
+      },
+    ],
+    commonQuestions: [
+      {
+        question: "Is an arbitration award legally binding?",
+        answer:
+          "Yes — a properly passed arbitral award is binding and enforceable in much the same way as a civil court decree.",
+      },
+      {
+        question: "Can I choose arbitration even without a prior agreement?",
+        answer:
+          "Only if the other party agrees. Arbitration is based on consent, either through a clause already in your contract or a fresh agreement between the parties.",
+      },
+      {
+        question: "How is arbitration different from mediation?",
+        answer:
+          "Arbitration results in a binding decision made by the arbitrator; mediation is a facilitated negotiation where the parties themselves reach a voluntary settlement.",
+      },
+      {
+        question: "Can an arbitration award be challenged?",
+        answer:
+          "Only on limited legal grounds, such as fraud or serious procedural irregularity — not simply because a party disagrees with the outcome.",
+      },
+    ],
+    relatedPostSlugs: [],
+  },
+  {
+    slug: "legal-documentation",
+    seoTitle: "Legal Documentation & Drafting Lawyer in Nashik | Advocate Jaya Sharma",
+    seoDescription:
+      "Advocate Jaya Sharma provides legal documentation services in Nashik — drafting and vetting of agreements, deeds, wills, powers of attorney, and legal notices.",
+    heading: "Legal Documentation Lawyer in Nashik",
+    intro: [
+      "Well-drafted documentation is the foundation of any sound legal position, whether personal or commercial. As a legal documentation lawyer in Nashik, this practice provides precise drafting and vetting of agreements, deeds, and legal instruments — the kind of careful documentation work that prevents disputes rather than merely responding to them.",
+    ],
+    process: [
+      {
+        title: "Understanding the Requirement",
+        description:
+          "The purpose, parties, and intent behind the document are clarified before any drafting begins.",
+      },
+      {
+        title: "Drafting or Review",
+        description:
+          "A fresh document is drafted, or an existing one is reviewed clause by clause for gaps and risks.",
+      },
+      {
+        title: "Clarification & Revision",
+        description:
+          "Terms are explained in plain language and revised based on your input before anything is finalised.",
+      },
+      {
+        title: "Execution",
+        description:
+          "The document is finalised, signed, and where required, registered or notarised.",
+      },
+    ],
+    commonQuestions: [
+      {
+        question: "Do all legal documents need to be registered?",
+        answer:
+          "No — only certain categories, like sale deeds and some gift deeds, are legally required to be registered. Others are valid once properly signed and witnessed.",
+      },
+      {
+        question: "Can I use a template I found online?",
+        answer:
+          "Generic templates often miss details specific to your situation and applicable law — exactly where disputes tend to originate later.",
+      },
+      {
+        question: "How long does drafting a legal document usually take?",
+        answer:
+          "Simple documents can be turned around quickly; more detailed agreements take longer to ensure every relevant clause is properly addressed.",
+      },
+      {
+        question: "What's the difference between vetting and drafting?",
+        answer:
+          "Drafting creates a document from scratch. Vetting reviews one you already have — often from the other party — to check it protects your interests before you sign.",
+      },
+    ],
+    relatedPostSlugs: [
+      "drafting-a-legal-notice",
+      "power-of-attorney-explained",
+      "will-testament-explained",
+    ],
+  },
+  {
+    slug: "corporate-law",
+    seoTitle: "Corporate Lawyer in Nashik | Advocate Jaya Sharma",
+    seoDescription:
+      "Advocate Jaya Sharma is a corporate lawyer in Nashik providing business structuring, compliance, contract drafting, and advisory support for companies of every size.",
+    heading: "Corporate Lawyer in Nashik",
+    intro: [
+      "From incorporation to ongoing governance, corporate clients need counsel that understands both the law and the practical realities of running a business. As a corporate lawyer in Nashik, Advocate Jaya Sharma's practice spans civil, criminal, and corporate matters, giving her a grounded, business-first perspective on every engagement.",
+    ],
+    process: [
+      {
+        title: "Business Review",
+        description:
+          "The company's structure, stage, and specific legal needs are assessed before advising on next steps.",
+      },
+      {
+        title: "Compliance & Structuring",
+        description:
+          "Incorporation, regulatory filings, or governance structures are set up or corrected as needed.",
+      },
+      {
+        title: "Contract Drafting & Vetting",
+        description:
+          "Commercial agreements, vendor contracts, and partnership terms are drafted or reviewed to protect the business.",
+      },
+      {
+        title: "Ongoing Advisory",
+        description:
+          "As the business grows, legal support continues on compliance, disputes, and new agreements as they arise.",
+      },
+    ],
+    commonQuestions: [
+      {
+        question: "When should a small business get a lawyer involved?",
+        answer:
+          "Ideally before signing any significant contract or facing a dispute — early review is far cheaper than fixing a problem after the fact.",
+      },
+      {
+        question: "What compliance do companies need to maintain in India?",
+        answer:
+          "Requirements vary by structure and sector, but generally include regular filings with the Registrar of Companies, tax compliance, and maintaining statutory registers.",
+      },
+      {
+        question: "Do I need a written partnership agreement?",
+        answer:
+          "Strongly recommended — an oral understanding offers little protection if the partnership runs into disagreement later.",
+      },
+      {
+        question: "Can a lawyer help recover payment from a defaulting client?",
+        answer:
+          "Yes — typically through a legal notice in the first instance, and a recovery suit if that doesn't resolve the matter.",
+      },
+    ],
+    relatedPostSlugs: ["recovery-suits-for-unpaid-money"],
+  },
+  {
+    slug: "criminal-defense",
+    seoTitle: "Criminal Defense Lawyer in Nashik | Advocate Jaya Sharma",
+    seoDescription:
+      "Advocate Jaya Sharma is a criminal defense lawyer in Nashik providing bail applications, trial representation, and defense strategy before the Nashik District Court.",
+    heading: "Criminal Defense Lawyer in Nashik",
+    intro: [
+      "A criminal matter can be one of the most stressful experiences in a person's life. As a criminal defense lawyer in Nashik, this practice provides rigorous defense strategy and steady courtroom advocacy, working to protect clients' rights and interests at every stage of proceedings before the Nashik District Court.",
+    ],
+    process: [
+      {
+        title: "Immediate Assessment",
+        description:
+          "The facts, charges, and any FIR or notice are reviewed urgently, since early steps often matter most in a criminal matter.",
+      },
+      {
+        title: "Bail Application",
+        description:
+          "Where custody is a concern, a bail or anticipatory bail application is filed promptly.",
+      },
+      {
+        title: "Trial Preparation",
+        description:
+          "Evidence is reviewed, witnesses assessed, and a defense strategy built around the specific facts of the case.",
+      },
+      {
+        title: "Trial & Resolution",
+        description:
+          "The matter is represented through trial, working toward acquittal, a favourable plea, or the strongest available outcome.",
+      },
+    ],
+    commonQuestions: [
+      {
+        question: "What should I do immediately if I'm named in an FIR?",
+        answer:
+          "Avoid making statements without legal advice, gather any relevant documents, and consult a lawyer promptly — early steps can materially affect how the case unfolds.",
+      },
+      {
+        question: "What's the difference between bail and anticipatory bail?",
+        answer:
+          "Anticipatory bail is sought before arrest, as protection against being taken into custody. Regular bail is sought after arrest has already occurred.",
+      },
+      {
+        question: "How long do criminal trials typically take in Nashik?",
+        answer:
+          "It varies significantly based on the nature of the offence, court backlog, and whether the matter is contested. A realistic estimate is given after reviewing the specific case.",
+      },
+      {
+        question: "Can criminal charges be quashed before trial?",
+        answer:
+          "In certain circumstances, yes — where the complaint is legally deficient or amounts to an abuse of process, a quashing petition can be filed before the High Court.",
+      },
+    ],
+    relatedPostSlugs: [
+      "cheque-bounce-section-138",
+      "fir-vs-nc-complaint",
+      "anticipatory-bail-explained",
+    ],
+  },
 ];
 
 export const FAQS = [

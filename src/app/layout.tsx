@@ -5,6 +5,7 @@ import DisclaimerModal from "@/components/DisclaimerModal";
 import FirebaseAnalytics from "@/components/FirebaseAnalytics";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import MotionProvider from "@/components/motion/MotionProvider";
 import { SITE_URL } from "@/lib/site";
 import "./globals.css";
@@ -121,6 +122,7 @@ export default function RootLayout({
             <MotionProvider>{children}</MotionProvider>
           </main>
           <Footer />
+          <WhatsAppButton />
         </BookingModalProvider>
       </body>
     </html>

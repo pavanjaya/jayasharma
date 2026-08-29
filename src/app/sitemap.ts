@@ -7,6 +7,7 @@ const STATIC_ROUTES = [
   "",
   "/about",
   "/practice-areas",
+  "/advocate-in-nashik",
   "/insights",
   "/faq",
   "/contact",

@@ -34,6 +34,17 @@ export default function PracticeAreasPage() {
         description="Comprehensive legal services tailored to individuals and businesses, backed by 15+ years of courtroom and advisory experience."
       />
 
+      <p className="mx-auto -mt-8 max-w-5xl px-6 pb-12 text-sm text-[#3d0b3d] lg:px-8">
+        For a broader overview of the practice as a whole, see{" "}
+        <Link
+          href="/advocate-in-nashik"
+          className="font-semibold text-[var(--color-navy)] underline decoration-[var(--color-gold)] decoration-2 underline-offset-4 hover:text-[var(--color-gold)]"
+        >
+          Advocate in Nashik
+        </Link>
+        .
+      </p>
+
       <section className="mx-auto max-w-5xl divide-y divide-neutral-200 px-6 pb-28 lg:px-8">
         {SERVICES.map((service) => (
           <Reveal key={service.slug} id={service.slug} className="scroll-mt-28 py-12 first:pt-0">

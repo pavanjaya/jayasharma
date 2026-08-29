@@ -9,7 +9,6 @@ import { FacebookIcon, InstagramIcon, LinkedinIcon } from "./SocialIcons";
 const QUICK_LINKS = [
   { label: "About Us", href: "/about" },
   { label: "Practice Areas", href: "/practice-areas" },
-  { label: "Advocate in Nashik", href: "/advocate-in-nashik" },
   { label: "Insights", href: "/insights" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },

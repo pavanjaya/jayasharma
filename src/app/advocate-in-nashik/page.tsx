@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
@@ -7,6 +8,7 @@ import FAQAccordion from "@/components/FAQAccordion";
 import ServiceIcon from "@/components/ServiceIcon";
 import Reveal from "@/components/motion/Reveal";
 import { RevealStagger, RevealStaggerItem } from "@/components/motion/RevealStagger";
+import ZoomImage from "@/components/motion/ZoomImage";
 import { SERVICES } from "@/data/content";
 import { SITE_URL } from "@/lib/site";
 
@@ -120,7 +122,20 @@ export default function AdvocateInNashikPage() {
       />
 
       <section className="mx-auto max-w-3xl px-6 pb-4 lg:px-8">
-        <Reveal className="border-t border-neutral-200 pt-10">
+        <Reveal className="relative mx-auto max-w-xl">
+          <div className="absolute -inset-3 -z-10 border border-[var(--color-gold)]/30" />
+          <ZoomImage className="relative aspect-[4/5] w-full overflow-hidden bg-surface sm:aspect-[16/10]">
+            <Image
+              src="/advocate-jaya-sharma-about.jpg"
+              alt="Advocate Jaya Sharma"
+              fill
+              className="object-cover"
+              sizes="(min-width: 640px) 36rem, 90vw"
+            />
+          </ZoomImage>
+        </Reveal>
+
+        <Reveal className="mt-14 border-t border-neutral-200 pt-10">
           <h2 className="font-serif-display text-2xl font-semibold text-[var(--color-navy)]">
             Advocate Jaya Sharma
           </h2>

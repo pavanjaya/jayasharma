@@ -1,0 +1,40 @@
+name: Notify IndexNow
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  ping-indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Vercel deploy to go live
+        run: sleep 90
+
+      - name: Submit sitemap URLs to IndexNow
+        env:
+          INDEXNOW_KEY: "1ca9a1f871778022b5e61f0bf607631e"
+          HOST: "advjayasharma.com"
+        run: |
+          set -e
+
+          SITEMAP=$(curl -s "https://${HOST}/sitemap.xml")
+
+          URL_LIST=$(echo "$SITEMAP" | grep -oE '<loc>[^<]+</loc>' | sed -E 's/<\/?loc>//g' | \
+            jq -R . | jq -s .)
+
+          COUNT=$(echo "$URL_LIST" | jq 'length')
+          echo "Submitting $COUNT URLs to IndexNow..."
+
+          PAYLOAD=$(jq -n \
+            --arg host "$HOST" \
+            --arg key "$INDEXNOW_KEY" \
+            --arg keyLocation "https://${HOST}/${INDEXNOW_KEY}.txt" \
+            --argjson urlList "$URL_LIST" \
+            '{host: $host, key: $key, keyLocation: $keyLocation, urlList: $urlList}')
+
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "$PAYLOAD" \
+            -w "\nIndexNow response status: %{http_code}\n"

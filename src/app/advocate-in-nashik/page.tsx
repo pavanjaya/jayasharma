@@ -15,7 +15,7 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Advocate in Nashik | Advocate Jaya Sharma & Associates",
   description:
-    "Advocate Jaya Sharma is an advocate in Nashik, Maharashtra, practicing civil, family, property, corporate, and criminal law, with over 15 years of legal experience.",
+    "Advocate Jaya Sharma is an advocate and lawyer in Nashik, Maharashtra, practicing civil, family, property, corporate, and criminal law, with over 15 years of legal experience.",
   alternates: {
     canonical: "/advocate-in-nashik",
   },
@@ -57,7 +57,7 @@ const PAGE_FAQS = [
   {
     question: "What is the difference between an advocate and a lawyer?",
     answer:
-      "In India, an advocate is a law graduate enrolled with a State Bar Council under the Advocates Act, 1961, and is entitled to represent clients and appear before courts and tribunals. The term \"lawyer\" is often used more loosely to refer to anyone with a legal qualification, whether or not they are enrolled to practice.",
+      "In India, an advocate is a law graduate enrolled with a State Bar Council under the Advocates Act, 1961, and is entitled to represent clients and appear before courts and tribunals. The term \"lawyer\" is often used more loosely — someone searching for a lawyer in Nashik and someone searching for an advocate in Nashik are typically looking for the same thing, since every practicing advocate is a lawyer, though not every law graduate is an enrolled advocate.",
   },
   {
     question: "When may someone need legal advice before taking legal action?",
@@ -141,8 +141,8 @@ export default function AdvocateInNashikPage() {
           </h2>
           <div className="mt-4 space-y-4 text-base leading-relaxed text-[#3d0b3d]">
             <p>
-              Advocate Jaya Sharma is a legal practitioner based in Nashik,
-              Maharashtra. She holds B.Com., LL.B., and LL.M. degrees, with
+              Advocate Jaya Sharma is a legal practitioner and lawyer based
+              in Nashik, Maharashtra. She holds B.Com., LL.B., and LL.M. degrees, with
               her LL.M. in Business Law from Nathmal Goenka Law College,
               Akola (SGB Amravati University). She is enrolled with the Bar
               Council of India (Registration No. MAH/4623/2010) and has over

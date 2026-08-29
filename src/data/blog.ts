@@ -11,6 +11,197 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "arbitration-vs-litigation",
+    image: "/insights/arbitration-agreement-review.jpg",
+    title: "Arbitration vs. Litigation: Which Route Fits Your Dispute?",
+    category: "Arbitration & ADR",
+    excerpt:
+      "Not every commercial dispute needs a courtroom. Here's how arbitration actually compares to litigation, and what determines which route is even available.",
+    date: "2026-08-29",
+    readTime: "4 min read",
+    content: [
+      {
+        paragraphs: [
+          "Many commercial, employment, and real estate contracts contain an arbitration clause, yet when a dispute actually arises, parties often default to assuming a civil suit is the only option. Whether arbitration is available — and whether it's the better route — depends on the agreement itself and the nature of the dispute.",
+        ],
+      },
+      {
+        heading: "What arbitration actually involves",
+        paragraphs: [
+          "Arbitration is a private dispute resolution process governed in India by the Arbitration and Conciliation Act, 1996. Instead of a judge, one or more arbitrators hear the matter and issue a binding award, which is enforceable in much the same way as a civil court decree once passed.",
+        ],
+      },
+      {
+        heading: "When arbitration is — and isn't — available",
+        paragraphs: [
+          "Arbitration is only available where the underlying contract contains an arbitration clause, or where both parties separately agree to refer the dispute to arbitration. It cannot be forced on a party who never agreed to it. Certain categories of disputes — criminal matters, matrimonial disputes, and some others considered to affect public rights — cannot be arbitrated even where an agreement exists.",
+        ],
+      },
+      {
+        heading: "Arbitration vs. litigation: the real differences",
+        paragraphs: [
+          "The two processes differ in several practical respects that matter more than people often expect going in.",
+        ],
+        bullets: [
+          "Confidentiality — arbitration proceedings are private; civil litigation is a matter of public record",
+          "Choice of decision-maker — parties can select an arbitrator with relevant subject-matter expertise, unlike court allocation",
+          "Limited appeal — an arbitral award can be challenged only on narrow grounds, unlike the multiple appellate levels available in litigation",
+          "Cost isn't automatically lower — for smaller disputes, arbitrator fees and administrative costs can make arbitration comparably expensive",
+        ],
+      },
+      {
+        heading: "The takeaway",
+        paragraphs: [
+          "Whether arbitration is even an option comes down to what the underlying contract actually says — reviewing that agreement is the first step before deciding how to pursue any dispute.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "does-your-business-need-a-partnership-agreement",
+    image: "/insights/partnership-agreement-handshake.jpg",
+    title: "Does Your Business Need a Partnership Agreement?",
+    category: "Corporate Law",
+    excerpt:
+      "Two people starting a business together often skip formal documentation, assuming trust is enough. Here's what actually happens when it isn't.",
+    date: "2026-08-28",
+    readTime: "4 min read",
+    content: [
+      {
+        paragraphs: [
+          "It's common for small businesses and professional partnerships in India to begin without any written agreement between the partners, relying instead on goodwill and the default rules of the Indian Partnership Act, 1932. Those default rules don't always reflect what the partners actually intended.",
+        ],
+      },
+      {
+        heading: "What happens without a written agreement",
+        paragraphs: [
+          "In the absence of a partnership deed, the Act's default provisions govern the relationship — profits and losses are shared equally regardless of each partner's capital contribution or role, there is no restriction on a partner exiting or competing, and there's no agreed mechanism for resolving disagreements when they arise.",
+        ],
+      },
+      {
+        heading: "What a partnership agreement should cover",
+        paragraphs: [
+          "A properly drafted deed addresses the specific points that tend to cause disputes later.",
+        ],
+        bullets: [
+          "Capital contribution and the actual profit-and-loss sharing ratio",
+          "Roles, responsibilities, and decision-making authority between partners",
+          "The process for admitting a new partner or removing an existing one",
+          "What happens to the business on a partner's death, exit, or the firm's dissolution",
+          "An agreed mechanism for resolving disputes between partners",
+        ],
+      },
+      {
+        heading: "Registration: optional but consequential",
+        paragraphs: [
+          "Registering a partnership firm under the Act isn't mandatory, but an unregistered firm faces real practical restrictions — most notably, it generally cannot sue a third party, or even another partner, to enforce a contractual right arising from the partnership.",
+        ],
+      },
+      {
+        heading: "The takeaway",
+        paragraphs: [
+          "Disagreements between partners are far more manageable when the terms were agreed and documented before the business started, rather than negotiated for the first time in the middle of a dispute.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-is-maintenance-calculated-after-divorce",
+    image: "/insights/maintenance-rupee-notes.jpg",
+    title: "How Is Maintenance Calculated After Divorce?",
+    category: "Family Law",
+    excerpt:
+      "There's no fixed formula for maintenance in Indian law — but courts do weigh a consistent set of factors when deciding what's reasonable.",
+    date: "2026-08-27",
+    readTime: "4 min read",
+    content: [
+      {
+        paragraphs: [
+          "Maintenance is one of the most contested aspects of a matrimonial matter, and unlike some other jurisdictions, Indian law doesn't prescribe a fixed percentage-of-income formula. Instead, courts assess a set of factors on the facts of each case.",
+        ],
+      },
+      {
+        heading: "The legal basis",
+        paragraphs: [
+          "Maintenance claims can arise under more than one provision depending on the circumstances — Section 125 of the Code of Criminal Procedure (now carried forward under the Bharatiya Nagarik Suraksha Sanhita) provides a general, religion-neutral remedy, while the Hindu Marriage Act and the Hindu Adoptions and Maintenance Act provide for interim and permanent maintenance in matters governed by Hindu law. Other personal laws and the Special Marriage Act contain their own provisions.",
+        ],
+      },
+      {
+        heading: "Factors courts actually weigh",
+        paragraphs: [
+          "Rather than applying a formula, courts typically look at a combination of factors specific to the parties involved.",
+        ],
+        bullets: [
+          "Income and earning capacity of both spouses, not just the paying spouse",
+          "The standard of living the parties maintained during the marriage",
+          "The claimant's reasonable needs, including housing and medical expenses",
+          "Whether the claimant has independent income or assets of their own",
+          "The needs of any children, where maintenance for children is also being decided",
+        ],
+      },
+      {
+        heading: "Interim vs. permanent maintenance",
+        paragraphs: [
+          "Interim maintenance may be awarded while proceedings are still pending, to meet immediate needs during the litigation itself. Permanent maintenance or alimony is fixed at the time of the final decree, and can be structured as periodic payments or a one-time lump sum, depending on what the parties agree or the court directs.",
+        ],
+      },
+      {
+        heading: "The takeaway",
+        paragraphs: [
+          "Because there's no fixed formula, presenting a clear, well-documented picture of both spouses' actual financial position is usually what determines the outcome — far more than the arguments made around it.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "limitation-period-filing-a-case-india",
+    image: "/insights/limitation-period-calendar.jpg",
+    title: "Limitation Period in India: Why Filing on Time Matters",
+    category: "Civil Litigation",
+    excerpt:
+      "A strong case can still be dismissed for one reason alone: it was filed too late. Here's how limitation periods actually work in Indian law.",
+    date: "2026-08-26",
+    readTime: "3 min read",
+    content: [
+      {
+        paragraphs: [
+          "Under the Limitation Act, 1963, every type of legal claim carries a specific window within which it must be filed. Miss that window, and the claim can be dismissed as time-barred — regardless of how strong it is on the merits.",
+        ],
+      },
+      {
+        heading: "How the clock starts",
+        paragraphs: [
+          "The limitation period generally begins from the date the \"cause of action\" arises — the date of a breach, the date a debt falls due, or the date a party gains knowledge of a fraud — rather than necessarily the date of the underlying event itself. Identifying the correct start date is often where disputes over limitation actually get decided.",
+        ],
+      },
+      {
+        heading: "Common limitation periods",
+        paragraphs: [
+          "The applicable period varies significantly by the type of claim.",
+        ],
+        bullets: [
+          "Three years for most contractual and money recovery suits",
+          "Twelve years for suits seeking possession of immovable property",
+          "One year for certain torts, including defamation",
+          "Ninety days is a common window for many civil appeals",
+          "Arbitration-related applications often carry their own shorter statutory windows, sometimes as little as 30 or 60 days",
+        ],
+      },
+      {
+        heading: "Can the delay be condoned?",
+        paragraphs: [
+          "Section 5 of the Limitation Act allows delay to be condoned in certain categories of proceedings — though notably not ordinary civil suits — where \"sufficient cause\" is shown for the delay. Courts tend to interpret this narrowly, and delay caused by simple inattention is rarely excused.",
+        ],
+      },
+      {
+        heading: "The takeaway",
+        paragraphs: [
+          "Given how unforgiving limitation law can be, having a matter reviewed as soon as a dispute arises — rather than waiting — preserves options that a delay would otherwise close off permanently.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "who-owns-property-after-owners-death",
     image: "/insights/property-inheritance.jpg",
     title: "Who Owns Property After the Owner's Death?",

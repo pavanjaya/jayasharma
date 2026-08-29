@@ -391,7 +391,11 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
           "Not automatically — it depends on the financial circumstances of both spouses and is either agreed upon (in mutual consent cases) or decided by the court based on need and capacity to pay.",
       },
     ],
-    relatedPostSlugs: ["divorce-by-mutual-consent", "child-custody-what-courts-consider"],
+    relatedPostSlugs: [
+      "divorce-by-mutual-consent",
+      "child-custody-what-courts-consider",
+      "how-is-maintenance-calculated-after-divorce",
+    ],
   },
   {
     slug: "property-law",
@@ -564,7 +568,10 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
           "Yes — many are resolved through negotiation or mediation, either before filing or during the proceedings, often faster and less costly than a full trial.",
       },
     ],
-    relatedPostSlugs: ["recovery-suits-for-unpaid-money"],
+    relatedPostSlugs: [
+      "recovery-suits-for-unpaid-money",
+      "limitation-period-filing-a-case-india",
+    ],
   },
   {
     slug: "arbitration-adr",
@@ -619,7 +626,7 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
           "Only on limited legal grounds, such as fraud or serious procedural irregularity — not simply because a party disagrees with the outcome.",
       },
     ],
-    relatedPostSlugs: [],
+    relatedPostSlugs: ["arbitration-vs-litigation"],
   },
   {
     slug: "legal-documentation",
@@ -733,7 +740,10 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
           "Yes — typically through a legal notice in the first instance, and a recovery suit if that doesn't resolve the matter.",
       },
     ],
-    relatedPostSlugs: ["recovery-suits-for-unpaid-money"],
+    relatedPostSlugs: [
+      "recovery-suits-for-unpaid-money",
+      "does-your-business-need-a-partnership-agreement",
+    ],
   },
   {
     slug: "criminal-defense",

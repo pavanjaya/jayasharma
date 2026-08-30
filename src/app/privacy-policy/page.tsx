@@ -18,6 +18,10 @@ export default function PrivacyPolicyPage() {
 
       <section className="mx-auto max-w-3xl px-6 pb-28 lg:px-8">
         <Reveal className="space-y-6 text-sm leading-relaxed text-[#3d0b3d]">
+          <p className="text-xs font-semibold uppercase tracking-wider text-[var(--color-gold)]">
+            Last updated: August 30, 2026
+          </p>
+
           <p>
             This Privacy Policy explains how information is collected and used
             when you visit this website or submit the contact form. It applies
@@ -45,8 +49,25 @@ export default function PrivacyPolicyPage() {
             <p className="mt-2">
               Information submitted is used solely to respond to your enquiry
               and, where relevant, to assess and provide legal services. It is
-              not sold, rented, or shared with third parties for marketing
-              purposes.
+              not sold or rented to third parties, and is not shared with any
+              third party for marketing purposes. Contact form submissions are
+              processed through Formspree, a third-party form-handling
+              service, solely to deliver your enquiry to us — see the
+              Third-Party Services section below.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
+              Data Retention
+            </h2>
+            <p className="mt-2">
+              Enquiry details submitted through the contact form are retained
+              only for as long as needed to respond to the enquiry and, where
+              an engagement follows, for as long as required by professional
+              and legal record-keeping obligations. You may request that your
+              submitted contact details be deleted at any time by writing to
+              the email address below.
             </p>
           </div>
 
@@ -63,7 +84,7 @@ export default function PrivacyPolicyPage() {
 
           <div>
             <h2 className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
-              Cookies
+              Cookies &amp; Third-Party Services
             </h2>
             <p className="mt-2">
               This website uses Google Firebase Analytics to understand how
@@ -71,8 +92,26 @@ export default function PrivacyPolicyPage() {
               general location and device information. This data is
               aggregated and anonymised, and is not used for advertising or
               sold to third parties. It does not use advertising cookies.
-              Basic, non-identifying technical data may also be processed by
-              the hosting provider to operate the website.
+            </p>
+            <p className="mt-2">
+              The contact form is processed by Formspree, and the office
+              location on the Contact page is displayed using an embedded
+              Google Maps iframe — both may set their own cookies or process
+              basic technical data (such as IP address) under their
+              respective privacy policies, independent of this website. Basic,
+              non-identifying technical data may also be processed by the
+              hosting provider to operate the website.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-serif-display text-lg font-semibold text-[var(--color-navy)]">
+              Changes to This Policy
+            </h2>
+            <p className="mt-2">
+              This Privacy Policy may be updated from time to time to reflect
+              changes to the website or the services it uses. The date at the
+              top of this page indicates when it was last revised.
             </p>
           </div>
 

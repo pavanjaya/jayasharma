@@ -11,6 +11,101 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "trust-deed-explained",
+    image: "/insights/trust-deed-house-model.jpg",
+    title: "What Is a Trust Deed and When Do You Need One?",
+    category: "Legal Documentation",
+    excerpt:
+      "Trusts aren't just for large charitable institutions — families use them too, often to manage property across generations. Here's what a trust deed actually does.",
+    date: "2026-08-30",
+    readTime: "4 min read",
+    content: [
+      {
+        paragraphs: [
+          "A trust, under the Indian Trusts Act, 1882, is a legal arrangement where one person (the settlor) transfers property to another (the trustee) to hold and manage for the benefit of someone else (the beneficiary). Families use them for far more than large charitable endowments — often simply to manage property responsibly across generations.",
+        ],
+      },
+      {
+        heading: "What a trust deed actually does",
+        paragraphs: [
+          "The trust deed is the legal document that actually creates the trust. It names the settlor, the trustee or trustees, and the beneficiaries, identifies the property being placed in trust, and sets out the trustees' powers, duties, and the terms on which the property is to be managed or distributed.",
+        ],
+      },
+      {
+        heading: "Common reasons families create a trust",
+        paragraphs: [
+          "A trust tends to come up for a specific, practical reason rather than as a general planning exercise.",
+        ],
+        bullets: [
+          "Managing property for minor children or a dependent with special needs",
+          "Avoiding fragmentation of family property across multiple heirs",
+          "Structured, staged distribution of assets over time rather than all at once",
+          "Charitable or religious endowments",
+          "Protecting assets from mismanagement by a beneficiary who isn't ready to manage them directly",
+        ],
+      },
+      {
+        heading: "A trust deed vs. a Will: not the same thing",
+        paragraphs: [
+          "A Will takes effect only after death, and can be freely revised any number of times before then. A trust can be created and take effect during the settlor's own lifetime, and once it's properly constituted, it generally can't be unwound unilaterally — unless the deed itself specifically reserves that power. That relative permanence is exactly why the terms need to be drafted with real care from the outset.",
+        ],
+      },
+      {
+        heading: "The takeaway",
+        paragraphs: [
+          "Because a trust is hard to unwind once executed, getting the details right at drafting stage — who the trustees are, what powers they actually hold, and how and when distributions happen — matters more here than in most other kinds of documentation.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "company-registration-business-structure-india",
+    image: "/insights/company-registration-desk.jpg",
+    title: "Company Registration in India: Choosing the Right Business Structure",
+    category: "Corporate Law",
+    excerpt:
+      "Private limited, LLP, partnership, or sole proprietorship — the structure you choose at the start affects liability, compliance, and how easily the business can raise funding later.",
+    date: "2026-08-30",
+    readTime: "4 min read",
+    content: [
+      {
+        paragraphs: [
+          "One of the first legal decisions when starting a business in India is choosing the right structure — a decision that affects personal liability, taxation, ongoing compliance, and how easily the business can bring in investors later.",
+        ],
+      },
+      {
+        heading: "The main structures available",
+        paragraphs: [
+          "Each structure carries a different trade-off between simplicity and protection.",
+        ],
+        bullets: [
+          "Sole Proprietorship — the simplest option, but with no separate legal identity and unlimited personal liability",
+          "Partnership Firm — governed by the Indian Partnership Act, 1932, with liability shared between partners",
+          "Limited Liability Partnership (LLP) — a separate legal entity where each partner's liability is limited to their agreed contribution",
+          "Private Limited Company — a separate legal entity under the Companies Act, 2013, offering limited liability and generally the structure investors expect, at the cost of higher compliance",
+        ],
+      },
+      {
+        heading: "What actually changes between structures",
+        paragraphs: [
+          "The practical differences go beyond paperwork. Personal assets remain exposed in a proprietorship or ordinary partnership, while an LLP or private limited company keeps that risk within the business itself. Compliance also scales up sharply — a proprietorship has minimal filing obligations, while a private limited company has significant annual filings with the Ministry of Corporate Affairs (MCA), regardless of how small the business actually is.",
+        ],
+      },
+      {
+        heading: "Registration in brief",
+        paragraphs: [
+          "Registering an LLP or private limited company is done through the MCA portal, and involves obtaining a Director Identification Number (DIN) and Digital Signature Certificate (DSC) for the directors or designated partners, reserving a proposed name, drafting the Memorandum and Articles of Association (or the LLP Agreement), and securing approval from the Registrar of Companies.",
+        ],
+      },
+      {
+        heading: "The takeaway",
+        paragraphs: [
+          "Converting from one structure to another later isn't always straightforward, and often carries real tax and legal consequences. Choosing deliberately at the outset — based on where the business is actually headed, not just where it stands today — tends to pay off more than most founders expect.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "rera-complaint-against-builder",
     image: "/insights/rera-building-construction.jpg",
     title: "How to File a RERA Complaint Against a Builder in Maharashtra",

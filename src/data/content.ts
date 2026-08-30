@@ -713,6 +713,7 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
       "drafting-a-legal-notice",
       "power-of-attorney-explained",
       "will-testament-explained",
+      "trust-deed-explained",
     ],
   },
   {
@@ -771,6 +772,7 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
     relatedPostSlugs: [
       "recovery-suits-for-unpaid-money",
       "does-your-business-need-a-partnership-agreement",
+      "company-registration-business-structure-india",
     ],
   },
   {

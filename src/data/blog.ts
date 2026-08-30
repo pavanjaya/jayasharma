@@ -11,6 +11,100 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "rera-complaint-against-builder",
+    image: "/insights/rera-building-construction.jpg",
+    title: "How to File a RERA Complaint Against a Builder in Maharashtra",
+    category: "Property Law",
+    excerpt:
+      "Delayed possession, a project that no longer matches what was promised, or a builder who's gone quiet — MahaRERA exists precisely for situations like these.",
+    date: "2026-08-30",
+    readTime: "4 min read",
+    content: [
+      {
+        paragraphs: [
+          "The Real Estate (Regulation and Development) Act, 2016 established MahaRERA in Maharashtra to regulate real estate projects and give homebuyers a dedicated forum for disputes with builders — a faster, more specialised alternative to routing every grievance through civil litigation.",
+        ],
+      },
+      {
+        heading: "What MahaRERA actually covers",
+        paragraphs: [
+          "A complaint can be filed against any registered project for issues such as delayed possession beyond the promised date, deviation from the sanctioned plan or approved layout, structural defects reported within the statutory defect liability period, or a builder's failure to refund a booking amount when a buyer is entitled to it.",
+        ],
+      },
+      {
+        heading: "Filing a complaint",
+        paragraphs: [
+          "Complaints are filed directly through the MahaRERA online portal against the registered project, along with a nominal filing fee and supporting documents — the booking agreement, payment receipts, and any correspondence with the builder. The matter is then heard by the authority, which can direct compensation, refund, or possession as appropriate.",
+        ],
+      },
+      {
+        heading: "What you can actually claim",
+        paragraphs: [
+          "Depending on the facts, a successful complaint can result in more than one type of relief.",
+        ],
+        bullets: [
+          "Refund of the amount paid, along with interest",
+          "Possession of the unit, along with interest for the period of delay",
+          "Compensation for loss caused by the builder's default",
+          "Interest for every month of delay under Section 18 of the Act, where possession itself is not sought",
+        ],
+      },
+      {
+        heading: "The takeaway",
+        paragraphs: [
+          "Since the outcome of a RERA complaint depends heavily on the specific booking agreement and payment trail, having those documents reviewed early — before filing — makes a real difference to how the complaint is framed and how strong it is.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "agricultural-land-disputes-revenue-tribunal",
+    image: "/insights/agricultural-land-farmer.jpg",
+    title: "Agricultural Land Disputes: Why They Often Start at the Revenue Office, Not Court",
+    category: "Property Law",
+    excerpt:
+      "Not every land dispute begins with a lawsuit. Many start with a disputed mutation entry at the Talathi's office — here's how the revenue system and the courts actually fit together.",
+    date: "2026-08-30",
+    readTime: "4 min read",
+    content: [
+      {
+        paragraphs: [
+          "Agricultural land disputes in Maharashtra frequently begin not in a civil court, but before revenue authorities — since the land records themselves are created, updated, and corrected through the revenue administration, not the judiciary.",
+        ],
+      },
+      {
+        heading: "The revenue record system",
+        paragraphs: [
+          "The 7/12 extract (Saat Baara Utara) is the primary record of rights for agricultural land in Maharashtra, showing ownership, cultivation details, and any encumbrances. Changes to it — a sale, inheritance, or partition — are recorded as mutation entries, first noted by the Talathi and then verified by the Circle Officer.",
+        ],
+      },
+      {
+        heading: "Where disputes actually start",
+        paragraphs: [
+          "Most agricultural land disputes trace back to one of a few recurring issues: a disputed or incorrect mutation entry, tenancy claims under the Maharashtra Tenancy and Agricultural Lands Act, disagreements over land classification or boundaries, or inheritance that isn't accurately reflected in the 7/12 record.",
+        ],
+      },
+      {
+        heading: "Revenue authorities vs. civil court",
+        paragraphs: [
+          "Choosing the right forum matters more than it might seem, since filing in the wrong one can cost significant time before the matter even gets addressed on its merits.",
+        ],
+        bullets: [
+          "The Talathi and Tehsildar handle mutation entries and related corrections in the first instance",
+          "Tenancy disputes are generally heard by the Tehsildar or Sub-Divisional Officer under the Maharashtra Tenancy and Agricultural Lands Act",
+          "The Maharashtra Revenue Tribunal hears certain appeals from these revenue authorities",
+          "Civil courts retain jurisdiction over genuine title and ownership disputes that go beyond simply correcting a record",
+        ],
+      },
+      {
+        heading: "The takeaway",
+        paragraphs: [
+          "The first real decision in an agricultural land dispute isn't legal strategy — it's identifying whether the dispute is really about the record (revenue forum) or about title itself (civil court), since that determines where the matter needs to be filed in the first place.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "arbitration-vs-litigation",
     image: "/insights/arbitration-agreement-review.jpg",
     title: "Arbitration vs. Litigation: Which Route Fits Your Dispute?",

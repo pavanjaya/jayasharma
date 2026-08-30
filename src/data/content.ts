@@ -470,6 +470,8 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
       "sale-deed-vs-agreement-to-sell",
       "property-due-diligence-checklist",
       "who-owns-property-after-owners-death",
+      "rera-complaint-against-builder",
+      "agricultural-land-disputes-revenue-tribunal",
     ],
   },
   {

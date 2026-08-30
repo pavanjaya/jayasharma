@@ -208,6 +208,8 @@ export const SERVICES: Service[] = [
       "Recovery suits and contractual disputes",
       "Injunctions and interim relief applications",
       "Commercial and business disputes",
+      "Specific performance of contracts",
+      "Defamation and other tort claims",
       "Appeals before appellate courts",
       "Settlement negotiation and mediation support",
     ],
@@ -219,13 +221,16 @@ export const SERVICES: Service[] = [
     shortDescription:
       "A property lawyer in Nashik for title verification, disputes, and transactions handled with due diligence.",
     longDescription:
-      "Property transactions and disputes require careful due diligence to avoid costly complications down the line. As a property lawyer in Nashik, this practice covers title verification, documentation review, and representation in property disputes, protecting clients' interests in one of their most significant assets.",
+      "Property transactions and disputes require careful due diligence to avoid costly complications down the line. As a property lawyer in Nashik, this practice covers title verification, documentation review, and representation in property disputes, protecting clients' interests in one of their most significant assets. It also extends to RERA disputes and builder-buyer conflicts, and to agricultural land matters before revenue tribunals — both common sources of dispute in and around Nashik.",
     bullets: [
       "Title investigation and due diligence",
       "Sale, lease, and gift deed drafting",
       "Property and boundary disputes",
       "Partition suits",
       "Encroachment and possession matters",
+      "RERA disputes and builder-buyer conflicts",
+      "Agricultural land and revenue tribunal matters",
+      "Developer agreement vetting",
     ],
   },
   {
@@ -257,6 +262,7 @@ export const SERVICES: Service[] = [
       "Legal opinion writing",
       "Power of attorney documentation",
       "Wills and testamentary documents",
+      "Trust deed drafting",
       "Notices and legal correspondence",
     ],
   },

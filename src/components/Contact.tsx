@@ -73,9 +73,7 @@ export default function Contact() {
                 Office Hours
               </p>
               <p className="mt-1.5 text-base leading-relaxed text-[#3d0b3d]">
-                Mon – Fri: 9:00 AM – 6:00 PM
-                <br />
-                Saturday: 10:00 AM – 2:00 PM
+                Mon – Sat: 9:00 AM – 6:00 PM
                 <br />
                 Sunday: By appointment
               </p>

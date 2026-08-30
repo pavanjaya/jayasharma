@@ -81,8 +81,31 @@ export default function PrivacyPolicyPage() {
               Contact
             </h2>
             <p className="mt-2">
-              For any questions about this Privacy Policy, reach out via the
-              contact details listed on the Contact page.
+              For any questions about this Privacy Policy, you can reach us
+              at:
+            </p>
+            <p className="mt-3">
+              Advocate Jaya Sharma
+              <br />
+              No. 622, 6th Floor, Lotus Capital, Ashok Stambh
+              <br />
+              Nashik, Maharashtra – 422002
+              <br />
+              Phone:{" "}
+              <a
+                href="tel:+919986758567"
+                className="font-semibold text-[var(--color-navy)] hover:text-[var(--color-gold)]"
+              >
+                +91 99867 58567
+              </a>
+              <br />
+              Email:{" "}
+              <a
+                href="mailto:advjayaosharma@gmail.com"
+                className="font-semibold text-[var(--color-navy)] hover:text-[var(--color-gold)]"
+              >
+                advjayaosharma@gmail.com
+              </a>
             </p>
           </div>
         </Reveal>

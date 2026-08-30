@@ -455,6 +455,16 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
         answer:
           "Missing originals are a serious red flag that warrants closer scrutiny, though not always disqualifying — it depends on why they're missing and what can be independently verified through official records.",
       },
+      {
+        question: "Can I file a complaint against a builder for a delayed project?",
+        answer:
+          "Yes — under the Real Estate (Regulation and Development) Act, homebuyers can approach MahaRERA for delayed possession, deviations from the sanctioned plan, or other builder defaults, and seek compensation, interest, or refund depending on the facts.",
+      },
+      {
+        question: "Are agricultural land disputes handled in civil court or somewhere else?",
+        answer:
+          "Many agricultural land matters — mutation entries, tenancy disputes, land classification — fall first before revenue authorities such as the Tehsildar or Sub-Divisional Officer under the Maharashtra Land Revenue Code, rather than a civil court, though some disputes can proceed to civil court depending on the relief sought.",
+      },
     ],
     relatedPostSlugs: [
       "sale-deed-vs-agreement-to-sell",
@@ -572,6 +582,16 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
         question: "Can civil disputes be settled outside court?",
         answer:
           "Yes — many are resolved through negotiation or mediation, either before filing or during the proceedings, often faster and less costly than a full trial.",
+      },
+      {
+        question: "What is a suit for specific performance?",
+        answer:
+          "It's a claim asking the court to compel the other party to actually carry out their contractual obligation — such as completing a property sale — rather than simply pay compensation for breaching it. Courts generally require the underlying contract to be clear, valid, and capable of being enforced.",
+      },
+      {
+        question: "Can I sue someone for defamation in a civil court?",
+        answer:
+          "Yes — defamation can be pursued as a civil tort claim seeking damages, separately from (or alongside) any criminal defamation complaint. The claim generally needs to show a false statement was published or communicated to a third party and caused harm to reputation.",
       },
     ],
     relatedPostSlugs: [

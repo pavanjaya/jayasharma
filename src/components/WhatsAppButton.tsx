@@ -18,7 +18,11 @@ export default function WhatsAppButton() {
       aria-label="Chat on WhatsApp"
       className="btn-pill fixed bottom-6 right-6 z-30 flex h-14 w-14 items-center justify-center bg-[#25D366] text-white transition-transform duration-300 hover:scale-105"
     >
-      <WhatsAppIcon size={28} />
+      <span
+        aria-hidden="true"
+        className="whatsapp-pulse-ring pointer-events-none absolute inset-0 bg-[#25D366]"
+      />
+      <WhatsAppIcon size={28} className="relative" />
     </a>
   );
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import InsightsGrid from "@/components/InsightsGrid";
@@ -20,7 +21,9 @@ export default function InsightsPage() {
       />
 
       <section className="mx-auto max-w-7xl px-6 pb-28 lg:px-8">
-        <InsightsGrid posts={BLOG_POSTS} />
+        <Suspense fallback={null}>
+          <InsightsGrid posts={BLOG_POSTS} />
+        </Suspense>
       </section>
 
       <CTASection />

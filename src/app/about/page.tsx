@@ -187,16 +187,6 @@ export default function AboutPage() {
               ))}
             </RevealStagger>
           </div>
-
-          <Reveal delay={0.1} className="mt-12 text-center">
-            <Link
-              href="/recognition"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
-            >
-              View All Awards &amp; Recognition
-              <ArrowRight size={15} />
-            </Link>
-          </Reveal>
         </div>
       </section>
 
@@ -281,6 +271,16 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <Reveal className="mx-auto -mt-4 max-w-4xl px-6 pb-4 text-center lg:px-8">
+        <Link
+          href="/recognition"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
+        >
+          Awards &amp; Recognition
+          <ArrowRight size={15} />
+        </Link>
+      </Reveal>
 
       <CTASection />
     </>

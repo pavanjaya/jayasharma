@@ -149,11 +149,6 @@ export const EDUCATION = [
 
 export const CERTIFICATIONS = [
   {
-    title: "Karmayogini Award",
-    issuer: "Deshdoot, Nashik",
-    period: "2026",
-  },
-  {
     title: "All India Bar Examination",
     issuer: "Bar Council of India, New Delhi",
     period: "March 2011",

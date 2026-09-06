@@ -30,6 +30,17 @@ export default function AboutPage() {
         description="B.Com., LL.B., LL.M. — 15+ years spanning litigation, arbitration, and corporate advisory, with a practical, business-first approach to every matter."
       />
 
+      <Reveal className="flex justify-center px-6 pb-16 lg:px-8">
+        <Link
+          href="/recognition"
+          className="inline-flex items-center gap-2.5 border border-[var(--color-gold)]/40 bg-[var(--color-gold)]/5 px-5 py-2.5 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 hover:border-[var(--color-gold)] hover:bg-[var(--color-gold)]/10"
+        >
+          <Award size={16} className="text-[var(--color-gold)]" />
+          Recipient of the Karmayogini Award 2026 — Deshdoot, Nashik
+          <ArrowRight size={14} />
+        </Link>
+      </Reveal>
+
       {/* Bio */}
       <section className="mx-auto max-w-5xl px-6 pb-24 lg:px-8">
         <Reveal className="relative mx-auto max-w-[54.6rem]">
@@ -271,16 +282,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      <Reveal className="mx-auto -mt-4 max-w-4xl px-6 pb-4 text-center lg:px-8">
-        <Link
-          href="/recognition"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
-        >
-          Awards &amp; Recognition
-          <ArrowRight size={15} />
-        </Link>
-      </Reveal>
 
       <CTASection />
     </>

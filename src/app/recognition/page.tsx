@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Award, Mic, Newspaper, Star } from "lucide-react";
+import { ArrowUpRight, Award, Mic, Newspaper, Star } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import { RevealStagger, RevealStaggerItem } from "@/components/motion/RevealStagger";
@@ -76,6 +76,17 @@ export default function RecognitionPage() {
                           <p className="mt-2 text-sm leading-relaxed text-[#3d0b3d]">
                             {item.description}
                           </p>
+                        )}
+                        {item.link && (
+                          <a
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-2 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
+                          >
+                            View Coverage
+                            <ArrowUpRight size={14} />
+                          </a>
                         )}
                       </div>
                     </RevealStaggerItem>

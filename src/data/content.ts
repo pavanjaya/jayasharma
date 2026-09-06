@@ -271,10 +271,11 @@ export const SERVICES: Service[] = [
     title: "Banking, Recovery & NCLT",
     icon: "banking",
     shortDescription:
-      "A bank recovery advocate in Nashik handling debt recovery, DRT and NCLT proceedings, and banking dispute resolution for financial institutions.",
+      "A bank recovery advocate in Nashik handling SARFAESI, DRT and NCLT proceedings, and banking dispute resolution for financial institutions.",
     longDescription:
       "As a bank recovery advocate in Nashik and formerly Senior Advocate at H R Katti Associates, Bangalore, Advocate Jaya Sharma represented clients before the Debt Recovery Tribunal and the National Company Law Tribunal on debt recovery and corporate disputes. She is presently empanelled as Panel Advocate for Bank of Maharashtra, Vishwas Cooperative Bank, and Shree Samarth Sahakari Bank, Nashik, handling recovery and financial matters on their behalf.",
     bullets: [
+      "SARFAESI recovery proceedings",
       "Debt Recovery Tribunal (DRT) proceedings",
       "NCLT and insolvency-related matters",
       "Bank recovery suits and financial disputes",

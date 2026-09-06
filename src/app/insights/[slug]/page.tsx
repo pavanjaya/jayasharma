@@ -7,6 +7,7 @@ import CTASection from "@/components/CTASection";
 import Reveal from "@/components/motion/Reveal";
 import { RevealStagger, RevealStaggerItem } from "@/components/motion/RevealStagger";
 import { BLOG_POSTS } from "@/data/blog";
+import { SITE_URL } from "@/lib/site";
 
 export function generateStaticParams() {
   return BLOG_POSTS.map((post) => ({ slug: post.slug }));
@@ -47,8 +48,32 @@ export default async function InsightPage({
     (p) => p.category === post.category && p.slug !== post.slug
   ).slice(0, 2);
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    image: `${SITE_URL}${post.image}`,
+    datePublished: post.date,
+    author: {
+      "@type": "Person",
+      name: "Advocate Jaya Sharma",
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Advocate Jaya Sharma & Associates",
+    },
+    mainEntityOfPage: `${SITE_URL}/insights/${post.slug}`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+
       <section className="relative overflow-hidden bg-background pt-36 pb-16 lg:pt-44 lg:pb-20">
         <Reveal className="relative mx-auto max-w-3xl px-6 lg:px-8">
           <Link
@@ -65,7 +90,10 @@ export default async function InsightPage({
           <h1 className="mt-4 font-serif-display text-3xl font-semibold leading-tight text-[var(--color-navy)] sm:text-4xl">
             {post.title}
           </h1>
-          <div className="mt-5 flex items-center gap-4 text-sm text-[#3d0b3d]">
+          <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-[#3d0b3d]">
+            <span className="font-semibold text-[var(--color-navy)]">
+              By Advocate Jaya Sharma
+            </span>
             <span className="flex items-center gap-1.5">
               <Calendar size={14} />
               {formatDate(post.date)}

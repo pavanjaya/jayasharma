@@ -80,6 +80,7 @@ const attorneyJsonLd = {
     },
   ],
   areaServed: "Nashik, Maharashtra",
+  award: "Karmayogini Award 2026 — Deshdoot, Nashik",
   sameAs: [
     "https://www.facebook.com/advjayasharma",
     "https://www.instagram.com/advjayasharma/",

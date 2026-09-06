@@ -7,6 +7,7 @@ export type RecognitionItem = {
   date?: string;
   description?: string;
   link?: string;
+  images?: string[];
 };
 
 export const RECOGNITION_CATEGORY_LABELS: Record<RecognitionCategory, string> = {
@@ -19,11 +20,12 @@ export const RECOGNITION_CATEGORY_LABELS: Record<RecognitionCategory, string> = 
 export const RECOGNITION_ITEMS: RecognitionItem[] = [
   {
     category: "award",
-    title: "Karmayogini Award",
+    title: "Karmayogini Award 2026",
     organization: "Deshdoot, Nashik",
     date: "March 2026",
     description: "Featured in Deshdoot's Nashik edition, 22 March 2026.",
     link: "https://epaper.deshdoot.com/view/4380/22-mar-2026/14",
+    images: ["/recognition/karmayogini-award-deshdoot-clipping.jpg"],
   },
 ];
 

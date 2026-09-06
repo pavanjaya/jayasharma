@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { ArrowUpRight, Award, Mic, Newspaper, Star } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
@@ -87,6 +88,27 @@ export default function RecognitionPage() {
                             View Coverage
                             <ArrowUpRight size={14} />
                           </a>
+                        )}
+                        {item.images && item.images.length > 0 && (
+                          <div className="mt-4 flex flex-wrap gap-4">
+                            {item.images.map((src) => (
+                              <a
+                                key={src}
+                                href={src}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="relative block h-40 w-28 flex-none overflow-hidden bg-[var(--color-navy)]/5 transition-opacity duration-300 hover:opacity-80"
+                              >
+                                <Image
+                                  src={src}
+                                  alt={`${item.title} — photo`}
+                                  fill
+                                  className="object-cover"
+                                  sizes="112px"
+                                />
+                              </a>
+                            ))}
+                          </div>
                         )}
                       </div>
                     </RevealStaggerItem>

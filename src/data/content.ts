@@ -600,6 +600,7 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
     relatedPostSlugs: [
       "recovery-suits-for-unpaid-money",
       "limitation-period-filing-a-case-india",
+      "what-is-an-injunction-when-can-you-get-one",
     ],
   },
   {
@@ -655,7 +656,10 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
           "Only on limited legal grounds, such as fraud or serious procedural irregularity — not simply because a party disagrees with the outcome.",
       },
     ],
-    relatedPostSlugs: ["arbitration-vs-litigation"],
+    relatedPostSlugs: [
+      "arbitration-vs-litigation",
+      "challenging-enforcing-arbitration-award",
+    ],
   },
   {
     slug: "legal-documentation",

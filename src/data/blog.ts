@@ -11,6 +11,100 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "challenging-enforcing-arbitration-award",
+    image: "/insights/arbitration-award-gavel.jpg",
+    title: "Can an Arbitration Award Be Challenged or Enforced in India?",
+    category: "Arbitration & ADR",
+    excerpt:
+      "Winning an arbitral award isn't the end of the road — it can still be challenged on limited grounds, or enforced like a court decree if the losing side simply ignores it.",
+    date: "2026-09-06",
+    readTime: "4 min read",
+    content: [
+      {
+        paragraphs: [
+          "An arbitral award doesn't automatically mean payment or compliance. Indian law, under the Arbitration and Conciliation Act, 1996, provides specific and fairly narrow routes to both challenge an award that's genuinely wrong, and enforce one that the losing party is simply ignoring.",
+        ],
+      },
+      {
+        heading: "Challenging an award: Section 34",
+        paragraphs: [
+          "An award can be set aside only on limited grounds — incapacity of a party, an invalid arbitration agreement, a party not being given proper notice or a fair opportunity to present its case, the award dealing with matters outside the scope of the reference, an improperly constituted tribunal, or — the most commonly argued ground — the award conflicting with the fundamental policy of Indian law or being vitiated by patent illegality. Courts do not re-examine the merits of the dispute here; they can't set aside an award simply because they'd have decided it differently.",
+        ],
+      },
+      {
+        heading: "The limitation window",
+        paragraphs: [
+          "An application to set aside an award must be filed within three months of receiving it, extendable by a further 30 days only where sufficient cause for the delay is shown. Miss this window entirely, and the award becomes final and enforceable regardless of its merits.",
+        ],
+      },
+      {
+        heading: "Enforcing an award: Section 36",
+        paragraphs: [
+          "Once the time to challenge an award has passed — or a challenge has been rejected without a stay — it becomes enforceable as if it were a decree of a civil court, letting the award-holder proceed directly to execution.",
+        ],
+        bullets: [
+          "Filing a Section 34 challenge does not automatically stay enforcement of the award",
+          "A separate, specific stay application must be filed and granted",
+          "Courts can impose conditions — such as a deposit of the awarded amount — before granting a stay",
+          "Once enforceable, the award is executed through the same process as any civil court decree",
+        ],
+      },
+      {
+        heading: "The takeaway",
+        paragraphs: [
+          "Because the grounds to challenge an award are deliberately narrow and the timeline is short, deciding quickly whether an award is genuinely open to challenge — or whether it's time to plan for enforcement instead — matters more here than in ordinary litigation.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "what-is-an-injunction-when-can-you-get-one",
+    image: "/insights/injunction-padlock-chain.jpg",
+    title: "What Is an Injunction and When Can You Get One?",
+    category: "Civil Litigation",
+    excerpt:
+      "An injunction can stop a wrong before it's completed, rather than just compensating for it afterward — but courts don't grant one lightly. Here's what actually needs to be shown.",
+    date: "2026-09-06",
+    readTime: "4 min read",
+    content: [
+      {
+        paragraphs: [
+          "In many civil disputes, compensation after the fact isn't enough — someone might be about to sell disputed property, demolish a structure, or breach a contract in a way money can't fully undo. An injunction is the remedy for exactly this: a court order restraining a party from doing, or continuing, a particular act.",
+        ],
+      },
+      {
+        heading: "Temporary vs. permanent injunctions",
+        paragraphs: [
+          "A temporary or interim injunction, sought under Order 39 of the Code of Civil Procedure, is granted while a suit is still pending, to preserve the situation until the case is finally decided. A permanent injunction, by contrast, is granted only at the conclusion of the trial, as final relief.",
+        ],
+      },
+      {
+        heading: "What a court actually looks for",
+        paragraphs: [
+          "Granting an interim injunction isn't automatic — courts weigh a consistent set of factors before doing so.",
+        ],
+        bullets: [
+          "A prima facie case — a genuine, arguable case on the merits, not proof of the full claim",
+          "Balance of convenience — whether refusing the injunction would harm the applicant more than granting it would harm the other side",
+          "Irreparable injury — harm that can't be adequately compensated by money later",
+          "Conduct and delay — courts are reluctant to assist an applicant who waited too long before seeking relief",
+        ],
+      },
+      {
+        heading: "Ex parte injunctions",
+        paragraphs: [
+          "In genuinely urgent situations, a court can grant a temporary injunction without first hearing the other side, known as an ex parte order. This is meant to be the exception rather than the default, and is typically revisited quickly once the opposing party has had a chance to respond.",
+        ],
+      },
+      {
+        heading: "The takeaway",
+        paragraphs: [
+          "Interim injunction applications are often decided quickly and on limited evidence, so having the strongest available documents ready before filing — not scrambled together afterward — is usually what determines whether the order is granted.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "trust-deed-explained",
     image: "/insights/trust-deed-house-model.jpg",
     title: "What Is a Trust Deed and When Do You Need One?",

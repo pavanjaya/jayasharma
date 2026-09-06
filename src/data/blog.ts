@@ -11,6 +11,244 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "filing-consumer-complaint-india",
+    image: "/insights/consumer-complaint-boxes.jpg",
+    title: "Filing a Consumer Complaint in India: What You Need to Know",
+    category: "Civil Litigation",
+    excerpt:
+      "Defective goods, a service that fell short, or a refund that never came — the Consumer Protection Act gives buyers a faster, simpler route than an ordinary civil suit.",
+    date: "2026-09-06",
+    readTime: "4 min read",
+    content: [
+      {
+        paragraphs: [
+          "The Consumer Protection Act, 2019 gives consumers a dedicated, faster route to complain about defective goods or deficient services, without the cost and delay of an ordinary civil suit.",
+        ],
+      },
+      {
+        heading: "What counts as a valid complaint",
+        paragraphs: [
+          "A complaint can be filed for a range of issues beyond just a faulty product.",
+        ],
+        bullets: [
+          "Defective goods or deficient services",
+          "Unfair trade practices or overcharging",
+          "Spurious or hazardous goods sold as genuine",
+          "Misleading advertisements",
+        ],
+      },
+      {
+        heading: "Which commission hears it",
+        paragraphs: [
+          "Jurisdiction depends on the value of the claim — the District Consumer Commission handles claims up to a specified threshold, the State Commission handles mid-range claims and appeals from District Commissions, and the National Commission handles the highest-value claims and appeals from State Commissions.",
+        ],
+      },
+      {
+        heading: "Filing the complaint",
+        paragraphs: [
+          "Complaints can be filed online through the e-daakhil portal or in person at the commission with jurisdiction — notably, either where you reside or where the transaction took place, which is more convenient than an ordinary civil suit's stricter jurisdiction rules. A lawyer isn't mandatory, though one can meaningfully speed up how the complaint is framed and argued.",
+        ],
+      },
+      {
+        heading: "The takeaway",
+        paragraphs: [
+          "Since this forum is designed to move faster and more informally than a civil suit, having your purchase documentation — invoice, warranty, correspondence with the seller — organised before filing is usually what determines how quickly the matter actually resolves.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "motor-accident-compensation-claims-mact",
+    image: "/insights/motor-accident-car-key.jpg",
+    title: "Motor Accident Compensation Claims: How MACT Works",
+    category: "Civil Litigation",
+    excerpt:
+      "A road accident claim isn't decided in a regular civil court — it goes to a specialised tribunal built specifically to get victims and families compensated faster.",
+    date: "2026-09-06",
+    readTime: "4 min read",
+    content: [
+      {
+        paragraphs: [
+          "The Motor Vehicles Act, 1988 established Motor Accident Claims Tribunals (MACT) in every district specifically to handle compensation claims arising from road accidents, separate from the ordinary civil court system.",
+        ],
+      },
+      {
+        heading: "Who can file a claim",
+        paragraphs: [
+          "The injured person can file a claim directly. In the case of death, legal heirs or dependents can claim compensation. The claim is typically filed against the vehicle owner, the driver, and the insurer — the insurer is usually made a party since the actual payout most often comes from the insurance policy.",
+        ],
+      },
+      {
+        heading: "How compensation is calculated",
+        paragraphs: [
+          "Tribunals weigh a specific set of factors rather than awarding a fixed amount.",
+        ],
+        bullets: [
+          "Age and income of the victim, using a standardised multiplier for loss of dependency in death cases",
+          "Medical expenses actually incurred",
+          "Loss of earning capacity in cases of permanent disability",
+          "Pain, suffering, and loss of amenities",
+          "Funeral expenses in fatal accident cases",
+        ],
+      },
+      {
+        heading: "No-fault vs. fault-based claims",
+        paragraphs: [
+          "Under Section 140 of the Act, a fixed interim compensation can be claimed without proving anyone was at fault. A full claim under Section 166 requires establishing negligence, but allows for a higher, fully assessed amount of compensation once that's shown.",
+        ],
+      },
+      {
+        heading: "The takeaway",
+        paragraphs: [
+          "Since compensation is calculated on documented facts — income proof, medical records, the FIR and accident report — collecting and preserving this evidence immediately after an accident is what most affects the eventual award.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "landlord-tenant-eviction-process-india",
+    image: "/insights/tenant-eviction-keys.jpg",
+    title: "Landlord-Tenant Disputes: Grounds and Process for Eviction in India",
+    category: "Property Law",
+    excerpt:
+      "A tenant who won't vacate isn't a problem you can solve by simply changing the locks. Here's how eviction actually has to be pursued under Indian law.",
+    date: "2026-09-06",
+    readTime: "4 min read",
+    content: [
+      {
+        paragraphs: [
+          "Landlord-tenant relationships are governed either by a registered rent or leave-and-license agreement together with general contract principles, or by a state-specific Rent Control Act where applicable. Either way, eviction is only lawful once pursued through the correct legal process — not through self-help.",
+        ],
+      },
+      {
+        heading: "Common grounds for eviction",
+        paragraphs: [
+          "Most eviction disputes fall into a handful of recurring categories.",
+        ],
+        bullets: [
+          "Non-payment of rent for a specified period",
+          "Subletting the premises without the landlord's consent",
+          "Using the premises for a purpose other than what was agreed",
+          "The landlord's bona fide requirement for personal use",
+          "Structural damage caused by the tenant",
+          "Expiry of a fixed-term lease or leave-and-license agreement",
+        ],
+      },
+      {
+        heading: "Notice before filing",
+        paragraphs: [
+          "A formal notice terminating the tenancy — giving the tenant a specified period to vacate or remedy the breach — is generally required before eviction proceedings can even be initiated. The exact notice period depends on the tenancy agreement and the law that applies.",
+        ],
+      },
+      {
+        heading: "Where the case is filed",
+        paragraphs: [
+          "Eviction suits are generally filed before the civil court with jurisdiction over the property. Where a state Rent Control Act applies, the matter may instead go through a Rent Controller or a Small Causes Court, depending on the state and the nature of the tenancy.",
+        ],
+      },
+      {
+        heading: "The takeaway",
+        paragraphs: [
+          "Attempting to force a tenant out without going through the legal process — cutting utilities, changing locks, removing belongings — exposes the landlord to legal liability of their own, regardless of how valid the underlying grievance actually is.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "cybercrime-in-india-it-act-explained",
+    image: "/insights/cybercrime-padlock-keyboard.jpg",
+    title: "Cybercrime in India: What the IT Act Actually Covers",
+    category: "Criminal Defense",
+    excerpt:
+      "From phishing to online harassment, the Information Technology Act — not just the ordinary penal code — is what defines most cybercrime offences in India.",
+    date: "2026-09-06",
+    readTime: "4 min read",
+    content: [
+      {
+        paragraphs: [
+          "As disputes and offences increasingly move online, the Information Technology Act, 2000 (as amended in 2008) has become the primary law governing cybercrime in India, working alongside the Bharatiya Nyaya Sanhita for related offences.",
+        ],
+      },
+      {
+        heading: "Common offences under the IT Act",
+        paragraphs: [
+          "The Act covers a wide range of conduct, well beyond just hacking.",
+        ],
+        bullets: [
+          "Unauthorised access to a computer system (Section 66)",
+          "Identity theft and cheating by personation using a computer resource (Sections 66C, 66D)",
+          "Publishing or transmitting obscene material (Section 67)",
+          "Violation of privacy, including capturing or publishing images without consent (Section 66E)",
+          "Cyberstalking and online harassment, dealt with jointly under IT Act and Bharatiya Nyaya Sanhita provisions",
+        ],
+      },
+      {
+        heading: "Filing a complaint",
+        paragraphs: [
+          "Complaints can be filed at the National Cyber Crime Reporting Portal (cybercrime.gov.in) or at the local police station's cyber cell. For financial fraud specifically, there's often only a narrow window — sometimes just a matter of hours — to maximise the chance of the transferred funds actually being frozen.",
+        ],
+      },
+      {
+        heading: "What to preserve as evidence",
+        paragraphs: [
+          "Digital evidence is easy to lose or alter if it isn't preserved properly and promptly — screenshots with visible timestamps, transaction records and bank statements, the original communication itself (email headers and SMS, not just a screenshot of it), and relevant device details all matter.",
+        ],
+      },
+      {
+        heading: "The takeaway",
+        paragraphs: [
+          "Cybercrime cases move fast in their first hours — reporting promptly and preserving evidence properly in that window matters more here than in almost any other kind of criminal matter.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "ndps-act-cases-what-makes-them-different",
+    image: "/insights/ndps-gavel-book.jpg",
+    title: "NDPS Act Cases: What Makes Them Different",
+    category: "Criminal Defense",
+    excerpt:
+      "Bail, evidence, and sentencing all work differently under the NDPS Act than in an ordinary criminal case — here's what sets it apart.",
+    date: "2026-09-06",
+    readTime: "4 min read",
+    content: [
+      {
+        paragraphs: [
+          "The Narcotic Drugs and Psychotropic Substances Act, 1985 governs offences relating to narcotics and psychotropic substances, and is structured very differently from ordinary criminal law in ways that matter a great deal to anyone facing a charge under it.",
+        ],
+      },
+      {
+        heading: "Quantity changes everything",
+        paragraphs: [
+          "The Act classifies offences by quantity — small quantity, quantity, or commercial quantity — and the applicable punishment and procedure differ dramatically at each level. Commercial quantity cases carry a mandatory minimum sentence and are treated far more strictly at every stage of the proceedings.",
+        ],
+      },
+      {
+        heading: "Bail is genuinely harder to get",
+        paragraphs: [
+          "Section 37 imposes additional conditions before bail can be granted in cases involving commercial quantity — the court must be satisfied there are reasonable grounds to believe the accused is not guilty and is unlikely to commit an offence while on bail, on top of the ordinary bail considerations. This makes NDPS bail meaningfully harder to secure than in most other offences.",
+        ],
+      },
+      {
+        heading: "The burden can shift",
+        paragraphs: [
+          "Certain provisions work differently from the usual presumption of innocence.",
+        ],
+        bullets: [
+          "Section 35 presumes a culpable mental state once possession is established",
+          "Section 54 presumes guilt for possession of a narcotic substance unless satisfactorily explained by the accused",
+          "Together, these effectively shift part of the burden onto the defence in a way ordinary criminal law does not",
+        ],
+      },
+      {
+        heading: "The takeaway",
+        paragraphs: [
+          "Because quantity classification and strict compliance with search and seizure procedure (Sections 42, 50, and 57) so often decide an NDPS case, a fast, careful review of exactly how the seizure was conducted is usually the first and most important step in building the defence.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "challenging-enforcing-arbitration-award",
     image: "/insights/arbitration-award-gavel.jpg",
     title: "Can an Arbitration Award Be Challenged or Enforced in India?",

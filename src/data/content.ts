@@ -502,6 +502,11 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
         answer:
           "Many agricultural land matters — mutation entries, tenancy disputes, land classification — fall first before revenue authorities such as the Tehsildar or Sub-Divisional Officer under the Maharashtra Land Revenue Code, rather than a civil court, though some disputes can proceed to civil court depending on the relief sought.",
       },
+      {
+        question: "Can a landlord evict a tenant without going to court?",
+        answer:
+          "No — cutting utilities, changing locks, or removing belongings without a court order exposes the landlord to legal liability of their own. Eviction has to be pursued through the proper notice and legal process, however valid the underlying grievance is.",
+      },
     ],
     relatedPostSlugs: [
       "sale-deed-vs-agreement-to-sell",
@@ -509,6 +514,7 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
       "who-owns-property-after-owners-death",
       "rera-complaint-against-builder",
       "agricultural-land-disputes-revenue-tribunal",
+      "landlord-tenant-eviction-process-india",
     ],
   },
   {
@@ -632,11 +638,23 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
         answer:
           "Yes — defamation can be pursued as a civil tort claim seeking damages, separately from (or alongside) any criminal defamation complaint. The claim generally needs to show a false statement was published or communicated to a third party and caused harm to reputation.",
       },
+      {
+        question: "Where do I file a complaint about a defective product or service?",
+        answer:
+          "Consumer complaints are filed before the District, State, or National Consumer Commission depending on the claim value, rather than a regular civil court — a faster, less formal forum designed specifically for this kind of dispute.",
+      },
+      {
+        question: "How is compensation decided in a road accident claim?",
+        answer:
+          "The Motor Accident Claims Tribunal weighs the victim's age and income, medical expenses, loss of earning capacity, and — in fatal cases — a standardised multiplier for loss of dependency, rather than awarding a fixed amount.",
+      },
     ],
     relatedPostSlugs: [
       "recovery-suits-for-unpaid-money",
       "limitation-period-filing-a-case-india",
       "what-is-an-injunction-when-can-you-get-one",
+      "filing-consumer-complaint-india",
+      "motor-accident-compensation-claims-mact",
     ],
   },
   {
@@ -868,11 +886,23 @@ export const PRACTICE_AREA_LANDING_PAGES: PracticeAreaLandingPage[] = [
         answer:
           "In certain circumstances, yes — where the complaint is legally deficient or amounts to an abuse of process, a quashing petition can be filed before the High Court.",
       },
+      {
+        question: "Where do I report a cybercrime like online fraud or hacking?",
+        answer:
+          "Complaints can be filed at the National Cyber Crime Reporting Portal (cybercrime.gov.in) or at the local police station's cyber cell. For financial fraud, reporting within the first few hours meaningfully improves the chance of the transferred funds being frozen.",
+      },
+      {
+        question: "Is it harder to get bail in an NDPS case?",
+        answer:
+          "Yes — for commercial quantity cases, Section 37 of the NDPS Act requires the court to be satisfied there are reasonable grounds to believe the accused is not guilty and unlikely to reoffend on bail, on top of the ordinary bail considerations, making it meaningfully harder than most other offences.",
+      },
     ],
     relatedPostSlugs: [
       "cheque-bounce-section-138",
       "fir-vs-nc-complaint",
       "anticipatory-bail-explained",
+      "cybercrime-in-india-it-act-explained",
+      "ndps-act-cases-what-makes-them-different",
     ],
   },
 ];

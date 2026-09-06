@@ -1,3 +1,29 @@
+export type RecognitionCategory = "award" | "chief-guest" | "media" | "achievement";
+
+export type RecognitionItem = {
+  category: RecognitionCategory;
+  title: string;
+  organization: string;
+  date?: string;
+  description?: string;
+};
+
+export const RECOGNITION_CATEGORY_LABELS: Record<RecognitionCategory, string> = {
+  award: "Awards",
+  "chief-guest": "Chief Guest & Speaking Engagements",
+  media: "Featured In",
+  achievement: "Other Achievements",
+};
+
+export const RECOGNITION_ITEMS: RecognitionItem[] = [
+  {
+    category: "award",
+    title: "Karmayogini Award",
+    organization: "Deshdoot, Nashik",
+    date: "2026",
+  },
+];
+
 export const CREDENTIALS = ["B.Com.", "LL.B.", "LL.M."];
 
 export const BAR_REGISTRATION = "MAH/4623/2010";

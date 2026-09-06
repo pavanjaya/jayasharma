@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Award, GraduationCap, Landmark, Quote } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, Award, GraduationCap, Landmark, Quote } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import Reveal from "@/components/motion/Reveal";
@@ -186,6 +187,16 @@ export default function AboutPage() {
               ))}
             </RevealStagger>
           </div>
+
+          <Reveal delay={0.1} className="mt-12 text-center">
+            <Link
+              href="/recognition"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-navy)] transition-colors duration-300 hover:text-[var(--color-gold)]"
+            >
+              View All Awards &amp; Recognition
+              <ArrowRight size={15} />
+            </Link>
+          </Reveal>
         </div>
       </section>
 
